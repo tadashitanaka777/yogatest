@@ -1,0 +1,141 @@
+.profile_img {
+  margin-bottom: 20px;
+  position: relative;
+  &:before {
+    display: block;
+    content: '';
+    padding-top: 100%;
+  }
+  #crop-avatar {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    // 画像がエリアからはみ出さないようにする
+    overflow: hidden;
+  }
+}
+
+.item_img {
+    width: 150px;
+    height: 150px;
+  //margin-bottom: 20px;
+  position: relative;
+  /*
+  &:before {
+    display: block;
+    content: '';
+    padding-top: 100%;
+  }
+  */
+  .crop-avatar {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+    .dropzone {
+        .dz-message {
+            padding: 0;
+        }
+    }
+  }
+}
+
+.pose_img {
+  margin-bottom: 20px;
+  position: relative;
+  #crop-pose {
+    width: 100%;
+    height: auto;
+    text-align: center;
+  }
+}
+
+
+/** Dropzone.js **/
+
+.dropzone {
+  width: 100%;
+  padding: 0;
+  background: transparent;
+  border: 1px solid #e5e5e5;
+  position: relative;
+  //min-height: 130px;
+  display: table;
+  &.dz-drag-hover {
+    background: lighter($primary,20%);
+  }
+  .dz-preview {
+    //margin: 0;
+    //display: inline-block;
+    .dz-image {
+      @include border-radius(0);
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+    .dz-remove {
+      width: 30px;
+      height: 30px;
+      padding: 6px;
+      color: $white;
+      background: $gray-light;
+      @include border-radius(4px);
+      position: absolute;
+      bottom: 10px;
+      right: 10px;
+      z-index: 30;
+      display: inline-block;
+      font: normal normal normal 14px/1 FontAwesome;
+      font-size: 18px;
+      text-rendering: auto;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      &:before {
+        content: "\f1f8";
+      }
+      &:hover {
+        text-decoration: none;
+        @include opacity(0.8);
+      }
+    }
+  }
+  .dz-message {
+    padding: 0 20px;
+    vertical-align: middle;
+    display: table-cell;
+  }
+}
+
+.avatarzone {
+  min-height: 100%;
+  .dz-preview {
+    margin: 0;
+    display: block;
+    .dz-image {
+      width: 100%;
+      height: 100%;
+      @include border-radius(0);
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+    .dz-error-message {
+      width: 100%;
+      @include border-radius(0);
+      top: auto;
+      left: auto;
+      bottom: 0;
+      &:after {
+        content: none;
+      }
+    }
+  }
+}
+
+/** /Dropzone.js **/

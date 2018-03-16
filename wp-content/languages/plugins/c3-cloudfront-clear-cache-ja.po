@@ -1,0 +1,83 @@
+# Translation of Plugins - C3 Cloudfront Cache Controller - Development (trunk) in Japanese
+# This file is distributed under the same license as the Plugins - C3 Cloudfront Cache Controller - Development (trunk) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2016-09-19 20:17:42+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: GlotPress/2.3.0-alpha\n"
+"Language: ja_JP\n"
+"Project-Id-Version: Plugins - C3 Cloudfront Cache Controller - Development (trunk)\n"
+
+#: module/view/root.php:140
+msgid "Notice: Every page's cache is removed."
+msgstr "警告: 全てのページのキャッシュが消去されます。"
+
+#: module/view/root.php:136
+msgid "CloudFront Cache Control"
+msgstr "CloudFront キャッシュコントロール"
+
+#: module/view/menus.php:63 module/view/menus.php:64
+msgid "CloudFront Settings"
+msgstr "CloudFront 設定"
+
+#. #-#-#-#-#  tmp-c3-cloudfront-clear-cache.pot (C3 Cloudfront Cache Controller
+#. 4.0.3)  #-#-#-#-#
+#. Plugin Name of the plugin/theme
+#: lib/c3-admin.php:81 module/view/root.php:81
+msgid "C3 Cloudfront Cache Controller"
+msgstr "C3 Cloudfront Cache Controller"
+
+#. Author URI of the plugin/theme
+msgid "http://wp-kyoto.net/"
+msgstr "http://wp-kyoto.net/"
+
+#. Author of the plugin/theme
+msgid "hideokamoto"
+msgstr "hideokamoto"
+
+#. Description of the plugin/theme
+msgid "This is simple plugin that clear all cloudfront cache if you publish posts."
+msgstr "投稿を公開した際にCloudFrontの全てのキャッシュを消去するシンプルなプラグイン"
+
+#. Plugin URI of the plugin/theme
+msgid "https://github.com/megumiteam/C3-Cloudfront-Clear-Cache"
+msgstr "https://github.com/megumiteam/C3-Cloudfront-Clear-Cache"
+
+#: lib/c3-admin.php:108 module/view/root.php:113
+msgid "Save Change"
+msgstr "変更を保存"
+
+#: lib/c3-admin.php:83 module/view/root.php:99
+msgid "General Settings"
+msgstr "総合設定"
+
+#: lib/c3-admin.php:74 module/base.php:125
+msgid "AWS Secret Key"
+msgstr "AWS シークレットキー"
+
+#: lib/c3-admin.php:73 module/base.php:124
+msgid "AWS Access Key"
+msgstr "AWS アクセスキー"
+
+#: lib/c3-admin.php:72 module/base.php:123
+msgid "CloudFront Distribution ID"
+msgstr "CloudFront Distribution ID"
+
+#: lib/c3-admin.php:53 module/view/root.php:139 module/view/root.php:144
+msgid "Flush All Cache"
+msgstr "全てのキャッシュをクリア"
+
+#: lib/c3-admin.php:47
+msgid "Notice:This is clear every page cache."
+msgstr "警告: 全てのページのキャッシュを消去します。"
+
+#: lib/c3-admin.php:46
+msgid "Flush CloudFront Cache"
+msgstr "CloudFront のキャッシュをクリア"
+
+#: lib/c3-admin.php:35 lib/c3-admin.php:36
+msgid "C3 Settings"
+msgstr "C3設定"

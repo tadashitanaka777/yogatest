@@ -1,0 +1,413 @@
+.banner img {
+width:100% !important;
+height:auto !important;
+}
+.entry-content {
+	width:100% !important;
+	padding: 0 10px;
+	box-sizing: border-box;
+}
+#main, .hentry, #archive-container {
+	float:none !important;
+	width:100% !important;
+}
+.entry-content p {
+	margin-bottom: 20px;
+}
+.entry-content img, article .col1 img {
+	max-width:100% !important;
+	height:auto !important;
+}
+.wp-caption {
+	width:100% !important;
+}
+h1.post-title {
+	border-bottom: 2px solid #dedede;
+	font-size: 18px;
+	font-weight: bold;
+	height: 47px;
+	margin-top:10px;
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+	position: relative;
+	text-decoration: none;
+}
+h1.page-title {
+	border-bottom: 2px solid #dedede;
+	font-size: 18px;
+	font-weight: bold;
+	margin-top:10px;
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+	position: relative;
+	text-decoration: none;
+}
+h1.post-title a, #archive-container article h2.post-title a, h1.page-title a {
+	color: #c689ab;
+}
+.byline {
+	font-size: 90%;
+	margin-bottom: 10px;
+}
+.entry-content h1 {
+	font-size: 180%;
+	font-weight: 700;
+	line-height: 130%;
+	margin: 0 0 20px;
+}
+.entry-content h2 {
+	/*background: none repeat scroll 0 0 #f7f7f7;*/
+	color: #333;
+	background: #f7f7f7;
+	font-size: 138%;
+	font-weight: 700;
+	line-height: 120%;
+	margin: 20px 0;
+	padding: 20px;
+}
+.entry-content h3 {
+	background:none;
+	border-bottom: 3px solid #f7f7f7;
+	font-size: 125%;
+	font-weight: 700;
+	line-height: 120%;
+	margin: 80px 0 20px;
+	padding: 0 0 15px;
+}
+.entry-content h4 {
+	border-left: 3px solid #333;
+	display: inline-block;
+	font-size: 113%;
+	font-weight: 700;
+	line-height: 120%;
+	margin: 0 0 20px;
+	padding: 5px 0 5px 15px;
+}
+.entry-content dd h4 {
+	margin-bottom: 10px;
+}
+.entry-content h5 {
+	font-size: 107%;
+	font-weight: 700;
+	line-height: 110%;
+	margin: 30px 0 10px;
+	padding: 1px 0 0;
+}
+.entry-content h6 {
+	font-size: 100%;
+	font-weight: 700;
+	line-height: 120%;
+	margin: 20px 0 10px;
+}
+.uGreen, h4 {
+	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", sans-serif;
+}
+.entry-content h3.uGreen {
+	border-bottom: 2px solid #dedede;
+	font-size: 180%;
+	padding-bottom: 0;
+}
+h3.uGreen span {
+	border-bottom: 2px solid #96bfad;
+	display: inline-block;
+	margin-bottom: -2px;
+	width: 266px;
+}
+h3.uGreen small {
+	font-size: 60%;
+}
+h3.uGreen small:before {
+	content: "/";
+	margin-left: 15px;
+	margin-right: 15px;
+}
+.entry-content ul {
+	margin: 2em 0;
+}
+.entry-content ul li {
+	background: url("https://www.yoga-gene.com/wp-content/uploads/item_icon_circle2.png") no-repeat scroll left 5px rgba(0, 0, 0, 0);
+	line-height: 140%;
+	list-style: none outside none;
+	margin: 0 0 1em;
+	padding: 0 0 0 20px;
+}
+.entry-content ul.potipink li {
+	background: url("https://www.yoga-gene.com/wp-content/uploads/item_icon_circle.png") no-repeat scroll left 5px rgba(0, 0, 0, 0);
+}
+.entry-content ul.potiblack li {
+	background: url("https://www.yoga-gene.com/wp-content/uploads/item_icon_circle3.png") no-repeat scroll left 5px rgba(0, 0, 0, 0);
+}
+.singular-page-56310 ul li {
+	background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+	line-height: 0;
+}
+.singular-page-56310 #news0 li {
+	line-height: 140%;
+	list-style: none outside none;
+	margin: 1em 0;
+	padding: 0 0 0 80px;
+}
+.singular-page-56310 #news1 li, .singular-page-56310 #news2 li {
+	background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+	line-height: 140%;
+	list-style: none outside none;
+	margin: 1em 0;
+	overflow: hidden;
+	padding: 0;
+}
+.entry-content ul li ul {
+	margin: 1em 0 2em 0.5em;
+}
+.entry-content ol {
+	margin: 2em 0;
+}
+.entry-content ol li {
+	line-height: 140%;
+	list-style-type: decimal;
+	margin: 0 0 1em 1.5em;
+	padding: 0 0 0 5px;
+}
+.entry-content ol li ol {
+	margin: 1em 0 2em 0.5em;
+}
+.entry-content ol li ol li {
+	margin: 0 0 0.5em;
+}
+#brandNavi li {
+	border: 1px dotted #d1d1cf;
+	box-sizing: border-box;
+	display: inline-block;
+	height: 70px;
+	margin-bottom: 9px;
+	margin-right: 13px;
+	width: 100%;
+}
+#brandNavi li:nth-of-type(4n) {
+ margin-right: 0;
+}
+#brandNavi li a {
+	display: block;
+	padding-bottom: 5px;
+	padding-top: 5px;
+	text-align: center;
+}
+#brandNavi li a:after {
+	content: attr(title);
+	display: block;
+	font-size: 9px;
+}
+.singular-page .entry-content ul li {
+	background: none !important;
+	line-height: 140%;
+	list-style: none outside none;
+	margin: 0;
+	padding: 0;
+}
+.entry-content dd {
+	border: 1px solid #f7f7f7;
+	margin: 2em 0 2em 10px;
+	padding: 2em 1.5em;
+}
+.entry-content dd.ami1 {
+	background-color: #f9f6ed;
+}
+.entry-content dd.ami2 {
+	background-color: #fef3f9;
+}
+.entry-content dd p:last-child, .entry-content dd ul:last-child, .entry-content dd ol:last-child {
+	margin-bottom: 0;
+}
+.entry-content dd.message {
+	background: url("https://www.yoga-gene.com/wp-content/uploads/item_icon_checkcircle.png") no-repeat scroll 10px 10px rgba(0, 0, 0, 0);
+	border: 4px solid #ed1384;
+	clear: both;
+	padding: 1em 1.5em 1em 52px;
+}
+.entry-content dd.interview {
+	background: url("https://www.yoga-gene.com/wp-content/uploads/item_icon_interview.png") no-repeat scroll 10px 10px rgba(0, 0, 0, 0);
+	border: 4px solid #303030;
+	clear: both;
+	padding: 1em 1.5em 1em 52px;
+}
+.entry-content blockquote {
+	background-image: url("https://www.yoga-gene.com/wp-content/uploads/icon-twoquotes.gif");
+	background-position: 10px 25px;
+	background-repeat: no-repeat;
+	border: 1px dotted #999;
+	color: #666;
+	margin: 2em 0 2em 10px;
+	outline: medium none;
+	padding: 20px 20px 0 52px;
+	position: relative;
+}
+/*=====social tag=====*/
+div#bottomcolumn {
+	clear: both;
+	margin: 0;
+}
+.socialTag {
+	clear:both;
+	line-height: 0;
+	margin: 60px auto 10px;
+	text-align: center;
+	width: 100%;
+	background-color:#FBFAF5;
+	border:1px solid #D1D1CF;
+}
+.hentry .socialTag {
+	border-left:none;
+	border-right:none;
+	background:none;
+	padding-top:20px;
+	padding-bottom:10px;
+}
+article.hentry .socialTag {
+	border-left:none;
+	border-right:none;
+	background:none;
+	margin-top:10px;
+	margin-bottom:30px;
+	padding:0;
+}
+.hentry .socialTag .bySns {
+}
+.hentry .socialTag p {
+	display: inline-block;
+	font-size: 16px;
+	font-weight:normal;
+	font-family: 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', sans-serif;
+	line-height:1;
+	height:20px;
+	border-bottom:2px solid #96BFAD;
+	margin-bottom:10px;
+}
+#archive-container .hentry .socialTag p, #archive-container .hentry .socialTag ul {
+	display:inline-block;
+}
+#archive-container .hentry .socialTag {
+	border-left:none;
+	border-right:none;
+	background:none;
+}
+#archive-container .hentry .socialTag .bySns {
+	margin-left:auto;
+	margin-right:auto;
+	padding-left:15px;
+}
+#archive-container .socialTag p {
+	color:#CCCCCC;
+	height:auto;
+	margin-top:10px;
+	margin-bottom:0;
+	font-size:12px;
+	font-family: 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', sans-serif;
+}
+.bySns {
+	line-height: 0;
+	padding:10px;
+	text-align: center;
+}
+.bySns li {
+	background: none repeat scroll 0 0 rgba(0, 0, 0, 0) !important;
+	display: inline-block;
+	padding-left: 0 !important;
+}
+.btnFacebook {
+	width: 120px;
+}
+.hentry .btnFacebook {
+	width:110px;
+}
+#membership {
+	clear: both;
+	padding-top: 30px;
+}
+/*
+#detailarea .bySns li.btnFacebook {
+    width: 108px;
+}
+*/
+.btnTwitter {
+	width: 90px;
+}
+/*
+#detailarea .bySns li.btnTwitter {
+    width: 95px;
+}
+*/
+.btnLine {
+	width: 30px;
+}
+.btnGoogle {
+	width: 40px;
+}
+/*=====/social tag=====*/
+
+/* SIDEBAR */
+
+#secondary .widget {
+	margin-bottom: 25px;
+}
+#secondary .widget .widget-title {
+	border-bottom: 2px solid #96bfad;
+	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", sans-serif;
+	font-size: 140%;
+	line-height: 1;
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+	background:none;
+}
+#secondary .widget ul.xoxo li {
+	background-image: url("https://c25.future-shop.jp/shop/item/ty20/design/img02/side_arrow.gif");
+	background-position: 5px 50%;
+	background-repeat: no-repeat;
+	border-bottom: 1px dotted #cccccc;
+	padding: 0 0 0 15px;
+}
+#secondary .widget ul.xoxo li.cat-item-107 {
+	background-position: 5px 17px;
+}
+#secondary .widget ul.xoxo li a {
+	display: inline-block;
+	padding-bottom: 10px;
+	padding-top: 10px;
+}
+#archive-container h1 {
+	color: #96bfad;
+	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", sans-serif;
+	font-size: 32px;
+	line-height: 1;
+	margin-top:30px;
+	margin-bottom: 10px;
+	text-align: center;
+}
+#archive-container small {
+	display: block;
+	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", sans-serif;
+	margin-bottom: 15px;
+	text-align: center;
+}
+#archive-container article .col1 {
+	float: right;
+	margin-bottom: 15px;
+}
+#archive-container article .col2 {
+	float: left;
+	margin-bottom: 15px;
+}
+#archive-container article h2.post-title {
+	border-bottom: 2px solid #dedede;
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 10px;
+	padding-bottom: 5px;
+	background:none;
+}
+.singular-page #main .hentry {
+	width: 100%;
+}
+.navigation-links {
+	margin-bottom:30px;
+	text-align:center;
+	font-size:18px;
+}

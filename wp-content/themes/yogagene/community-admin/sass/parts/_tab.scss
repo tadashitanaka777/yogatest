@@ -1,0 +1,35 @@
+.tab-ul {
+    width: 100%;
+    padding: 0;
+    margin: 0 0 20px;
+    text-align: center;
+    list-style: none;
+    overflow: hidden;
+    li {
+        width: 25%;
+        padding: 10px 20px;
+        text-align: center;
+        border: 1px solid $list-group-border;
+        background: transparent;
+        //float: left;
+        //margin-right: 1px;
+        @include border-radius(4px);
+        cursor: pointer;
+        display: inline-block;
+        &:hover {
+            @include opacity(0.8);
+        }
+        &.select {
+            background: #eee;
+        }
+    }
+}
+
+.tab-content {
+    .tab-li{
+        background: transparent;
+        &.hide {
+            display: none;
+        }
+    }
+}

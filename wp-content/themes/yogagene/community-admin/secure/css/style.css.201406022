@@ -1,0 +1,6663 @@
+@charset "UTF-8";
+/* ==================
+	common
+====================== */
+
+
+/* 初級モードでの変更が適応されるCSS（system_SizeColorSettings.css）  */
+/*FutureShop2 system_SizeColorSettings.css*/
+
+/*メインカラー（キャプションの背景色・見出しの下線色）*/
+.pageTitle { }
+.CrossHead {}
+.Definition {border-color: #DDDDDD;}
+.userTable_01 caption {background: #DDDDDD;}
+.userTable_02 caption {background: #DDDDDD;}
+/*.cartTable caption {background: #DDDDDD;}*/
+#FS2_body_Goods .userTable_01 { border-top-color: #DDDDDD;}
+#FS2_body_Review .userTable_01 { border-top-color: #DDDDDD;}
+.FS2_body_MyReviewList .cartTable { border-top-color: #DDDDDD;}
+.FS2_body_MyReviewList .cartTable { border-top-color: #DDDDDD;}
+.FS2_additional_image_tableVariation_border th {border-color: #DDDDDD;}
+.FS2_additional_image_tableVariation_border td {border-color: #DDDDDD;}
+
+
+/*サブカラー　1（セルの背景色）*/
+.pan {background: #fff;}
+.userTable_01 th {background: #85ad9a; }
+.userTable_02 th {background: #EDEDE5;}
+.sellTerms {background: #F6F6F6;}
+.FS2_inputSelection_table th {background: #F6F6F6;}
+.GoodsSelectionTable th {background: #F6F6F6;}
+.FS2_Review_Detail_td {background: #F6F6F6;}
+.cartTable th {}
+.FS2_MyReviewList_Detail_td {background: #F6F6F6;}
+.ODTable th {background: #F6F6F6;}
+.ODTable2 th {background: #F6F6F6;}
+.FS2_OptionPrice_table th {background: #F6F6F6;}
+
+
+/*サブカラー　2（罫線の色）*/
+.userTable_01 {border-color: #DDDDDD;}
+.userTable_01 th {border-color: #DDDDDD;}
+.userTable_01 td {border-color: #DDDDDD; color:#555;}
+.userTable_02 {border-color: #DDDDDD;}
+.userTable_02 th {border-color: #DDDDDD;}
+.userTable_02 td {border-color: #DDDDDD; color:#555;}
+.FS2_privacyPageLink_container {border-color: #DDDDDD;}
+.FS2_point {border-color: #DDDDDD;}
+.sellTerms {border-color: #DDDDDD;}
+.FS2_inputSelection_table th {border-color: #DDDDDD;}
+.FS2_inputSelection_table td {border-color: #DDDDDD;}
+.GoodsSelectionTable th {border-color: #DDDDDD;}
+.GoodsSelectionTable td {border-color: #DDDDDD;}
+#FS2_body_Goods .userTable_01 { border-bottom-color: #DDDDDD;}
+#FS2_body_Review .userTable_01 { border-bottom-color: #DDDDDD;}
+.FS2_body_ReviewList td.FS2_Review_Detail_td {border-color: #DDDDDD;}
+
+.cartTable {border-color: #DDDDDD;}
+.cartTable th {border-color: #DDDDDD;}
+.cartTable td {border-color: #DDDDDD;}
+
+.ODTable {border-color: #DDDDDD;}
+.ODTable th {border-color: #DDDDDD;}
+.ODTable td {border-color: #DDDDDD;}
+.ODTable2 {border-color: #DDDDDD;}
+.ODTable2 {border-color: #DDDDDD;}
+.ODTable2 th {border-color: #DDDDDD;}
+.ODTable2 td {border-color: #DDDDDD;}
+#FS2_bundleInformationBlock{border-color: #DDDDDD;}
+
+
+/*リンク*/
+
+/*リンク色*/
+a:link {color: ;}
+/*すでにクリックしたリンク色*/
+a:visited {color: ;}
+/*クリック中のリンク色*/
+a:active {color: ;}
+/*マウスカーソル通過時の色*/
+a:hover {color: ;}
+
+
+/*背景*/
+
+/*背景色*/
+body {background-color: #FFFFFF;}
+/*背景画像*/
+body {background-image:url();}
+/*背景画像の繰り返し*/
+body {background-repeat: no-repeat;}
+/*背景画像の位置*/
+body {background-position:top center;}
+
+
+/*テキスト*/
+
+/*全体*/
+/*色*/
+body {color: #000000;}
+/*サイズ*/
+body {/* font-size: 80%; */}
+/*行間*/
+p {line-height: ;}
+
+/*ページ見出し*/
+/*色*/
+.pageTitle {}
+/*サイズ*/
+.pageTitle {}
+/*行間*/
+.pageTitle {}
+
+/*パンくずリンク*/
+/*色*/
+.pan {color: ;}
+/*サイズ*/
+.pan {font-size: 85%;}
+/*行間*/
+.pan {line-height: ;}
+
+/*商品名（グループ・商品の一覧表示時）*/
+/*色*/
+.itemTitle, .itemGroup a{color: ;}
+/*サイズ*/
+.itemTitle, .itemGroup {font-size: 110%;}
+/*行間*/
+.itemTitle, .itemGroup {line-height: ;}
+
+/*商品名（商品詳細表示時）*/
+/*色*/
+.FS2_body_Goods_GoodsDetail .itemTitle, .itemTitle a {color: ;}
+/*サイズ*/
+.FS2_body_Goods_GoodsDetail .itemTitle {font-size: 116%;}
+/*行間*/
+.FS2_body_Goods_GoodsDetail .itemTitle {line-height: ;}
+
+/*商品価格（グループ・商品の一覧表示時）*/
+/*色*/
+.itemPrice {color: #a46f8b;}
+/*サイズ*/
+.itemPrice {font-size: ;}
+/*行間*/
+.itemPrice {line-height: ;}
+
+/*商品価格（商品詳細表示時）*/
+/*色*/
+.FS2_body_Goods_GoodsDetail .itemPrice {color: #000099;}
+/*サイズ*/
+.FS2_body_Goods_GoodsDetail .itemPrice {font-size: ;}
+/*行間*/
+.FS2_body_Goods_GoodsDetail .itemPrice {line-height: ;}
+
+/*会員価格*/
+/*色*/
+.FS2_special_members_price .itemPrice {color: #FF0000;}
+/*サイズ*/
+.FS2_special_members_price .itemPrice {font-size: ;}
+/*行間*/
+.FS2_special_members_price .itemPrice {line-height: ;}
+
+/*アラート文言*/
+/*色*/
+.error_content {color: #FFFFFF;}
+/*サイズ*/
+.error_content {font-size: ;}
+/*行間*/
+.error_content {line-height: ;}
+
+
+
+
+
+
+
+
+
+
+
+/* 上級モードで表示される全体のCSS（system_DesignSettings.css） */
+/*=========================================================
+CSS基本設定
+FutureShop2 system_DesignSettings.css
+=========================================================*/
+
+/*　フォントサイズをクロスブラウジング対応　*/
+body {
+	/* font-size:80%; */
+}
+
+/*　body直下テキスト　*/
+.FS2_body_text_area {}
+.FS2_body_text {
+	margin:0px;
+	padding:0px;
+}
+
+/*=========================================================
+ページレイアウト
+=========================================================*/
+
+/*　ページレイアウト　*/
+.layout_body {}
+
+.layout_table{
+  width: 982px!important;
+  margin: 0 auto;
+}
+
+/*　ページレイアウト：ヘッダエリア　*/
+.layout_header {}
+
+/*　ページレイアウト：左メニュー　*/
+td.layout_menu {
+	margin:0px;
+	padding:0px;
+	vertical-align:top;
+}
+
+/*　ページレイアウト：コンテンツエリア　*/
+td.layout_content {
+  margin: 0;
+  padding: 0 0 0 25px;
+  vertical-align:top;
+}
+
+/*　ページレイアウト：右メニュー　*/
+td.layout_right {
+	margin:0px;
+	padding:0px;
+	vertical-align:top;
+}
+
+/*　ページレイアウト：フッタエリア　*/
+.layout_footer {
+}
+
+
+/*=========================================================
+ユーザーメニューエリア
+=========================================================*/
+
+/*　ユーザーメニューエリア　*/
+.utility {
+	padding:0px;
+	margin:0 0 5px 0;
+}
+
+.utility table {
+	margin:0px;
+}
+
+.utility td {
+	padding:0px;
+	margin:0px;
+}
+
+/*　ユーザーメニューエリア：いらっしゃいませゲストさん　*/
+.FS2_welcome_area {
+  background: url(/shop/item/ty20/design/img01/icon_user.jpg) no-repeat;
+  padding-left: 5px!important;
+}
+
+.welcome {
+	margin-left:0.5em;
+	line-height:1.1;
+}
+
+/*　ユーザーメニューエリア：マイページ・ログイン・パスワード　*/
+.FS2_login_area {
+	padding:0 0 0 10px;
+	text-align:right;
+}
+
+ul.login {
+	padding:0px;
+	margin:0px;
+}
+
+.login li {
+	padding:0 5px 0 15px;
+	margin:0px;
+	display:inline;
+}
+
+
+/*　ユーザーメニューエリア：マイページ　*/
+.FS2_icon_mypage {}
+
+/*　ユーザーメニューエリア：ログイン　*/
+.FS2_icon_login {}
+
+/*　ユーザーメニューエリア：ログアウト　*/
+.FS2_icon_logout {}
+
+/*　ユーザーメニューエリア：パスワードをお忘れですか？　*/
+.FS2_FS2_icon_password {}
+
+
+/*　ユーザーメニューエリア：送料・個人情報・特商　*/
+ul.item {
+  border-bottom:1px solid #DDDDDD;
+  padding:2px 0 17px 0;
+  margin:5px 0 0 0;
+  text-align:right;
+}
+
+.item li {
+  padding:0 5px 15px 15px;
+  margin:0px;
+  display:inline;
+}
+
+/*　ユーザーメニューエリア：送料とお支払い方法について　*/
+.FS2_postagesettlelist {}
+
+/*　ユーザーメニューエリア：個人情報の取り扱いについて　*/
+.FS2_privacypolicy {}
+
+/*　ユーザーメニューエリア：特定商取引法に基づく表示　*/
+.FS2_businessdeal {}
+
+
+
+
+/*=========================================================
+システムコンテンツ
+=========================================================*/
+
+/*　システムコンテンツ　*/
+.system_content {}
+.system_content ol {
+margin-left:30px;
+margin-bottom:20px;
+}
+.system_content ol li {
+list-style:decimal;
+padding-left:10px;
+}
+
+/*　システムコンテンツ：パンくずナビ　*/
+.pan {
+  font-size:85%;;
+  padding:5px;
+  margin:20px 0 20px 0;
+}
+
+/*　システムコンテンツ：ページ切り替え（○件中○件表示）　*/
+.pager {
+  margin:30px 0 30px auto;
+  padding:0 5px;
+  text-align: right;
+}
+
+
+.FS2_pager_text {}
+.FS2_pager_link_first {}
+.FS2_pager_link_prev {}
+.FS2_pager_link {}
+.FS2_pager_stay {}
+.FS2_pager_link_next {}
+.FS2_pager_link_last {}
+
+
+/*　システムコンテンツ：並び替え（並び替え｜価格が安い｜価格が高い｜新着順｜）　*/
+/*　システムコンテンツ：並び替え：コンテナ　*/
+.FS2_sort_menu_bg {
+  margin:0px;
+  padding:0 5px;
+  background: #95baaa;
+  height: 36px;
+}
+
+.FS2_sort_menu_bg ul {
+  margin:0px;
+  padding:0px;
+  text-align:left;
+  line-height: 36px;
+}
+
+.FS2_sort_menu_bg li {
+  margin:0px;
+  padding:0 8px 0 5px;
+  display:inline;
+  border-right:1px solid #739d8b;
+  color: #48705f;
+}
+
+.FS2_sort_menu_bg li a {
+  color: #fff;
+}
+
+.FS2_sort_menu_bg li a:hover {
+  color: #5f8877;
+  text-decoration: underline;
+}
+
+/*　システムコンテンツ：並び替え：コンテナ　*/
+#FS2_sort_menu {}
+
+/*　システムコンテンツ：並び替え：並び替え　*/
+.FS2_sort_menu_title {
+  font-weight: bold;
+}
+
+/*　システムコンテンツ：並び替え：価格が安い　*/
+.FS2_sort_menu_sortPriceLowLink {}
+
+/*　システムコンテンツ：並び替え：価格が高い　*/
+.FS2_sort_menu_sortPriceHighLink {}
+
+/*　システムコンテンツ：並び替え：新着順　*/
+.FS2_sort_menu_sortNewLink {}
+
+/*　システムコンテンツ：並び替え：登録順　*/
+.FS2_sort_menu_sortOldLink {}
+
+/*　システムコンテンツ：並び替え：優先度順　*/
+.FS2_sort_menu_sortPriorityLink {}
+
+/*　システムコンテンツ：並び替え：レビュー順　*/
+.FS2_sort_menu_sortReviewLink {}
+
+/*　システムコンテンツ：並び替え：キーワードヒット順　*/
+.FS2_sort_menu_sortKeywordLink {}
+
+/* 商品を閲覧するにはログインが必要です */
+.FS2_memberOnly {}
+.FS2_memberOnlyText {}
+.FS2_memberOnlyLoginLink {}
+
+
+/*=========================================================
+ページ共通設定：見出し
+=========================================================*/
+.pageTitle {
+
+}
+
+.pageTitle,
+.CrossHead {
+color:#96BFAD;
+font-family: '小塚ゴシック Pro','ヒラギノ角ゴ Pro W3','ＭＳ Ｐゴシック','Osaka','メイリオ','Meiryo',sans-serif;
+font-size:110%;
+font-weight:bold;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #96BFAD;
+	line-height:1.6;
+	margin-bottom:10px;
+	margin-right:15px;
+}
+
+
+
+/*=====カートの中身部分非表示=====*/
+h2.pageTitle + h3.CrossHead{
+  display: none;
+}
+/*=====/カートの中身部分非表示=====*/
+
+.Definition {
+  padding:0px;
+  margin:20px 0 5px 0;
+  border-bottom:2px dotted #DDDDDD;
+}
+
+
+
+
+
+
+
+/*=========================================================
+ページ共通設定：テーブル
+=========================================================*/
+.inputTableArea {
+  margin-bottom: 20px;
+}
+
+.inputTableArea .userTable_01,
+.inputTableArea .userTable_02 {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border-collapse: separate;
+    border-spacing: 0;
+    border-top: 1px solid #CCCCCC;
+}
+
+.inputTableArea .userTable_01 th,
+.inputTableArea .userTable_02 th {
+    background: url("https://c25.future-shop.jp/shop/item/ty20/design/img02/bg-thtd-table-info.gif") repeat-x scroll 0 100% #EDEDE5;
+    font-weight: normal;
+    height: auto;
+    padding: 10px 15px;
+    vertical-align: top;
+}
+.inputTableArea .userTable_01 td,
+.inputTableArea .userTable_02 td {
+    background: url("https://c25.future-shop.jp/shop/item/ty20/design/img02/bg-thtd-table-info.gif") repeat-x scroll 0 100% #FFFFFF;
+    border-bottom: medium none;
+    height: auto;
+    padding: 10px;
+    vertical-align: top;
+}
+
+.inputTableArea .userTable_01 caption,
+.inputTableArea .userTable_02 caption {
+    background: url("https://c25.future-shop.jp/shop/item/ty20/design/img02/bg-thtd-table-info.gif") repeat-x scroll 0 -1px #95baaa;
+  border-top: 1px solid #CCCCCC !important;
+  border-bottom: 1px solid #fff !important;
+  color: #fff;
+  text-align: center;
+  padding:10px 15px;
+  line-height:1;
+  font-weight:bold;
+}
+.inputTableArea .userTable_01 td,
+.inputTableArea .userTable_01 th,
+.inputTableArea .userTable_02 td,
+.inputTableArea .userTable_02 th {
+  text-align: left!important;
+  vertical-align: middle;
+}
+
+/*
+.inputTableArea .userTable_02 th {
+	background: url("https://c25.future-shop.jp/shop/item/ty20/design/img02/bg-thtd-table-info.gif") repeat-x scroll 0 100%;
+    border-bottom: medium none;
+    border-top: 1px solid #FFFFFF;
+    font-weight: normal;
+    height: auto;
+    padding: 10px 20px;
+    vertical-align: top;
+    width: 50px;
+}
+.inputTableArea .userTable_02 td {
+    background: url("https://c25.future-shop.jp/shop/item/ty20/design/img02/bg-thtd-table-info.gif") repeat-x scroll 0 100% #FFFFFF;
+    border-bottom: medium none;
+    border-top: 1px solid #FFFFFF;
+    height: auto;
+    padding: 10px;
+    vertical-align: top;
+}
+*/
+
+
+td.userTable_02 {
+  margin: 10px auto 10px;
+  width: 95%;
+}
+
+.userTable_01 {
+	width:100%;
+	margin-bottom:10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+.inputTableArea .userTable_01,
+.inputTableArea .userTable_01 tr,
+.inputTableArea .userTable_02,
+.inputTableArea .userTable_02 tr {
+  height: 50px;
+}
+.inputTableArea .userTable_01 td,
+.inputTableArea .userTable_01 th,
+.inputTableArea .userTable_02 td,
+.inputTableArea .userTable_02 th {
+  text-align: left!important;
+  vertical-align: middle;
+}
+
+.inputTableArea .userTable_02 th {
+	background: url("https://c25.future-shop.jp/shop/item/ty20/design/img02/bg-thtd-table-info.gif") repeat-x scroll 0 100%;
+    border-bottom: medium none;
+    border-top: 1px solid #FFFFFF;
+    font-weight: normal;
+    height: auto;
+    padding: 10px;
+    vertical-align: top;
+    width: 50px;
+}
+.inputTableArea .userTable_02 td {
+    background: url("https://c25.future-shop.jp/shop/item/ty20/design/img02/bg-thtd-table-info.gif") repeat-x scroll 0 100% #FFFFFF;
+    border-bottom: medium none;
+    border-top: 1px solid #FFFFFF;
+    height: auto;
+    padding: 10px;
+    vertical-align: top;
+}
+
+
+td.userTable_02 {
+  margin: 10px auto 10px;
+  width: 95%;
+}
+
+.userTable_01 {
+	width:100%;
+	margin-bottom:10px;
+	border-top:1px solid #DDDDDD;
+	border-left:1px solid #DDDDDD;
+}
+
+.userTable_01 caption {
+	padding:5px;
+	text-align:center;
+	background:#DDDDDD;
+}
+
+.userTable_01 th {
+	white-space:nowrap;font-weight:normal;
+	background:#EDEDE5;
+	border-bottom:1px solid #DDDDDD;
+	padding:3px 5px;
+}
+
+.userTable_01 th.FS2_Delivery_table_caution{
+	white-space:normal;
+}
+
+
+.userTable_01 td {
+	border-bottom:1px solid #DDDDDD;
+	border-right:1px solid #DDDDDD;
+	padding:3px 5px;
+}
+
+.userTable_02 {
+	border-top:1px solid #DDDDDD;
+	border-left:1px solid #DDDDDD;
+	width:100%;
+	margin-bottom:10px;
+}
+
+.userTable_02 caption {
+	padding:5px;
+	text-align:center;
+	background:#DDDDDD;
+}
+
+.userTable_02 th {
+	font-weight:normal;
+	border-bottom:1px solid #DDDDDD;
+	border-right:1px solid #DDDDDD;
+	padding:3px 5px;
+}
+
+.userTable_02 td {
+	border-bottom:1px solid #DDDDDD;
+	border-right:1px solid #DDDDDD;
+	padding:3px 5px;
+}
+*/
+
+
+/*=========================================================
+ページ共通設定：個人情報保護方針
+=========================================================*/
+.FS2_privacyPageLink_container {
+	text-align:center;
+	margin:5px 0;
+	border:1px solid #DDDDDD;
+	padding:5px;
+}
+
+.FS2_privacyPageLink_container input {
+	position:relative;
+	top:3px;
+}
+
+.FS_privacyPageLink {}
+
+
+/*=========================================================
+商品ページ
+=========================================================*/
+
+/*　商品ページ共通　*/
+#FS2_body_Goods {}
+
+.FS2_body_Goods_GoodsGroupList_0,/*商品グループ一覧*/
+.FS2_body_Goods_GoodsGroupList_1,/*グループ一覧（第1階層）*/
+.FS2_body_Goods_GoodsGroupList_2,/*グループ一覧（第2階層）*/
+.FS2_body_Goods_GoodsGroupList_3,/*グループ一覧（第3階層）*/
+.FS2_body_Goods_GoodsGroupList_4,/*グループ一覧（第4階層）*/
+.FS2_body_Goods_GoodsGroupList_5 /*グループ一覧（第5階層）*/
+ {}
+
+
+/*=========================================================
+商品画面：商品カテゴリ一覧ページ
+=========================================================*/
+
+/*　商品画面：商品グループ：子グループのコンテナ　*/
+.FS2_GroupList {}
+
+/*　商品画面：商品グループ：商品一覧のコンテナ　*/
+.FS2_GroupLayout {}
+
+
+/*　商品画面：商品グループ：商品グループのコンテナ　*/
+.groupLayout {
+	margin:0 auto;
+	width:100%;
+}
+
+/*　商品画面：商品グループ：商品のコンテナ　*/
+.groupLayout .gl_Item {
+	float: left;
+	display:inline;
+}
+
+/*　商品画面：商品グループ：サムネイル　*/
+.groupLayout .FS2_thumbnail_container {
+	margin:0 0 5px 0;
+}
+
+/*　商品画面：商品グループ名　*/
+.groupLayout .itemGroup {
+  padding:10px 0;
+  margin: 0;
+}
+
+.groupLayout .itemGroup a{
+  width: 100%;
+  padding: 10px 0;
+}
+
+.groupLayout .itemGroup a:hover{
+  padding: 10px 0;
+  background: #f6f6f6;
+}
+
+/*　商品画面：商品グループ：商品一言説明　*/
+.FS2_ItemShortComment {}
+
+
+
+/*=========================================================
+商品画面：商品グループ・商品一覧　レイアウトスタイル
+=========================================================*/
+
+/*　商品グループレイアウト1×1から
+　　商品レイアウト横幅指定　*/
+.alignItem_01 .gl_Item {
+	width:98%;
+	margin-left:1%;
+}
+
+.alignItem_02 .gl_Item {
+	width:48.5%;
+	margin-left:1%;
+}
+
+.alignItem_03 .gl_Item {
+	width:32.2%;
+	margin-left:1%;
+}
+
+.alignItem_04 .gl_Item {
+	width:23.8%;
+	margin-left:1%;
+}
+
+.alignItem_05 .gl_Item {
+	width:19.5%;
+	margin-left:0.5%;
+}
+
+.alignItem_06 .gl_Item {
+	width:16.1%;
+	margin-left:0.5%;
+}
+
+.alignItem_07 .gl_Item {
+	width:13.7%;
+	margin-left:0.5%;
+}
+
+.alignItem_08 .gl_Item {
+	width:11.9%;
+	margin-left:0.5%;
+}
+
+.alignItem_09 .gl_Item {
+	width:10.6%;
+	margin-left:0.5%;
+}
+
+.alignItem_10 .gl_Item {
+	width:9.4%;
+	margin-left:0.5%;
+}
+
+
+/*=========================================================
+商品画面：所属する子グループのレイアウトスタイル
+=========================================================*/
+
+/*　商品画面：所属する子グループのレイアウトスタイル：パターンA　*/
+#FS2_itemlayout_list_A {}
+
+/*　商品画面：所属する子グループのレイアウトスタイル：パターンB　*/
+#FS2_itemlayout_list_B {}
+
+/*　商品画面：所属する子グループのレイアウトスタイル：パターンC　*/
+#FS2_itemlayout_list_C {}
+
+/*　商品画面：所属する子グループのレイアウトスタイル：パターンD　*/
+#FS2_itemlayout_list_D {}
+
+/* r_system_preset.css */
+#FS2_itemlayout_list_D td{
+vertical-align:top;
+	padding:2px;
+}
+
+/* r_system_preset.css */
+#FS2_itemlayout_list_D .itemGroup{
+font-size:90%;
+	font-weight:normal;
+	padding:0px;
+	margin:0px;
+}
+
+/* r_system_preset.css */
+#FS2_itemlayout_list_D .itemGroup .FS2_itemlayout_list_D_arrow{
+	font-weight:bold;
+	color:red;
+}
+
+/* r_system_preset.css */
+.FS2_itemlayout_list_D_icon{
+	width:3px;
+}
+
+/* r_system_preset.css */
+.alignItem_01 .FS2_itemlayout_list_D_name{
+	width:99%;
+}
+
+/* r_system_preset.css */
+.alignItem_02 .FS2_itemlayout_list_D_name{
+	width:49%;
+}
+
+/* r_system_preset.css */
+.alignItem_03 .FS2_itemlayout_list_D_name{
+	width:33%;
+}
+
+/* r_system_preset.css */
+.alignItem_04 .FS2_itemlayout_list_D_name{
+	width:24%;
+}
+
+/* r_system_preset.css */
+.alignItem_05 .FS2_itemlayout_list_D_name{
+	width:19%;
+}
+
+/* r_system_preset.css */
+.alignItem_06 .FS2_itemlayout_list_D_name{
+	width:16%;
+}
+
+/* r_system_preset.css */
+.alignItem_07 .FS2_itemlayout_list_D_name{
+	width:14%;
+}
+
+/* r_system_preset.css */
+.alignItem_08 .FS2_itemlayout_list_D_name{
+	width:12%;
+}
+
+/* r_system_preset.css */
+.alignItem_09 .FS2_itemlayout_list_D_name{
+	width:11%;
+}
+
+/* r_system_preset.css */
+.alignItem_10 .FS2_itemlayout_list_D_name{
+	width:9%;
+}
+
+/*=========================================================
+商品画面：所属する商品のレイアウトスタイル一覧
+=========================================================*/
+
+/*　商品画面：所属する商品のレイアウトスタイル：
+　　サムネイル一覧　→　商品詳細ページに遷移するタイプ　*/
+
+/*　パターンA　*/
+#FS2_itemlayout_A {}
+
+/*　パターンB　*/
+#FS2_itemlayout_B {}
+
+/*　パターンC　*/
+#FS2_itemlayout_C {}
+
+
+
+/*　商品画面：所属する商品のレイアウトスタイル：
+　　同一ページ内に複数の商品詳細情報を並べるタイプ　*/
+
+/*　パターンE　*/
+#FS2_itemlayout_E {}
+
+/*　パターンF　*/
+#FS2_itemlayout_F {}
+
+/*　パターンG　*/
+#FS2_itemlayout_G {}
+
+/*　パターンH　*/
+#FS2_itemlayout_H {}
+
+/*　パターンI　*/
+#FS2_itemlayout_I {}
+
+/*　パターンJ　*/
+#FS2_itemlayout_J {}
+
+
+/*=========================================================
+商品画面：おすすめ商品
+=========================================================*/
+
+/*　おすすめ商品：コンテナ　*/
+#FS2_Recommend_List {}
+
+/*　おすすめ商品：見出し　*/
+#FS2_Recommend_List .CrossHead {
+	margin-bottom:15px;
+}
+
+#FS2_Recommend_List .gl_Item {
+	float:left;
+	display:inline;
+}
+
+/*　おすすめ商品：パターンA　*/
+#FS2_Recommend_itemlayout_A {}
+
+/*　おすすめ商品：パターンB　*/
+#FS2_Recommend_itemlayout_B .gl_Item {}
+
+/*　おすすめ商品：パターンC　*/
+#FS2_Recommend_itemlayout_C {}
+
+
+/*　おすすめ商品：レイアウトテーブル　*/
+
+.FS2_recommendgoods_table {
+	margin:0 auto;
+}
+
+/*　おすすめ商品：商品名　*/
+#FS2_Recommend_List .itemTitle {
+	padding:0px;
+	margin:0px;
+}
+
+/*　おすすめ商品：定価　*/
+#FS2_Recommend_List .FS2_itemPrice_text {
+	margin-bottom:0px;
+}
+
+#FS2_Recommend_List .FS2_memberPriceImage {
+	margin:0px;
+}
+
+
+/*=========================================================
+商品画面：商品詳細ページ
+=========================================================*/
+
+/*　商品詳細ページ共通　*/
+.FS2_body_Goods_GoodsDetail {}
+
+
+/*=========================================================
+商品画面：商品詳細
+=========================================================*/
+
+/*　商品画面：商品詳細：コンテナ　*/
+.gl_Item {
+	padding:0px;
+	margin:0 0 15px 0;
+}
+
+/*　商品画面：商品詳細：上部・下部コメント　*/
+.user_inner_content {
+  margin:20px 0 20px;
+  clear: both;
+}
+
+/*　商品画面：商品詳細：コンテナ：レイアウト左側　*/
+.FS2_itemlayout_td_Left {
+	vertical-align:top;
+}
+
+/*　商品画面：商品詳細：画像コンテナ　*/
+.FS2_thumbnail_container {
+	vertical-align:top;
+}
+
+/*　商品画面：商品詳細：画像　*/
+.thumbnail {}
+
+/*　商品画面：商品詳細：商品レイアウトパターン：中央寄せのレイアウト　*/
+#FS2_itemlayout_list_B .thumbnail {margin:0px;}/*商品グループ*/
+#FS2_itemlayout_list_C .thumbnail {margin:0px;}/*商品グループ*/
+#FS2_itemlayout_B .thumbnail {margin:0 0 5px 0;}
+#FS2_itemlayout_C .thumbnail {margin:0 0 5px 0;}
+#FS2_Recommend_itemlayout_B .thumbnail {margin:0 0 5px 0;}/*おすすめ商品*/
+#FS2_Recommend_itemlayout_C .thumbnail {margin:0 0 5px 0;}/*おすすめ商品*/
+
+/*　商品画面：商品詳細：商品レイアウトパターン：中央寄せ以外のレイアウト　*/
+#FS2_itemlayout_list_A .thumbnail {margin:0 10px 0 0;}/*商品グループ*/
+#FS2_itemlayout_A .thumbnail {margin:0 10px 5px 0;}
+#FS2_itemlayout_D .thumbnail {margin:0 10px 5px 0;}
+#FS2_itemlayout_E .thumbnail {margin:0 10px 5px 0;}
+#FS2_itemlayout_F .thumbnail {margin:0 10px 5px 0;}
+#FS2_itemlayout_G .thumbnail {margin:0 10px 5px 0;}
+#FS2_itemlayout_I .thumbnail {margin:0 10px 5px 0;}
+#FS2_itemlayout_J .thumbnail {margin:0 10px 5px 0;}
+#FS2_Recommend_itemlayout_A .thumbnail {margin:0 10px 5px 0;}/*おすすめ商品*/
+
+/*　商品画面：商品詳細：コンテナ：レイアウト右側　*/
+.FS2_itemlayout_td_Right {
+	vertical-align:top;
+}
+
+/*　商品画面：商品詳細：商品名　*/
+.itemTitle {
+  font-size:116%;
+  color:#84ae9c;
+  font-weight:700;
+}
+
+/*　商品画面：商品詳細：アイキャッチアイコン　*/
+.FS2_additional_image_itemdetail_container_left .catch {
+position: absolute;
+top: -10px;
+}
+
+/*#FS2_itemlayout_IHL1 .catch {
+position: absolute;
+top: 215px;
+}*/
+.catch {
+	margin: 0 5px 0 0;
+}
+
+/*　商品画面：商品詳細：商品レイアウトパターン：中央寄せのレイアウト　*/
+#FS2_itemlayout_list_B .catch {margin:0 1px;}/*商品グループ*/
+#FS2_itemlayout_list_C .catch {margin:0 1px;}/*商品グループ*/
+#FS2_itemlayout_B .catch {margin:0 1px;}
+#FS2_itemlayout_C .catch {margin:0 1px;}
+
+/*　商品画面：商品詳細：商品レイアウトパターン：中央寄せ以外のレイアウト　*/
+#FS2_itemlayout_list_A .catch {margin:0 2px 0 0;}/*商品グループ*/
+#FS2_itemlayout_A .catch {margin:0 2px 0 0;}
+#FS2_itemlayout_D .catch {margin:0 2px 0 0;}
+#FS2_itemlayout_E .catch {margin:0 2px 0 0;}
+#FS2_itemlayout_F .catch {margin:0 2px 0 0;}
+#FS2_itemlayout_G .catch {margin:0 2px 0 0;}
+#FS2_itemlayout_I .catch {margin:0 2px 0 0;}
+#FS2_itemlayout_J .catch {margin:0 2px 0 0;}
+
+
+/*　商品画面：商品詳細：商品番号　*/
+.itemNumber {
+	color:#8C8C8C;
+	padding:0px;
+	margin:0 0 5px 0;
+}
+
+/*　商品画面：商品詳細：価格コンテナ　*/
+.FS2_itemPrice_area {
+	padding:0px;
+	margin:0 0 5px 0;
+}
+
+/*　商品画面：商品詳細：商品価格上部コメント　*/
+.itemComment {
+	padding:0px;
+	margin:0 0 5px 0;
+	}
+
+/*　商品画面：商品詳細：定価　*/
+.FS2_itemPrice_text {
+	padding:0px;
+	margin:0 0 15px 0;
+}
+
+/*　商品画面：商品詳細：定期購入定価　*/
+.FS2_FixedPeriodItemPrice_text {
+	padding:0px;
+	margin:0 0 15px 0;
+}
+
+
+/*　商品画面：商品詳細：定価取消し線　*/
+.useBorder {
+	text-decoration:line-through;
+}
+
+/*　商品画面：商品詳細：当店特別価格　*/
+.FS2_special_price {
+	padding:0px;
+	margin-right:0.5em;
+}
+
+/*　商品画面：商品詳細：価格　*/
+.itemPrice {
+  font-weight:bold;
+  font-size:140%;
+  color:#000099;
+}
+
+/*　商品画面：商品詳細：価格：(本体価格：××円)(消費税込：××円)(税込)　*/
+.FS2_itemPrice_addition {}
+
+
+/*　商品画面：商品詳細：特別会員価格あり　*/
+.FS2_members_contents {}
+
+/*　商品画面：商品詳細：特別会員価格ありアイコン　*/
+.FS2_memberPriceImage {
+	margin:0 0 5px 0;
+	padding:0px;
+}
+
+/*　商品画面：商品詳細：特別会員価格：コンテナ　*/
+.FS2_special_members_price {
+	margin:0px;
+	padding:0px;
+}
+
+/*　商品画面：商品詳細：特別会員価格：テキスト　*/
+.FS2_special_members_price_text {
+	margin-right:0.5em;
+}
+
+/*　商品画面：商品詳細：特別会員価格　*/
+.FS2_special_members_price .itemPrice {
+	color:#FF0000;
+}
+
+/*　商品画面：商品詳細：ポイント　*/
+.FS2_point {
+	font-size:85%;
+	color:#FF3300;
+	padding:0px;
+	margin:0px;
+/*	border-bottom:1px dotted #DDDDDD;*/
+}
+
+/*　商品画面：商品詳細：会員価格で購入するにはログインが必要です　*/
+.FS2_members_login_link {
+	padding:0px;
+	margin:0px;
+	text-align:right;
+}
+
+.FS2_members_login_link a {
+	text-decoration:none;
+}
+
+.FS2_members_login_link a:hover {
+	text-decoration:underline;
+}
+
+
+/*　商品画面：商品詳細：送料　*/
+.FS2_postage {
+	padding:0px;
+	margin:0 0 10px 0;
+}
+
+/*　商品画面：商品詳細：販売開始前です。　*/
+/*　商品画面：商品詳細：販売を終了いたしました。　*/
+.error_item {
+	border:1px dotted #FF3300;
+	color:#FF3300;
+	background:#FFF1EE;
+	text-align:center;
+	padding:0px;
+	margin:0 0 10px 0;
+}
+
+/*　商品画面：商品詳細：販売期間　*/
+.sellTerms {
+	border:1px dotted #DDDDDD;
+	background:#F6F6F6;
+	text-align:center;
+	padding:0px;
+	margin:0 0 10px 0;
+}
+
+/*　商品画面：商品詳細：エラー　*/
+.error_content {}
+
+/*　商品画面：商品詳細：項目選択肢コンテナ　*/
+.FS2_inputSelection {
+	margin-bottom:10px;
+}
+/*　商品画面：商品詳細：項目選択肢テーブル　*/
+.FS2_inputSelection_table {}
+
+.FS2_inputSelection_table th {
+	font-weight:normal;
+	padding:2px 8px;
+	border-bottom:1px solid #DDDDDD;
+	background:#F6F6F6;
+}
+
+.FS2_inputSelection_table td {
+	font-weight:normal;
+	padding:2px 8px;
+	border-bottom:1px solid #DDDDDD;
+	text-align:left;
+}
+
+/*　商品画面：商品詳細：バリエーションコンテナ　*/
+.FS2_tableVariation {}
+
+/*　商品画面：商品詳細：バリエーションのテーブル　*/
+.GoodsSelectionTable {
+	margin: 0 0 5px 0;
+}
+
+.GoodsSelectionTable th {
+	font-weight:normal;
+	padding:2px 8px;
+	border-bottom:1px solid #DDDDDD;
+	border-right:1px solid #DDDDDD;
+	background:#F6F6F6;
+}
+
+/*　商品画面：商品詳細：バリエーションのテーブル：縦／横　*/
+.thStrong {}
+
+.GoodsSelectionTable td {
+	padding:2px 8px;
+	text-align:center;
+	border-bottom:1px solid #DDDDDD;
+	border-right:1px solid #DDDDDD;
+}
+
+/*　商品画面：商品詳細：申し訳ございません。ただいま在庫がございません。　*/
+.itemStock {
+	border:1px dotted #FF3300;
+	color:#FF3300;
+	padding:0 5px;
+	margin:0 0 10px 0;
+	text-align:center;
+}
+
+/*　商品画面：商品詳細：在庫数　*/
+.FS2_Stock {}
+
+/*　商品画面：商品詳細：残りわずか　*/
+.FS2_FewText {}
+
+/*　商品画面：商品詳細：在庫がありません　*/
+.FS2_noStockText {}
+
+
+/*　商品画面：商品詳細：△：残りわずか　*/
+.FS2_ItemStockSample_area {
+	padding:0px;
+	margin:0 0 10px 0;
+}
+
+/*　商品画面：商品詳細：残りわずか　*/
+.FS2_fewStockSample {}
+
+/*　商品画面：商品詳細：在庫がなくなりました　*/
+.FS2_noStockSample {}
+
+
+/*　商品画面：商品詳細：在庫がない場合の時の着色をリセット　*/
+.FS2_ItemStockSample_area .itemStock {
+	border:none;
+	padding:0px;
+	color:#000000;
+}
+
+
+
+
+
+/*　商品画面：商品詳細：数量コンテナ　*/
+.FS2_figure {
+	padding:0px;
+	margin:0 0 5px 0;
+}
+
+/*　商品画面：商品詳細：数量テーブル　*/
+.FS2_figure_table {margin-bottom: 30px;}
+
+/*　商品画面：商品詳細：数量　*/
+.FS2_figure_table_td_figure {}
+
+/*　商品画面：商品詳細：数量入力テキストフォーム　*/
+.FS2_figure_table_td_input_cnt {}
+
+/*　商品画面：商品詳細：数量↑↓ボタン　*/
+.FS2_figure_table_td_updn_btn {}
+
+/*　商品画面：商品詳細：カートヘ入れるボタン　*/
+.FS2_figure_table_td_cart_btn {}
+
+/*　商品画面：商品詳細：詳しく見るボタン　*/
+.FS2_figure_table_td_detail_btn {}
+
+/*　商品画面：商品詳細：クール便コンテナ　*/
+.FS2_CoolButton_area {
+	padding:0px;
+	margin:0 0 5px 0;
+}
+
+/*　商品画面：商品詳細：Tweet　*/
+.FS2_TweetButton_area {}
+
+/*　商品画面：商品詳細：入荷お知らせメール　*/
+.FS2_ArrivalInformationButton_area {margin-bottom: 15px;}
+
+/*　商品画面：商品詳細：商品についてのお問い合わせ　*/
+.FS2_InquiryButton_area {margin-bottom: 15px;}
+
+/*　商品画面：商品詳細：友達にメールで知らせる　*/
+.FS2_MailRecommendButton_area {margin-bottom: 15px;}
+
+
+/*　商品画面：商品詳細：レビューを書くボタン　*/
+.FS2_ReviewEditButton_area {}
+
+/*　商品画面：商品詳細：レビューを見るボタン　*/
+
+.FS2_ReviewButton_area a {
+	text-decoration:none;
+}
+
+/*　商品画面：商品詳細：この商品の平均評価　*/
+.FS2_ReviewEditAverage img {
+	position:relative;
+	top:-2px;
+}
+
+/*　商品画面：商品詳細：レビュー一覧　*/
+.FS2_Review_Detail_container_td table {
+	width:100%;
+	border:none;
+}
+
+#FS2_body_Goods .userTable_01 {
+	border-left:none;
+	border-bottom:1px solid #DDDDDD;
+	border-top:1px solid #DDDDDD;
+}
+
+#FS2_body_Goods .userTable_01 td {
+	padding:0px;
+	border-right:none;
+	border-bottom:none;
+}
+
+#FS2_body_Goods .userTable_01 .FS2_Review_Detail_container_td td {
+	border:none;
+	padding:3px;
+}
+
+/*　商品画面：商品詳細：レビュー一覧：背景色　*/
+.FS2_Review_Detail_td {
+	background:#F6F6F6;
+}
+
+/*　商品画面：商品詳細：レビュー一覧：投稿者名　*/
+.FS2_Review_Detail_name {}
+
+/*　商品画面：商品詳細：レビュー一覧：購入者　*/
+.FS2_Review_User_Status {
+	background:#FF6600;
+	color:#FFFFFF;
+	padding:1px 0px 0px 2px;
+	line-height:1.2;
+	border:1px solid #FFFFFF;
+	font-size:11px;
+	margin-left:5px;
+}
+
+/*　商品画面：商品詳細：レビュー一覧：投稿者詳細・投稿日　*/
+.FS2_Review_Detail_Prof_Date {
+	padding:0px;
+	margin:0px;
+	text-align:right;
+}
+
+/*　商品画面：商品詳細：レビュー一覧：おすすめ度　*/
+.FS2_MyReviewStatus {
+	color:#5BA633;
+	float:left;
+	font-size:85%;
+	margin:5px;
+}
+
+.FS2_MyReviewStatus img {
+	position:relative;
+	top:-2px;
+}
+
+.FS2_MyReviewStatus_text {
+	line-height:2;
+	color:#000000;
+}
+
+/*　商品画面：商品詳細：レビュー一覧：投稿内容　*/
+.FS2_MyReviewList_Text {
+	padding:0px;
+	margin:0 5px 5px 5px;
+	width:98%;
+}
+
+/*　商品画面：商品詳細：レビュー一覧：全てのレビューを見る　*/
+.FS2_ReviewTextLink_area {
+	text-align:right;
+}
+
+/*　商品画面：商品詳細：TrustMark　*/
+.FS2_TrustMark {
+	margin-bottom:10px;
+}
+
+/*　商品画面：商品詳細：商品説明　*/
+.FS2_ItemComment {}
+
+
+/*　商品詳細：定期購入・頒布会：価格表　*/
+/*　商品詳細：定期購入・頒布会：価格表：コンテナ　*/
+.FS2_FixedPeriod {
+	margin-bottom:10px;
+}
+
+/*　商品詳細：定期購入・頒布会：価格表：上部コメント　*/
+.FS2_FixedPeriod_comment {
+	margin:0px 0px 5px 0px;
+}
+
+/*　商品詳細：定期購入・頒布会：価格表：テーブル　*/
+.FS2_GoodsFixedPeriodTable{
+	margin: 0 0 5px 0;
+	width:100%;
+	border-left:1px solid #DDDDDD;
+	border-top:1px solid #DDDDDD;
+}
+
+.FS2_GoodsFixedPeriodTable th {
+	font-weight:normal;
+	padding:2px 8px;
+	border-bottom:1px solid #DDDDDD;
+	border-right:1px solid #DDDDDD;
+	background:#F6F6F6;
+	text-align:left;
+}
+
+.FS2_GoodsFixedPeriodTable td {
+	padding:2px 8px;
+	text-align:center;
+	border-bottom:1px solid #DDDDDD;
+	border-right:1px solid #DDDDDD;
+	text-align:right;
+}
+
+/*　商品詳細：定期購入・頒布会：価格表：初回　*/
+.FS2_FixedPeriod_title_tr_init {}
+
+/*　商品詳細：定期購入・頒布会：価格表：その他の回　*/
+.FS2_FixedPeriod_title_tr {}
+
+/*　商品詳細：定期購入・頒布会：価格表：最終回　*/
+.FS2_FixedPeriod_title_tr_final {}
+
+
+/*　商品詳細：定期購入・頒布会：価格表：当店特別価格　*/
+.FS2_GoodsFixedPeriodTable.FS2_special_price {}
+
+/*　商品詳細：定期購入・頒布会：価格表：価格　*/
+.FS2_GoodsFixedPeriodTable.itemPrice {}
+
+/*　商品詳細：定期購入・頒布会：価格表：(本体価格：××円)(消費税込：××円)(税込)　*/
+.FS2_GoodsFixedPeriodTable.FS2_itemPrice_addition {}
+
+/*　商品詳細：定期購入：一回のみ注文する　*/
+.FS2_figure_InCartOnly {
+	border:5px solid #F0F0F0;
+	padding:10px;
+	margin:0px;
+}
+
+.FS2_figure_InCartOnly p {
+	margin:0px;
+	padding:0px;
+}
+
+/*　商品詳細：定期購入：一回のみ注文する：テーブル　*/
+.FS2_figure_table_InCartOnly {}
+
+/*　商品詳細：定期購入：一回のみ注文する：在庫　*/
+.FS2_figure_InCartOnly .FS2_Stock {}
+
+/*　商品詳細：定期購入：一回のみ注文する：一番左の空白セル（レイアウト調整用）　*/
+.FS2_figure_InCartOnly .FS2_figure_table_InCartOnly .FS2_FixedPeriod_td {
+	width:px;/*　上下のボタン位置を調整したい場合、任意の数値に要変更　*/
+}
+
+/*　商品詳細：定期購入：一回のみ注文する：数量　*/
+.FS2_figure_InCartOnly .FS2_figure_table_InCartOnly .FS2_figure_table_td_figure {}
+
+/*　商品詳細：定期購入：一回のみ注文する：数量入力テキストフォーム　*/
+.FS2_figure_InCartOnly .FS2_figure_table_InCartOnly .FS2_figure_table_td_input_cnt {}
+
+/*　商品詳細：定期購入：一回のみ注文する：数量↑↓ボタン　*/
+.FS2_figure_InCartOnly .FS2_figure_table_InCartOnly .FS2_figure_table_td_updn_btn {}
+
+/*　商品詳細：定期購入：一回のみ注文する：カートヘ入れるボタン　*/
+.FS2_figure_InCartOnly .FS2_figure_table_InCartOnly .FS2_figure_table_td_cart_btn {}
+
+/*　商品詳細：定期購入：定期購入する　*/
+.FS2_figure_FixedPeriod {
+	border:5px solid #F0F0F0;
+	padding:10px;
+	margin:0px 0px 10px 0px;
+}
+
+.FS2_figure_FixedPeriod p {
+	margin:0px;
+	padding:0px;
+}
+
+/*　商品詳細：定期購入：定期購入する：テーブル　*/
+.FS2_FixedPeriod_table {}
+
+/*　商品詳細：定期購入：定期購入する：在庫　*/
+.FS2_figure_FixedPeriod .FS2_Stock {}
+
+/*　商品詳細：定期購入：定期購入する：一番左の空白セル（レイアウト調整用）　*/
+.FS2_figure_FixedPeriod .FS2_FixedPeriod_table .FS2_FixedPeriod_td {}
+
+/*　商品詳細：定期購入：定期購入する：数量　*/
+.FS2_figure_FixedPeriod .FS2_FixedPeriod_table .FS2_figure_table_td_figure {}
+
+/*　商品詳細：定期購入：定期購入する：数量入力テキストフォーム　*/
+.FS2_figure_FixedPeriod .FS2_FixedPeriod_table .FS2_figure_table_td_input_cnt {}
+
+/*　商品詳細：定期購入：定期購入する：数量↑↓ボタン　*/
+.FS2_figure_FixedPeriod .FS2_FixedPeriod_table .FS2_figure_table_td_updn_btn {}
+
+/*　商品詳細：定期購入：定期購入する：カートヘ入れるボタン　*/
+.FS2_figure_FixedPeriod .FS2_FixedPeriod_table .FS2_figure_table_td_cart_btn {}
+
+
+
+
+/*　商品詳細：定期購入：通常・定期商品混在時の定期購入する　*/
+.FS2_figure_FixedPeriodUnion {
+	border:5px solid #F0F0F0;
+	border-top:none;
+	padding:10px;
+	margin:0px 0px 10px 0px;
+}
+
+.FS2_figure_FixedPeriodUnion p {
+	margin:0px;
+	padding:0px;
+}
+
+/*　商品詳細：定期購入：通常・定期商品混在時の定期購入する：テーブル　*/
+.FS2_figure_FixedPeriodUnion .FS2_FixedPeriod_table {}
+
+/*　商品詳細：定期購入：通常・定期商品混在時の定期購入する：在庫　*/
+.FS2_figure_FixedPeriodUnion .FS2_Stock {}
+
+/*　商品詳細：定期購入：通常・定期商品混在時の定期購入する：在庫切れメッセージ　*/
+p.FS2_noStockText_forFixedPeriod {
+	color:#8c8c8c;
+	display:block;
+	background:#f0f0f0;
+	padding:5px 10px;
+}
+
+/*　商品詳細：定期購入：通常・定期商品混在時の定期購入する：一番左の空白セル（レイアウト調整用）　*/
+.FS2_figure_FixedPeriodUnion .FS2_FixedPeriod_table .FS2_FixedPeriod_td {}
+
+/*　商品詳細：定期購入：通常・定期商品混在時の定期購入する：数量　*/
+.FS2_figure_FixedPeriodUnion .FS2_FixedPeriod_table .FS2_figure_table_td_figure {}
+
+/*　商品詳細：定期購入：通常・定期商品混在時の定期購入する：数量入力テキストフォーム　*/
+.FS2_figure_FixedPeriodUnion .FS2_FixedPeriod_table .FS2_figure_table_td_input_cnt {}
+
+/*　商品詳細：定期購入：通常・定期商品混在時の定期購入する：数量↑↓ボタン　*/
+.FS2_figure_FixedPeriodUnion .FS2_FixedPeriod_table .FS2_figure_table_td_updn_btn {}
+
+/*　商品詳細：定期購入：通常・定期商品混在時の定期購入する：カートヘ入れるボタン　*/
+.FS2_figure_FixedPeriodUnion .FS2_FixedPeriod_table .FS2_figure_table_td_cart_btn {}
+
+
+
+
+
+/*　商品詳細：頒布会：商品別価格一覧　*/
+/*　商品詳細：頒布会：商品別価格一覧：コンテナ　*/
+.FS2_Distribution {
+	margin:10px 0;
+}
+
+.FS2_Distribution_title{
+margin-bottom:2px;
+}
+/*　商品詳細：頒布会：商品別価格一覧：テーブル　*/
+.FS2_GoodsDistributionTable{
+	margin: 0 0 5px 0;
+	width:100%;
+	border-left:1px solid #B8B8B8;
+	border-top:1px solid #B8B8B8;
+	border-right:1px solid #B8B8B8;
+}
+.FS2_GoodsDistributionTable th{
+	font-weight:normal;
+	padding:2px 8px;
+	border-bottom:1px solid #B8B8B8;
+	border-right:1px solid #B8B8B8;
+	background:#e0e0e0;
+	text-align:left;
+}
+.FS2_GoodsDistributionTable td {
+	font-weight:normal;
+	padding:2px 8px;
+	border-bottom:1px solid #B8B8B8;
+	text-align:left;
+}
+
+/*　商品詳細：頒布会：頒布会購入するボタン　*/
+.FS2_figure_Distribution {
+	border:5px solid #F0F0F0;
+	padding:10px;
+	margin:0px 0px 10px 0px;
+}
+
+.FS2_figure_Distribution p {
+	margin:0px;
+	padding:0px;
+}
+
+
+/*　商品詳細：頒布会：頒布会購入するボタン：テーブル　*/
+.FS2_figure_Distribution .FS2_Distribution_table {}
+
+/*　商品詳細：頒布会：頒布会購入するボタン：在庫　*/
+.FS2_figure_Distribution .FS2_Stock {}
+
+/*　商品詳細：頒布会：頒布会購入するボタン：在庫切れメッセージ　*/
+p.FS2_noStockText_forDistribution {
+	color:#8c8c8c;
+	display:block;
+	background:#f0f0f0;
+	padding:5px 10px;
+}
+
+/*　商品詳細：頒布会：頒布会購入するボタン：一番左の空白セル（レイアウト調整用）　*/
+.FS2_figure_Distribution .FS2_Distribution_table .FS2_FixedPeriod_td {}
+
+/*　商品詳細：頒布会：頒布会購入するボタン：数量　*/
+.FS2_figure_Distribution .FS2_Distribution_table .FS2_figure_table_td_figure {}
+
+/*　商品詳細：頒布会：頒布会購入するボタン：数量入力テキストフォーム　*/
+.FS2_figure_Distribution .FS2_Distribution_table .FS2_figure_table_td_input_cnt {}
+
+/*　商品詳細：頒布会：頒布会購入するボタン：数量↑↓ボタン　*/
+.FS2_figure_Distribution .FS2_Distribution_table .FS2_figure_table_td_updn_btn {}
+
+/*　商品詳細：頒布会：頒布会購入するボタン：カートヘ入れるボタン　*/
+.FS2_figure_Distribution .FS2_Distribution_table .FS2_figure_table_td_cart_btn {}
+
+
+
+/*　商品詳細：返品特約　*/
+/*　商品詳細：返品特約：コンテナ　*/
+.FS2_ReturnedSpecialContract {
+	margin-bottom:10px;
+}
+
+/*　商品詳細：返品特約：リンクテキスト　*/
+.FS2_ReturnedSpecialContract_link {
+	margin:10px 0;
+}
+
+.FS2_ReturnedSpecialContract_text p {
+	padding:0px;
+	margin:0px;
+}
+
+
+/*　商品詳細：返品特約：テキスト　*/
+.FS2_ReturnedSpecialContract_text {
+	margin:10px 0 30px 0;
+	border:5px solid #f0f0f0;
+	padding:10px;
+}
+
+
+
+/*=========================================================
+送料とお支払い方法について
+=========================================================*/
+/*　送料　*/
+.FS2_Config_Postage {}
+/*　お支払方法　*/
+.FS2_Config_Settle {}
+
+/*　お支払方法について　*/
+.FS2_Config_Settle_about {}
+
+/*　消費税について　*/
+.FS2_Config_Settle_tax {}
+
+
+
+/*=========================================================
+商品についてのお問い合わせ
+友達にメールで知らせる
+=========================================================*/
+.FS2_inqury_table {
+	margin: 0 0 20px 0;
+}
+
+.FS2_inqury_td01 img {
+	margin-right:10px;
+}
+
+.FS2_inqury_td02 {
+
+}
+
+
+/*=========================================================
+入荷お知らせメールお申し込み
+=========================================================*/
+.FS2_arrival_information_table {
+
+	margin: 0 0 20px 0;
+}
+
+.FS2_arrival_information_td01 img {
+	margin-right:10px;
+}
+
+.FS2_arrival_information_td02 {}
+
+.FS2_body_ArrivalInfomationEntry .FS2_bottom_btn_center_1 {
+margin-bottom:40px;
+}
+
+
+/*=========================================================
+レビュー一覧画面
+=========================================================*/
+#FS2_body_Review .userTable_01 td {
+	border-right:none;
+	border-bottom:none;
+	padding:0px;
+}
+
+#FS2_body_Review .userTable_01 {
+	border-left:none;
+	border-bottom:1px solid #DDDDDD;
+	border-top:1px solid #DDDDDD;
+}
+
+/*　レビュー一覧画面：商品ごとのレビュー一覧　*/
+.FS2_ReviewImage_table td {
+	vertical-align:top;
+	padding-right:10px;
+}
+
+#FS2_body_Review .userTable_01 .FS2_Review_Detail_td {
+	padding:5px;
+}
+
+#FS2_body_Review .caution {
+	position:relative;
+	top:3px;
+}
+
+.FS2_Review_Detail_text {
+	padding:0px;
+	margin:5px;
+}
+
+
+/*　レビュー一覧画面：投稿者ごとのレビュー一覧　*/
+.FS2_body_ReviewListCustomer .FS2_Review_Detail_Prof_Date {
+	margin:5px;
+}
+
+.FS2_body_ReviewListCustomer .userTable_01 th {
+	white-space:nowrap;border:none;
+	padding:2px 5px;
+}
+
+
+.FS2_body_ReviewListCustomer .userTable_01 .FS2_Review_Detail_td td {
+	border:none;
+	padding:2px 5px;
+}
+
+
+
+/*　レビュー一覧画面：投稿された全てのレビュー一覧　*/
+/*　レビュー一覧画面：投稿された全てのレビュー一覧：テーブル　*/
+.FS2_body_ReviewList .userTable_01 {
+	margin-bottom:15px;
+}
+
+/*　レビュー一覧画面：投稿された全てのレビュー一覧：投稿内容　*/
+.FS2_body_ReviewList td.FS2_Review_Detail_td {
+	font-size:100%;
+	border-bottom:1px solid #DDDDDD;
+	padding:5px 5px 0 5px;
+}
+
+/*　レビュー一覧画面：投稿された全てのレビュー一覧：本文背景色　*/
+.FS2_body_ReviewList .FS2_MyReviewList_Detail_td {
+	background:none;
+}
+
+/*　レビュー一覧画面：投稿された全てのレビュー一覧：投稿者名　*/
+.FS2_body_ReviewList .FS2_Review_Detail_name {
+	font-weight:bold;
+	margin-left:5px;
+}
+
+/*　レビュー一覧画面：投稿された全てのレビュー一覧：投稿者詳細・投稿日　*/
+.FS2_body_ReviewList .FS2_Review_Detail_Prof_Date {
+	margin-top:7px;
+}
+
+/*　レビュー一覧画面：投稿された全てのレビュー一覧：商品名リンク　*/
+.FS2_Review_Detail_itemname {
+	font-size:85%;
+	margin-left:5px;
+}
+
+
+/*=========================================================
+カート画面
+=========================================================*/
+
+/*　カート画面共通　*/
+#FS2_body_Cart {}
+
+.FS2_body_Cart_ShoppingCart {} /*カート画面：ショッピングカートTOPページ*/
+.FS2_body_Cart_GuestLogin {} /*カート画面：ゲストログインページ*/
+.FS2_body_Cart_DeliveryEdit {} /*カート画面：お届け先指定ページ*/
+.FS2_body_Cart_SettleEdit {} /*カート画面：お支払方法選択ページ*/
+.FS2_body_Cart_OrderConfirm {} /*カート画面：注文確認ページ*/
+.FS2_body_Cart_OrderComplete {}/*カート画面：注文完了ページ*/
+
+/*　カート画面テーブル　*/
+.cartTable {
+	width:100%;
+	margin-bottom:5px;
+	border-collapse:collapse;
+}
+
+.cartTable caption {
+  background:#95baaa;
+  padding:5px;
+  color:#fff;
+  text-align: left;
+}
+
+.cartTable th {
+  background:#EDEDE5;
+  padding:3px;
+  font-weight:normal;
+}
+
+.cartTable td {
+  color:#666;
+  padding:5px 3px;
+}
+
+.FS2_bottom_btn_right_and_left_2 {
+  width: 230px;
+  margin-left: auto!important;
+}
+.FS2_bottom_btn_right_and_left_2 #submit_4 {
+  position: relative!important;
+  left:12px!important;
+}
+
+
+.FS2_GoodsImage_td {
+	width:1px;
+	vertical-align:top;
+}
+.FS2_GoodsImage_td img {
+	margin:5px;
+}
+
+.FS2_Cart_Detail_Postage th,
+.FS2_Cart_Detail_InclusiveSum th,
+.FS2_Cart_Detail_Point th,
+.FS2_Cart_Detail_Count th,
+.FS2_Cart_Detail_ItemPriceSummary th,
+.FS2_Cart_Detail_Settle th {
+  text-align: left;
+  padding-left: 15px;
+}
+
+.FS2_Cart_Detail_Postage th,
+.FS2_Cart_Detail_Postage td,
+.FS2_Cart_Detail_ItemPriceSummary th,
+.FS2_Cart_Detail_ItemPriceSummary td,
+.FS2_Cart_Detail_Count th,
+.FS2_Cart_Detail_Count td,
+.FS2_Cart_Detail_Point th,
+.FS2_Cart_Detail_Point td,
+.FS2_Cart_Detail_Settle th,
+.FS2_Cart_Detail_Settle td {
+  border: 1px solid #EDEDE5 !important;
+}
+
+.cartAtenText {
+  height: 106px;
+  width: 395px;
+  margin: 20px 0 60px auto;
+  font-size: 11px;
+  color: #666;
+}
+.cartAtenText .cartAtenTextRed {
+  color: #f00;
+  font-weight: 700;
+}
+.cartAtenText p {
+  height: 27px;
+  width: 125px;
+  margin: 15px 0 0 auto;
+}
+
+/*　カート画面：合計金額コンテナ　*/
+.FS2_total_area table {
+  margin: 30px 0;
+  width: 360px;
+}
+
+.FS2_total_area td {}
+
+
+/*　カート画面：合計金額　*/
+.summary {
+	font-weight:bold;
+}
+
+/* 手数料、値引き等の表の「総合計」行の見せ方 */
+.cartTable tr.summary th,
+.cartTable tr.summary td{
+  border: 1px solid #EDEDE5;
+}
+
+
+/*　カート画面：STEP1～STEP5　*/
+.orderFlow {
+  padding:0px;
+  margin:0 0 20px 0;
+  text-align:center;
+}
+
+/*　カート画面：TadeSafe　*/
+/*　system_preset.css　*/
+.FS2_TradeSafe div{
+  margin:auto;
+}
+
+
+/*　カート画面：お支払いに関する注意事項　*/
+.FS2_settleNotice {}
+
+
+/*　カート：定期購入：STEP2（body）　*/
+.FS2_body_FixedPeriodDeliveryEdit {}
+
+/*　カート：定期購入：STEP3（body）　*/
+.FS2_body_FixedPeriodDeliveryCycleEdit {}
+
+.FS2_FixedPeriodDelivery_CycleEdit_container_01 {}
+
+.FS2_FixedPeriodDelivery_CycleEdit_container_02 {
+	margin-top:0.3em;
+	margin-left:1.5em;
+	margin-bottom:1.5em;
+}
+
+.FS2_FixedPeriodDeliveryCycle_Confirm_container{
+	margin:0 auto;
+	width:65%;
+}
+
+.FS2_body_FixedPeriodDeliveryCycleEdit .inputTableArea th{
+	text-align:left;
+}
+
+
+
+/*　楽天銀行注意書き　*/
+.FS2_rakuten_bank_caution{
+	font-size:85%;
+}
+
+/*　カート：定期購入：お届け日確認一覧　*/
+.FS2_FixedPeriodDeliveryCycle_Confirm {
+	border:5px solid #DDDDDD;
+	padding:10px;
+}
+
+
+.FS2_FixedPeriodDeliveryCycle_Confirm span {
+	display: -moz-inline-box;
+	display:inline-block;
+	width:10em;
+}
+
+
+.FS2_FixedPeriodDeliveryCycle_Confirm input {}
+
+/*　カート：定期購入：お届け日確認一覧：省略の…　*/
+.FS2_FixedPeriodDeliveryCycle_Confirm_abbr {
+	padding-left:16em;
+}
+
+/*　カート：定期購入：STEP4（body）　*/
+.FS2_body_FixedPeriodSettleEdit {}
+
+/*　カート：定期購入：STEP5（body）　*/
+.FS2_body_FixedPeriodOrderConfirm {}
+
+/*　カート：定期購入：STEP5：合計金額（th）　*/
+.FS2_total_area .cartTable th.FS2_FixedPeriod_summary {
+	font-weight:bold;
+}
+
+/*　カート：定期購入：STEP5：合計金額（td）　*/
+.FS2_total_area .cartTable td.FS2_FixedPeriod_summary {
+	font-weight:bold;
+}
+
+
+
+/*　カート：返品特約　*/
+.FS2_body_Cart_OrderConfirm .FS2_ReturnedSpecialContract_text {
+	margin:10px 0 30px 0;
+	border:none;
+	padding:0px;
+}
+
+.FS2_body_Cart_OrderConfirm .FS2_ReturnedSpecialContract_text p {
+	padding:0px;
+	margin:0px 0px 10px 0px ;
+}
+
+/*　メール便　*/
+.FS2_DeliveryMethod_table p{
+	margin-top:0px;
+}
+
+.FS2_DeliveryMethod_table td th{
+	white-space:nowrap;
+}
+
+.FS2_DeliveryMethod_table_input_th{
+	text-align:left;
+	vertical-align:top;
+}
+
+.FS2_Delivery_table01 th{
+}
+
+.FS2_Delivery_table02 th{
+}
+
+.FS2_Delivery_table03{
+	width:inherit;
+	margin-left:1.5em;
+}
+
+.FS2_Delivery_table04{
+
+}
+
+
+
+/*=========================================================
+ログイン画面
+=========================================================*/
+
+/*　ログイン画面：レイアウト用テーブル　*/
+.FS2_login_layout_table {
+	margin:0 0 10px 0;
+	width:100%;
+}
+
+/*　ログイン画面：左側　*/
+.FS2_login_layout_table_td_left {width:48%;}
+
+.FS2_login_layout_table_td_left .inputTableArea {
+	margin-right:15px;
+}
+
+/*.FS2_login_layout_table_td_left .CrossHead {
+	margin-right:15px;
+}*/
+
+/*　ログイン画面：右側　*/
+.FS2_login_layout_table_td_right {width:48%;}
+
+.FS2_Login_comment_area {}
+
+/*　ログイン画面：会員登録後（せず）に購入ボタン　*/
+.FS2_Login_btn_position {
+	text-align:center;
+}
+.FS2_login_layout_table_td_right .FS2_Login_btn_position a {
+  display: block!important;
+  position: relative!important;
+  left: -80px!important;
+}
+.FS2_login_layout_table_td_right .FS2_Login_btn_position input {
+margin-top:30px;
+}
+
+/*=========================================================
+会員登録画面
+=========================================================*/
+#FS2_body_Member{}
+.FS2_body_Member_MemberAgreement{}
+
+/*　会員登録画面：会員規約　*/
+.frameArea{
+	height: 300px;
+	margin: 10px auto;
+	overflow: scroll;
+}
+
+/*=========================================================
+会員画面（マイページ）
+=========================================================*/
+/*　会員画面共通　*/
+#FS2_body_MyPage {}
+
+.FS2_body_MyPage_MyPageTop {}/*マイページのトップページ*/
+.FS2_body_MyPage_OrderHistoryList {}/*注文履歴*/
+.FS2_body_MyPage_AddressList {}/*アドレス帳*/
+.FS2_body_MyPage_PasswordEdit {}/*パスワードの変更*/
+.FS2_body_MyPage_PointHistory {}/*ポイント履歴を見る*/
+.FS2_body_PointAgreement {}/*ポイントについて*/
+.FS2_body_MyPage_EntryDetail {}/*登録内容の変更・解除*/
+.FS2_body_ItemReviewList {}/*購入した商品のレビューを書く*/
+.FS2_body_MyReviewList {}/*レビュー履歴を見る*/
+
+
+/*　会員画面：マイページのトップページ：レイアウトテーブル　*/
+.FS2_mypagetop_list {}
+
+.FS2_mypage_top_table {
+	width:100%;
+}
+
+.FS2_mypage_container_LookOrderHistory {}/*注文履歴を見るコンテナ*/
+.FS2_mypage_container_AddressList {margin-top:20px;}/*アドレス帳コンテナ*/
+.FS2_mypage_container_PasswordEdit {margin-top:20px;}/*パスワードの変更コンテナ*/
+.FS2_mypage_container_PointHistory {margin-top:20px;}/*ポイント履歴を見るコンテナ*/
+.FS2_mypage_container_EntryInfoEdit {margin-top:20px;}/*登録内容の変更・解除コンテナ*/
+.FS2_mypage_container_ReviewHistory {margin-top:20px;}/*レビューコンテナ*/
+.FS2_mypage_container_WishListHistory {margin-top:20px;}
+
+
+/*　会員画面：注文履歴ページ　*/
+.FS2_body_MyPage_OrderHistoryList .pager {
+	border:none;
+	margin:0px;
+	padding:0px;
+}
+
+/*　会員画面：マイページ共通：表示するボタン　*/
+.FS2_pagerTable_area_input {
+	position:relative;
+	top:3px;
+	left:3px;
+}
+
+/*　会員画面：注文履歴ページ：今年の注文　*/
+.FS2_mypage_Entry_table .GoodsSelectionTable th {
+	border-right:none;
+}
+.FS2_mypage_Entry_table .GoodsSelectionTable td {
+	border-right:none;
+}
+
+/*　会員画面：注文履歴ページ：ご注文明細：お届け先タイトル　*/
+.OD_CrossHead {
+	margin:0px;
+	padding:0px;
+}
+
+
+/*　会員画面：注文履歴ページ：ご注文明細：お届け先テキスト　*/
+.OD_color {}
+
+.ODTable {
+	width:100%;
+	border-left:1px solid #DDDDDD;
+	border-top:1px solid #DDDDDD;
+	margin:0 0 5px 0;
+}
+
+.ODTable th {
+	font-weight:normal;
+	background:#F6F6F6;
+	border-bottom:1px solid #DDDDDD;
+	border-right:1px solid #DDDDDD;
+	padding:0px 5px;
+}
+
+.ODTable td {
+	border-bottom:1px solid #DDDDDD;
+	border-right:1px solid #DDDDDD;
+	padding:0px 5px;
+}
+
+.ODTable2 {
+	width:100%;
+	border-left:1px solid #DDDDDD;
+	border-top:1px solid #DDDDDD;
+	margin:0 0 5px
+}
+
+.ODTable2 th {
+	font-weight:normal;
+	background:#F6F6F6;
+	border-bottom:1px solid #DDDDDD;
+	border-right:1px solid #DDDDDD;
+	padding:0px 5px;
+}
+
+.ODTable2 td {
+	border-bottom:1px solid #DDDDDD;
+	border-right:1px solid #DDDDDD;
+	padding:0px 5px;
+}
+
+/*　アドレス帳　*/
+.FS2_Address_list_btn input {
+	margin-right:20px;
+}
+
+/*　会員画面：注文履歴ページ：ページ切り替え（○件中○件表示）　*/
+.FS2_body_MyPage_PointHistory .pager {
+	border:none;
+	margin:0px;
+	padding:0px;
+}
+
+/*　会員画面：レビューページ：購入した商品のレビュー一覧　*/
+.FS2_body_ItemReviewList .cartTable td {
+	padding:0px;
+}
+
+.FS2_body_ItemReviewList .FS2_GoodsImage_td {
+	border-right:none;
+}
+
+.FS2_MyReviewList_Detail_td {
+	background:#F6F6F6;
+}
+
+.FS2_MyReview_itemname {
+	padding:0px;
+	margin:5px;
+}
+
+.FS2_body_ItemReviewList .FS2_MyReviewStatus {
+	float:left;
+	line-height:1.1;
+	margin:0 5px;
+}
+
+.FS2_body_ItemReviewList .FS2_MyReviewList_Text {
+	background:#FFFFFF;
+	padding:5px;
+	margin:0px;
+}
+
+.FS2_MyReviewList_Text:after {
+	content: ".";
+	display: block;
+	visibility: hidden;
+	height: 0.1px;
+	font-size: 0.1em;
+	line-height: 0;
+	clear: both;
+}
+
+.FS2_MyReviewList_Text {
+    display: inline-block;
+}
+
+/*　会員画面：レビューページ：レビュー履歴一覧　*/
+.FS2_body_MyReviewList .cartTable {
+	border-top:1px solid #DDDDDD;
+	border-left:none;
+}
+
+.FS2_body_MyReviewList .cartTable td {
+	padding:0px;
+	border-right:none;
+}
+
+.FS2_body_MyReviewList .FS2_GoodsImage_td {
+	border-right:none;
+}
+
+.FS2_body_MyReviewList .FS2_MyReviewStatus {
+	float:left;
+	line-height:1.1;
+	margin:0 5px;
+}
+
+.FS2_body_MyReviewList .FS2_MyReviewList_Text {
+	background:#FFFFFF;
+	padding:5px;
+	margin:0px;
+}
+
+.FS2_ReviewEdit {
+	float:right;
+}
+
+
+
+/*=========================================================
+パスワード認証（闇市）
+=========================================================*/
+/*　パスワード認証（闇市）共通　*/
+.FS2_body_GoodsPassword {}
+
+/*　パスワード認証（闇市）：フォームコメント　*/
+.FS2_GoodsPassword_message {}
+
+
+/*　=================================================================
+　返品特約
+=================================================================　*/
+
+/* 返品特約：商品詳細 */
+.FS2_ReturnedSpecialContract {
+	margin:20px 0px;
+}
+
+.FS2_ReturnedSpecialContract_link {
+	margin:10px 0;
+}
+
+.FS2_ReturnedSpecialContract_text {
+	margin:10px 0 30px 0;
+	border:5px solid #f0f0f0;
+	padding:10px;
+}
+
+.FS2_ReturnedSpecialContract_text p{
+	padding:0px;
+	margin:0px;
+}
+
+
+/* 返品特約：ショッピングカート */
+.FS2_body_Cart_OrderConfirm .FS2_ReturnedSpecialContract{
+	width:48%;
+	margin:0px;
+	border:5px solid #f0f0f0;
+	padding:0px;
+}
+
+.FS2_body_Cart_OrderConfirm .FS2_ReturnedSpecialContract_link {
+	margin:10px;
+}
+
+.FS2_body_Cart_OrderConfirm .FS2_ReturnedSpecialContract_text {
+	margin:0px 10px 10px 10px;
+	border:none;
+	padding:0px;
+}
+
+
+/*　=================================================================
+　画像ホスティングオプション
+=================================================================　*/
+
+/*　商品画面：商品詳細：画像ホスティングオプション：商品一覧：IHL1　*/
+#FS2_itemlayout_IHL1{
+  float:left;
+  width:200px;
+  padding:0;
+  margin:5px;
+  padding:10px;
+/*  position:relative;*/
+}
+
+/*　商品画面：商品詳細：画像ホスティングオプション：商品一覧：IHL1：
+サムネイル　*/
+#FS2_itemlayout_IHL1 .FS2_thumbnail_container{
+	border:none;
+	margin:5px 0px;
+	padding:0px;
+}
+
+#FS2_itemlayout_IHL1 img{
+	margin:0 5px 0 0;
+	padding:0px;
+}
+
+/*　商品画面：商品詳細：画像ホスティングオプション：商品一覧：IHL1：
+サムネイル　*/
+#FS2_itemlayout_IHL1 .FS2_AdditionalImageEnlargementSsize_Button{
+	text-align:right;
+}
+
+
+/*　商品画面：商品詳細：画像ホスティングオプション：商品一覧：IHL1：
+アイキャッチアイコン　*/
+/*#FS2_itemlayout_IHL1 .FS2_eye_catch_icon {
+position: relative;
+top: 215px;
+}*/
+
+/*　商品画面：商品詳細：画像ホスティングオプション：商品一覧：IHL1：
+商品価格コンテナ　*/
+#FS2_itemlayout_IHL1 .FS2_itemPrice_text{
+	margin:5px 0px;
+	font-size:80%;
+	font-weight:normal;
+}
+
+/*　商品画面：商品詳細：画像ホスティングオプション：商品一覧：IHL1：
+商品一言コメント　*/
+#FS2_itemlayout_IHL1 .FS2_ItemShortComment{
+	margin:10px;
+	font-size:80%;
+	color:#777;
+}
+
+
+/*　商品画面：商品詳細：画像ホスティングオプション：商品一覧：IHL1：
+特別会員価格あり　*/
+#FS2_itemlayout_IHL1 .FS2_members_contents{
+	margin:5px 0px;
+}
+
+/*　商品画面：商品詳細：画像ホスティングオプション：商品一覧：IHL1：
+会員価格　*/
+#FS2_itemlayout_IHL1 .FS2_special_members_price{
+	margin:5px 0px;
+}
+
+/*　商品画面：商品詳細：画像ホスティングオプション：商品一覧：IHL1：
+拡大ボタン　*/
+#FS2_itemlayout_IHL2 .FS2_AdditionalImageEnlargementSsize_Button{
+  margin:5px 0px 0px 0px;
+}
+
+
+
+/*　商品画面：商品詳細：画像ホスティングオプション：商品一覧：IHL2　*/
+#FS2_itemlayout_IHL2{
+	border:1px solid #ddd;
+	float:left;
+	width:200px;
+	padding:10px;
+	margin:5px;
+
+}
+
+/*　商品画面：商品詳細：画像ホスティングオプション：商品一覧：IHL2：
+サムネイル　*/
+#FS2_itemlayout_IHL2 .FS2_thumbnail_container{
+	border:none;
+	margin:0px 0px 10px 0px;
+	padding:0px;
+
+}
+
+#FS2_itemlayout_IHL2 img{
+	margin:0px;
+	padding:0px;
+}
+
+/*　商品画面：商品詳細：画像ホスティングオプション：商品一覧：IHL2：
+アイキャッチアイコン　*/
+#FS2_itemlayout_IHL2 .FS2_eye_catch_icon{
+	margin:5px 0px;
+}
+
+/*　商品画面：商品詳細：画像ホスティングオプション：商品一覧：IHL2：
+商品価格コンテナ　*/
+#FS2_itemlayout_IHL2 .FS2_itemPrice_text{
+	margin:5px 0px;
+	font-size:80%;
+	font-weight:normal;
+}
+
+/*　商品画面：商品詳細：画像ホスティングオプション：商品一覧：IHL2：
+商品一言コメント　*/
+#FS2_itemlayout_IHL2 .FS2_ItemShortComment{
+	margin:10px;
+	font-size:80%;
+	color:#777;
+}
+
+/*　商品画面：商品詳細：画像ホスティングオプション：商品一覧：IHL2：
+特別会員価格あり　*/
+#FS2_itemlayout_IHL2 .FS2_members_contents{
+	margin:5px 0px;
+}
+
+/*　商品画面：商品詳細：画像ホスティングオプション：商品一覧：IHL2：
+会員価格　*/
+#FS2_itemlayout_IHL2 .FS2_special_members_price{
+	margin:5px 0px;
+}
+
+/*　商品画面：商品詳細：画像ホスティングオプション：商品一覧：IHL2：
+拡大ボタン　*/
+#FS2_itemlayout_IHL2 .FS2_AdditionalImageEnlargementSsize_Button{
+	margin:5px 0px 0px 0px;
+}
+
+
+/*　商品画面：商品詳細：画像ホスティングオプション：商品一覧：IHL3　*/
+#FS2_itemlayout_IHL3{
+	border:1px solid #ddd;
+	float:left;
+	width:320px;
+	padding:10px;
+	margin:5px;
+
+}
+
+/*　商品画面：商品詳細：画像ホスティングオプション：商品一覧：IHL3：
+サムネイル　*/
+#FS2_itemlayout_IHL3 .FS2_thumbnail_container{
+	border:none;
+	padding:0px;
+	float:left;
+	margin:0px 10px 0px 0px;
+}
+
+#FS2_itemlayout_IHL3 img{
+	margin:0px;
+	padding:0px;
+}
+
+/*　商品画面：商品詳細：画像ホスティングオプション：商品一覧：IHL3：
+アイキャッチアイコン　*/
+#FS2_itemlayout_IHL3 .FS2_eye_catch_icon{
+	margin-bottom:10px;
+}
+
+/*　商品画面：商品詳細：画像ホスティングオプション：商品一覧：IHL3：
+商品価格コンテナ　*/
+#FS2_itemlayout_IHL3 .FS2_itemPrice_text{
+	margin:5px 0px;
+	font-size:80%;
+	font-weight:normal;
+}
+
+
+/*　商品画面：商品詳細：画像ホスティングオプション：商品一覧：IHL3：
+商品一言コメント　*/
+#FS2_itemlayout_IHL3 .FS2_ItemShortComment{
+	margin:10px;
+	font-size:80%;
+	color:#777;
+}
+
+/*　商品画面：商品詳細：画像ホスティングオプション：商品一覧：IHL3：
+特別会員価格あり　*/
+#FS2_itemlayout_IHL3 .FS2_members_contents{
+	margin:5px 0px;
+}
+
+/*　商品画面：商品詳細：画像ホスティングオプション：商品一覧：IHL3：
+会員価格　*/
+#FS2_itemlayout_IHL3 .FS2_special_members_price{
+	margin:5px 0px;
+}
+
+/*　商品画面：商品詳細：画像ホスティングオプション：商品一覧：IHL3：
+拡大ボタン　*/
+#FS2_itemlayout_IHL3 .FS2_AdditionalImageEnlargementSsize_Button{
+	text-align:right;
+}
+
+
+
+/*　商品画面：商品詳細：オプション価格コンテナ　*/
+.FS2_OptionPrice {
+	margin-bottom:10px;
+}
+/*　商品画面：商品詳細：オプション価格テーブル　*/
+.FS2_OptionPrice {}
+
+.FS2_OptionPrice th {
+	font-weight:normal;
+	padding:2px 8px;
+	border-bottom:1px solid #DDDDDD;
+	background:#F6F6F6;
+}
+
+.FS2_OptionPrice td {
+	font-weight:normal;
+	padding:2px 8px;
+	border-bottom:1px solid #DDDDDD;
+	text-align:left;
+}
+
+/*　オプション価格（カート画面罫線）　*/
+.FS2_option_price_rule{
+	color:#DDDDDD;
+}
+
+
+
+/*商品詳細画面------------------------------------------------------------------*/
+
+/*　商品画面：商品詳細：画像ホスティングオプション：レイアウト別サイズ指定：IH1　*/
+/*　商品画面：商品詳細：画像ホスティングオプション：レイアウト別サイズ指定：IH1：
+商品画像コンテナ横幅　*/
+#FS2_itemlayout_IH1 .FS2_thumbnail_container{
+  width:500px;
+}
+
+/*　商品画面：商品詳細：画像ホスティングオプション：レイアウト別サイズ指定：IH1：
+メイン・サブ画像群サムネイルコンテナ横幅　*/
+#FS2_itemlayout_IH1 .FS2_additional_image_container{
+  width:240px;
+}
+
+/*　商品画面：商品詳細：画像ホスティングオプション：レイアウト別サイズ指定：IH1：
+商品画像・拡大・Prev・Nextボタンテーブルコンテナ横幅　*/
+#FS2_itemlayout_IH1 .FS2_additional_image_btn_thumbnail_container{
+	width:420px;
+}
+
+/*　商品画面：商品詳細：画像ホスティングオプション：レイアウト別サイズ指定：IH1：
+商品詳細右カラム　*/
+#FS2_itemlayout_IH1 .FS2_additional_image_itemdetail_container_right{
+  width:500px;
+}
+
+/*　商品画面：商品詳細：画像ホスティングオプション：レイアウト別サイズ指定：IH1：
+商品詳細左カラム　*/
+#FS2_itemlayout_IH1 .FS2_additional_image_itemdetail_container_left{
+  width:270px;
+  float: right;
+}
+
+/*　商品画面：商品詳細：画像ホスティングオプション：レイアウト別サイズ指定：IH1：
+商品詳細コンテナ*/
+#FS2_itemlayout_IH1 .FS2_additional_image_itemdetail_container{
+	margin-top:2em;
+}
+
+
+/*　商品画面：商品詳細：画像ホスティングオプション：レイアウト別サイズ指定：IH2　*/
+/*　商品画面：商品詳細：画像ホスティングオプション：レイアウト別サイズ指定：IH2：
+商品画像・拡大・Prev・Nextボタンテーブルコンテナ横幅　*/
+#FS2_itemlayout_IH2 .FS2_additional_image_btn_thumbnail_container{
+	width:420px;
+}
+
+/*　商品画面：商品詳細：画像ホスティングオプション：レイアウト別サイズ指定：IH2：
+商品画像コンテナ横幅　*/
+#FS2_itemlayout_IH2 .FS2_thumbnail_container{
+  width:500px;
+}
+
+/*　商品画面：商品詳細：画像ホスティングオプション：レイアウト別サイズ指定：IH2：
+商品詳細右カラム　*/
+#FS2_itemlayout_IH2 .FS2_additional_image_itemdetail_container_right{
+	width:220px;
+}
+
+/*　商品画面：商品詳細：画像ホスティングオプション：レイアウト別サイズ指定：IH2：
+商品詳細左カラム　*/
+#FS2_itemlayout_IH2 .FS2_additional_image_itemdetail_container_left{
+	width:350px;
+}
+
+/*　商品画面：商品詳細：画像ホスティングオプション：レイアウト別サイズ指定：IH2：
+メイン画像群サムネイルコンテナ　*/
+#FS2_itemlayout_IH2 .FS2_additional_image_container_main{
+  float:right;
+  width:240px;
+}
+
+/*　商品画面：商品詳細：画像ホスティングオプション：レイアウト別サイズ指定：IH2：
+サブ画像群サムネイルコンテナ　*/
+#FS2_itemlayout_IH2 .FS2_additional_image_container_sub{
+	margin-top:2em;
+	width:100%;
+}
+
+/*　商品画面：商品詳細：画像ホスティングオプション：レイアウト別サイズ指定：IH2：
+商品詳細コンテナ*/
+#FS2_itemlayout_IH2 .FS2_additional_image_itemdetail_container{
+	margin-top:2em;
+}
+
+
+
+/*　商品画面：商品詳細：画像ホスティングオプション：レイアウト別サイズ指定：IH3　*/
+/*　商品画面：商品詳細：画像ホスティングオプション：レイアウト別サイズ指定：IH3：
+商品画像コンテナ横幅　*/
+#FS2_itemlayout_IH3 .FS2_thumbnail_container{
+  width:370px;
+}
+
+#FS2_itemlayout_IH3  .FS2_additional_image_btn_thumbnail_container .FS2_thumbnail_container{
+  border:1px solid #ddd;
+  margin-bottom:10px;
+  padding:9px ;
+  text-align:center;
+}
+
+/*　商品画面：商品詳細：画像ホスティングオプション：レイアウト別サイズ指定：IH3：
+商品詳細右カラム　*/
+#FS2_itemlayout_IH3 .FS2_additional_image_itemdetail_container_right{
+  width:320px;
+  float: right;
+}
+
+*+html #FS2_itemlayout_IH3 .FS2_additional_image_itemdetail_container_right {
+  width:300px;
+}
+
+#FS2_itemlayout_IH3 .FS2_additional_image_itemdetail_container_left{
+  width:350px;
+}
+
+/*　商品画面：商品詳細：画像ホスティングオプション：レイアウト別サイズ指定：IH3：
+メイン画像群サムネイルコンテナ　*/
+#FS2_itemlayout_IH3 .FS2_additional_image_container_main{
+  float:right;
+  width:50px;
+  padding: 0 10px 0 0 ;
+}
+
+/*　商品画面：商品詳細：画像ホスティングオプション：レイアウト別サイズ指定：IH3：
+サブ画像群サムネイルコンテナ　*/
+#FS2_itemlayout_IH3 .FS2_additional_image_container_sub{
+  width:380px;
+}
+
+
+/*　商品画面：商品詳細：画像ホスティングオプション：レイアウト別サイズ指定：IH3：
+商品画像・拡大・Prev・Nextボタンテーブルコンテナ横幅　*/
+#FS2_itemlayout_IH3 .FS2_additional_image_btn_thumbnail_container{
+  width:430px;
+  margin-bottom:2em;
+}
+*+html  #FS2_itemlayout_IH3 .FS2_additional_image_btn_thumbnail_container{
+  width:390px;
+  margin-bottom:2em;
+}
+
+/*　商品画面：商品詳細：画像ホスティングオプション：レイアウト別サイズ指定：IH3：
+商品詳細コンテナ*/
+#FS2_itemlayout_IH3 .FS2_additional_image_itemdetail_container{
+  margin-top:2em;
+}
+
+#FS2_itemlayout_IH3  .FS2_additional_image_thumbnail_container{
+  vertical-align: top;
+  /*display: block;*/
+  padding: 2px 5px;
+}
+
+
+/*　商品画面：商品詳細：画像ホスティングオプション：レイアウト別サイズ指定：IH4　*/
+/*　商品画面：商品詳細：画像ホスティングオプション：レイアウト別サイズ指定：IH4：
+商品画像コンテナ横幅　*/
+#FS2_itemlayout_IH4 .FS2_thumbnail_container{
+	width:200px;
+}
+
+/*　商品画面：商品詳細：画像ホスティングオプション：レイアウト別サイズ指定：IH4：
+商品詳細右カラム　*/
+#FS2_itemlayout_IH4 .FS2_additional_image_itemdetail_container_right{
+	width:250px;
+	margin-left:20px;
+}
+
+/*　商品画面：商品詳細：画像ホスティングオプション：レイアウト別サイズ指定：IH4：
+商品詳細左カラム　*/
+#FS2_itemlayout_IH4 .FS2_additional_image_itemdetail_container_left{
+	width:290px;
+	float:right;
+	margin-left:20px;
+}
+
+
+/*　商品画面：商品詳細：画像ホスティングオプション：レイアウト別サイズ指定：IH4：
+商品画像・拡大・Prev・Nextボタンテーブルコンテナ横幅　*/
+#FS2_itemlayout_IH4 .FS2_additional_image_btn_thumbnail_container{
+	width:220px;
+	float:left;
+}
+
+
+/*　商品画面：商品詳細：画像ホスティングオプション：レイアウト別サイズ指定：IH4：
+メイン・サブ画像群サムネイルコンテナ横幅　*/
+#FS2_itemlayout_IH4 .FS2_additional_image_container{
+	width:85px;
+	float:left;
+	margin-right:10px;
+}
+
+
+/*　各レイアウト共通　*/
+/*　商品画面：商品詳細：画像ホスティングオプション：サムネイルコンテナ　*/
+.FS2_additional_image_btn_thumbnail_container .FS2_thumbnail_container{
+	border:1px solid #ddd;
+	margin-bottom:10px;
+	padding:9px;
+	text-align:center;
+}
+
+
+/*　商品画面：商品詳細：画像ホスティングオプション：メイン・サブ画像群サムネイルコンテナ　*/
+.FS2_additional_image_container{
+	float:right;
+}
+
+/*　商品画面：商品詳細：画像ホスティングオプション：メイン画像群サムネイルコンテナ　*/
+.FS2_additional_image_container_main{
+	margin-bottom:2em;
+}
+
+.FS2_additional_image_container_main img{
+	margin:0px 2px 2px 0px;
+    border: 1px solid white;
+}
+
+/*　商品画面：商品詳細：画像ホスティングオプション：メイン・サブ画像群サムネイルコンテナ　*/
+.FS2_additional_image_container_sub{}
+
+.FS2_additional_image_container_sub img{
+	margin:0px 2px 2px 0px;
+	border: 1px solid white;
+}
+
+/*　商品画面：商品詳細：画像ホスティングオプション：メイン・サブ画像群名称　*/
+.FS2_additional_image_container_title{
+  border-bottom:1px dotted #999;
+  padding-bottom:2px;
+  margin:5px 0px;
+  font-weight:bold;
+  color:#83a999;
+}
+
+
+/*　商品画面：商品詳細：画像ホスティングオプション：拡大・Next・Prevボタン　*/
+.FS2_additional_image_btn_container {
+  width:500px;
+  margin: 0 auto;
+}
+
+#FS2_itemlayout_IH3 .FS2_additional_image_btn_container {
+  width:370px;
+  margin: 0 auto;
+}
+
+.FS2_additional_image_btn_container table{
+  border-collapse:collapse;
+  border-spacing: 0px;
+margin-left:auto;
+margin-right:auto;
+}
+
+.FS2_additional_image_btn_container td{
+  vertical-align:top;
+  text-align:center;
+}
+
+.FS2_additional_image_btn_container .FS2_additional_image_btn_incart{
+  text-align:center;
+}
+
+.FS2_additional_image_btn_container .FS2_additional_image_btn_next,
+.FS2_additional_image_btn_container .FS2_additional_image_btn_prev {
+padding-left:1px;
+}
+
+.FS2_additional_image_btn_container .FS2_additional_image_btn_next{
+  text-align:center;
+}
+
+.FS2_additional_image_btn_container .FS2_additional_image_btn_prev{
+  text-align:center;
+}
+
+
+/*　商品画面：商品詳細：画像ホスティングオプション：商品詳細コンテナ　*/
+.FS2_additional_image_itemdetail_container{}
+
+
+/*　商品画面：商品詳細：画像ホスティングオプション：商品詳細右カラム　*/
+.FS2_additional_image_itemdetail_container_right{
+  float:left;
+}
+
+/*　商品画面：商品詳細：画像ホスティングオプション：商品詳細左カラム　*/
+.FS2_additional_image_itemdetail_container_left{
+  position: relative;
+}
+
+
+/*　商品画面：商品詳細：画像ホスティングオプション：バリエーションテーブル　*/
+.FS2_additional_image_tableVariation{
+  margin:10px 0;
+}
+
+.FS2_additional_image_tableVariation_table {}
+
+.FS2_additional_image_tableVariation_table th{
+	text-align:left;
+	font-weight:normal;
+  padding:8px 0;
+}
+
+.FS2_additional_image_tableVariation_table td{
+  padding:8px;
+  font-size:11px;
+}
+
+.FS2_additional_image_tableVariation_table td span{
+	display:block;
+	text-align:center;
+	color:#777;
+}
+
+.FS2_additional_image_tableVariation_table td img{}
+
+.FS2_additional_image_tableVariation_border th{
+  padding: 8px 0;
+}
+
+.FS2_additional_image_tableVariation_border td{
+  padding: 8px;
+}
+
+.FS2_additional_image_tableVariation_bg{
+  background:#fff;
+}
+
+
+/*　商品画面：商品詳細：画像ホスティングオプション：拡大（popup window）：
+ページ余白　*/
+body#FS2_additional_image_popup{
+	margin:0px;
+	padding:0px;
+}
+
+/*　商品画面：商品詳細：画像ホスティングオプション：拡大（popup window）：
+画像コンテナ　*/
+#FS2_additional_image_popup .FS2_thumbnail_container{
+	width:500px;
+	margin-top:10px;
+	margin-left:10px;
+}
+
+#FS2_additional_image_popup .FS2_thumbnail_container img{
+border:none;
+}
+
+
+/*　商品画面：商品詳細：画像ホスティングオプション：拡大（popup window）：
+ページ全体の横幅　*/
+.FS2_additional_image_popup_container{
+	width:900px;
+	padding-bottom:50px;
+}
+
+
+/*　商品画面：商品詳細：画像ホスティングオプション：拡大（popup window）：
+メイン・サブ画像群サムネイルコンテナ　*/
+.FS2_additional_image_popup_container .FS2_additional_image_container{
+	float:right;
+	width:350px;
+	margin-top:10px;
+}
+
+
+/*　商品画面：商品詳細：画像ホスティングオプション：拡大（popup window）：
+フッタ　*/
+.FS2_additional_image_popup_footer{
+	text-align:center;
+	margin:2em auto 0 auto;
+	background:#f0f0f0;
+	padding:1em 0;
+	position:absolute;
+	bottom:0px;
+	width:100%;
+}
+
+.FS2_additional_image_popup_footer a:link{
+	color:#fff;
+	text-decoration:none;
+	background:#000;
+	display:inline-block;
+	padding:5px 10px;
+}
+
+.FS2_additional_image_popup_footer a:active{
+	color:#fff;
+	text-decoration:none;
+	background:#000;
+	display:inline-block;
+	padding:5px 10px;
+}
+
+.FS2_additional_image_popup_footer a:visited{
+	color:#fff;
+	text-decoration:none;
+	background:#000;
+	display:inline-block;
+	padding:5px 10px;
+}
+
+
+.FS2_additional_image_popup_footer a:hover{
+	color:#fff;
+	background:#666;
+}
+
+
+
+/*　商品画面：商品一覧：画像ホスティングオプション：バルーンチップ　*/
+/*　商品画面：商品一覧：画像ホスティングオプション：バルーンチップ：コンテナ　*/
+.FS2_AdditionalImage_Balloon_Tip {
+  width: 200px;
+  height: 100px;
+	display: none;
+	position: absolute;
+	color: gray;
+	background-color: white;
+	border: 1px solid silver;
+	overflow: hidden;
+	padding:10px;
+}
+
+#FS2_AdditionalImage_Balloon_Tip_container {
+	width: 200px;
+	left: 10px;
+	top: 10px;
+	display: block;
+	position: fixed;
+	color: gray;
+	background-color: white;
+	border: 1px solid silver;
+}
+
+#FS2_AdditionalImage_Balloon_Tip_container {
+	display: none;
+}
+
+/*　商品画面：商品一覧：画像ホスティングオプション：バルーンチップ：
+左側に表示時　*/
+.FS2_AdditionalImage_Balloon_Tip_left {
+/*	border-right: 5px solid silver;
+	border-bottom: 5px solid silver;*/
+}
+
+/*　商品画面：商品一覧：画像ホスティングオプション：バルーンチップ：
+右側に表示時　*/
+.FS2_AdditionalImage_Balloon_Tip_right {
+/*	border-left: 5px solid silver;
+	border-bottom: 5px solid silver;*/
+}
+
+/*　商品画面：商品一覧：画像ホスティングオプション：バルーンチップ：
+画像共通設定　*/
+.FS2_AdditionalImage_Balloon_Tip img {
+	border: 0;
+}
+
+
+/*　商品画面：商品一覧：画像ホスティングオプション：バルーンチップ：
+ロールオーバー時背景色　*/
+.FS2_AdditionalImage_Balloon_Tip_RollOver {
+	background-color: #f6f6f6;
+}
+
+
+/*　商品画面：商品詳細：画像ホスティングオプション：画像切り替え　*/
+/*　商品画面：商品詳細：画像ホスティングオプション：画像切り替え：
+メイン画像群サムネイル　*/
+.FS2_AdditionalImage_switcher_thumbs_color img {
+	border: 1px solid white;
+}
+
+/*　商品画面：商品詳細：画像ホスティングオプション：画像切り替え：
+サブ画像群サムネイル　*/
+.FS2_AdditionalImage_switcher_thumbs_item img {
+	border: 1px solid white;
+}
+
+/*　商品画面：商品詳細：画像ホスティングオプション：画像切り替え：
+サブ画像群サムネイル　*/
+.FS2_AdditionalImage_switcher_cursor_pointer {
+	cursor: pointer;
+}
+
+
+/*　商品画面：商品詳細：画像ホスティングオプション：画像切り替え：
+サブ画像群サムネイル　*/
+.FS2_AdditionalImage_switcher_cursor_cross {
+	cursor: crosshair;
+ }
+
+
+/*　商品画面：商品詳細：画像ホスティングオプション：画像切り替え：
+サブ画像群サムネイル　*/
+.FS2_AdditionalImage_switcher_thumbnail_selected {
+	border-color: silver !important;
+}
+
+/*　商品画面：商品詳細：画像ホスティングオプション：画像切り替え：
+サブ画像群サムネイル　*/
+.FS2_AdditionalImage_switcher_btn_prev {
+	cursor: pointer;
+}
+
+/*　商品画面：商品詳細：画像ホスティングオプション：画像切り替え：
+サブ画像群サムネイル　*/
+.FS2_AdditionalImage_switcher_btn_next {
+	cursor: pointer;
+}
+
+
+/*　入荷お知らせメールお申し込み：画像ホスティングオプション用：マトリクス　*/
+.FS2_AdditionalImage_ArrivalInformation_Entry_Container_Matorix{
+	margin:1em 0 2em 0;
+}
+
+/*　入荷お知らせメールお申し込み：画像ホスティングオプション用：コンボボックス　*/
+.FS2_AdditionalImage_ArrivalInformation_Entry_Container {
+	display:table;
+	margin:0 0 15px 0;
+	width:100%;
+	background-color:#EEEEEE;
+}
+
+.FS2_ArrivalInformation_Entry_ListR {
+	direction:rtl;
+}
+
+.FS2_ArrivalInformation_Entry_ListR * {
+	direction:ltr;
+}
+
+.FS2_AdditionalImage_ArrivalInformation_Entry_Container .FS2_ArrivalInformation_Entry_List,
+.FS2_AdditionalImage_ArrivalInformation_Entry_Container .FS2_ArrivalInformation_Entry_Comment {
+	display:table-cell;
+	padding:10px;
+	vertical-align:top;
+	line-height:1.2em;
+
+}
+
+.FS2_AdditionalImage_ArrivalInformation_Entry_Container .FS2_ArrivalInformation_Entry_Comment {}
+.FS2_AdditionalImage_ArrivalInformation_Entry_Container .FS2_ArrivalInformation_Entry_List {
+	padding-left:10px;
+	padding-right:10px;
+}
+.FS2_ArrivalInformation_Entry_ListR .FS2_ArrivalInformation_Entry_Comment {
+	padding-left:10px;
+}
+.FS2_ArrivalInformation_Entry_ListL .FS2_ArrivalInformation_Entry_Comment {
+	padding-right:10px;
+}
+
+/* for IE */
+.FS2_forIE8 FS2_AdditionalImage_ArrivalInformation_Entry_Container .FS2_ArrivalInformation_Entry_List {
+	width:expression(this.getElementsByTagName("img")[0].clientWidth);
+}
+.FS2_forIE8 .FS2_ArrivalInformation_Entry_ListL .FS2_ArrivalInformation_Entry_List {
+	float:left;
+}
+.FS2_forIE8 .FS2_ArrivalInformation_Entry_ListR .FS2_ArrivalInformation_Entry_List {
+	float:right;
+}
+.FS2_forIE8 FS2_AdditionalImage_ArrivalInformation_Entry_Container .FS2_ArrivalInformation_Entry_Comment {
+	width:auto;
+}
+
+
+
+/* ウィッシュリスト */
+.FS2_body_WishList .pager{
+	border:none;
+	text-align:right;
+	margin:0px;
+	padding:0px;
+}
+
+.FS2_WishList_table{
+	width:100%;
+	border-top:1px solid #ddd;
+}
+
+.FS2_WishList_table td{
+	padding:8px 3px;
+	border-bottom:1px solid #ddd;
+}
+
+.FS2_WishListCheck_td{
+	width:20px;
+}
+
+.FS2_WishListGoodsImage_td{
+	width:50px;
+}
+
+.FS2_WishListDetail_td p{
+	margin:0px;
+	padding:0px;
+}
+
+.FS2_WishListDetail_td p.FS2_WishListDate{
+	font-size:80%;
+	margin:0.3em 0;
+	text-align:right;
+}
+
+.FS2_WishListDetail_td h1.itemTitle{
+	margin:0px;
+	padding:0px;
+	font-size:100%;
+	font-weight:normal;
+}
+
+.FS2_WishListDelete_td{
+	text-align:right;
+}
+
+.FS2_WishListAllDeleteButton_area{
+	width:100%;
+	text-align:left;
+}
+
+.FS2_body_WishList .FS2_itemPrice_area{
+	margin:0px;
+	padding:0px;
+}
+
+.FS2_body_WishList .FS2_FixedPeriodItemPrice_text{
+	margin:0px;
+	padding:0px;
+}
+
+
+.FS2_body_WishList .FS2_ReviewEditAverage{
+	margin:0px;
+	padding:0px;
+}
+
+
+/*=========================================================
+エラー
+=========================================================*/
+
+/*　操作失敗時のエラー　*/
+
+.error_content {
+  /*border:1px solid #FF0000;*/
+  text-align:center;
+  padding:5px 2px;
+  margin-bottom: 20px;
+  background:#a46f8b;
+  color:#FFFFFF;
+}
+
+
+/*=========================================================
+上部・中部・下部コメント
+=========================================================*/
+
+/*　上部・中部・下部コメント　*/
+/*　上部・中部・下部コメント共通　*/
+.user_content {}
+/*　上部コメント　*/
+.FS2_upper_comment {}
+.FS2_upper_comment + .pageTitle {   display: none;}
+/*　中部コメント：MailMagazineEntry.htmlのみで使用　*/
+.FS2_middle_comment {}
+/*　下部コメント　*/
+.FS2_lower_comment {padding-top: 40px;}
+
+
+
+/*=========================================================
+ページ下部のボタン
+=========================================================*/
+
+/*　ページ下部のボタン：infomation.html用　*/
+.FS2_bottom_btn_info {
+	margin: 0 0 30px 0;
+}
+
+/*　ページ下部のボタン：位置:1段目：中央寄　*/
+.FS2_bottom_btn_center_1 {
+	text-align:center;
+	margin: 10px 0;
+}
+
+/*　ページ下部のボタン：位置:1段目：右寄　*/
+.FS2_bottom_btn_right_1 {
+	text-align:right;
+	margin: 10px 0;
+}
+
+/*　ページ下部のボタン：位置:1段目：左寄　*/
+.FS2_bottom_btn_left_1 {
+	text-align:left;
+	margin: 10px 0;
+}
+
+/*　ページ下部のボタン：位置：2段目：中央寄　*/
+.FS2_bottom_btn_center_2 {
+	text-align:center;
+	margin: 10px 0;
+}
+
+/*　ページ下部のボタン：位置：2段目：右寄　*/
+.FS2_bottom_btn_right_2 {
+	text-align:right;
+	margin: 10px 0;
+}
+
+/*　ページ下部のボタン：位置：2段目：左寄　*/
+.FS2_bottom_btn_left_2 {
+	text-align:left;
+	margin: 10px 0;
+}
+
+
+/*=========================================================
+共通使用セレクタ
+=========================================================*/
+
+/*　Float　*/
+.itemCenter {
+	text-align:center;
+}
+
+.userTable_01 + .itemCenter {
+  text-align:center;
+  padding-top: 30px;
+}
+.userTable_01 + .itemCenter + div {
+	text-align:center;
+	margin-top:10px;
+}
+label + .userTable_01 {
+  margin-top: 10px;
+}
+
+.itemLeft {
+	float:left;
+}
+
+.itemRight {
+	float:right;
+}
+
+.itemLeft50 {
+	float:left;
+	width:48%;
+}
+.itemRight50 {
+  float:right;
+  width:100%;
+}
+
+
+/*　文字寄　*/
+.alignCenter {
+	text-align:center;
+}
+
+.alignLeft {
+	text-align:left;
+}
+
+.alignRight {
+	text-align:right;
+}
+
+/*　dummySubmit　*/
+.dummySubmit {
+	position:absolute;
+	left:-9999px;
+}
+
+.caution {
+	color:#FF0000;
+}
+
+/*　テーブル直下のcheckboxとテキスト位置調整　*/
+p.FS2_checkbox_text_container{
+	margin-top:10px;
+}
+
+
+/*=========================================================
+お試し店舗　ヘッダ
+=========================================================*/
+.FS2_trial table {
+	position:relative;
+	top:-2px;
+}
+
+.FS2_trial td {
+	vertical-align:top;
+}
+
+.FS2_trial p {
+	padding:0px;
+	margin:0px;
+}
+
+
+
+
+
+
+
+
+/*========================================================================
+　クーポン関係スタイル↓↓↓↓↓
+========================================================================　*/
+
+body#FS2_body_Coupon a img{border:none;}
+
+a.FS2_MoveToAcquiredCouponList{
+	display:block;
+	float:right;
+	padding:5px 3px 0 0;
+	text-decoration:none;
+}
+
+div.FS2_CouponBlock{
+	margin:0 0 40px 0;
+	padding-bottom:25px;
+	line-height:1.5em;
+}
+
+table.FS2_CouponDescriptionTable{
+	width:100%;
+	border-collapse:collapse;
+}
+
+
+table.FS2_CouponDescriptionTable td{
+	margin:0;
+	padding:0;
+	vertical-align:top;
+}
+
+table.FS2_CouponDescriptionTable img.FS2_CouponImg{
+	margin:0 16px 8px 0;
+}
+
+table.FS2_CouponDescriptionTable td.FS2_CouponDescriptionCell
+ p{
+	margin:0px 0 8px 0;
+}
+
+div.FS2_CouponInfo{
+	text-align:center;
+	padding:10px;
+	margin:10px 0;
+}
+
+div.FS2_CouponInfo p.FS2_CouponEffect{
+	font-size:20px;
+	margin:6px;
+}
+
+div.FS2_CouponInfo p.FS2_CouponRequirements{
+	margin:0 0 5px 0;
+	padding:0;
+}
+
+div.FS2_CouponBlock table th{
+	width:160px;
+}
+
+div.FS2_CouponBlock table .FS2_Coupon_condition{
+	margin:3px 0 0 0;
+	padding0;
+}
+
+.FS2_ShowCouponGoodsList{
+	margin:5px 2px;
+	text-align:right;
+}
+
+.FS2_Coupon_container,
+.FS2_UseCoupon_container,
+.FS2_InputCouponCode_container,
+.FS2_MoveToCouponCode_container{
+	margin:20px 0;
+	padding:5px;
+	text-align:center;
+}
+
+.FS2_Coupon_container strong,
+.FS2_Coupon_container em,
+.FS2_UseCoupon_container strong,
+.FS2_UseCoupon_container em,
+.FS2_InputCouponCode_container strong,
+.FS2_InputCouponCode_container em,
+.FS2_MoveToCouponCode_container strong,
+.FS2_MoveToCouponCode_container em{
+	display:block;
+	padding:10px 5px;
+	font-size:18px;
+	font-weight:bold;
+	font-style:normal;
+}
+
+.FS2_Coupon_container span,
+.FS2_UseCoupon_container span,
+.FS2_MoveToCouponCode_container span{
+	display:block;
+}
+
+
+.FS2_Coupon_container p{
+	margin:8px 0;
+	line-height:1.5em;
+}
+
+.FS2_InputCouponCode_container span{
+	display:block;
+	padding-bottom:10px;
+}
+
+
+.FS2_CouponTargetItems+p.alignRight{
+	margin:0 0 10px 0;
+}
+
+
+.FS2_GetCoupon{
+	padding:3px;
+	text-align:center;
+	font-size:14px;
+	font-weight:bold;
+}
+
+
+.FS2_GetCoupon p{
+	margin:3px;
+}
+
+body.FS2_body_CouponLogin .FS2_Login_btn_position{
+		margin:10px 0 30px 0;
+}
+
+
+/* クーポン対象商品一覧↓ */
+
+span.FS2_CouponTargetItemsBoxPager{
+	display:block;
+	text-align:right;
+	position:absolute;
+	top:-32px;
+	right:5px;
+}
+span.FS2_CouponTargetItemsBoxCtrlButtons{
+	display:block;
+	position:absolute;
+	top:0px;
+	left:0px;
+	right:10px;
+	visibility:hidden;
+}
+span.FS2_CouponTargetItemsBoxCtrlButtons a{
+	display:block;
+}
+
+a.FS2_CouponTargetItemsBox_leftButton{
+	float:left;
+}
+a.FS2_CouponTargetItemsBox_rightButton{
+	float:right;
+}
+
+ul.FS2_CouponTargetItems{
+	margin:10px auto 0 auto;
+	list-style-type:none;
+	margin:0 50px;
+	padding:0;
+	position: relative;
+  z-index: 100;
+}
+
+ul.FS2_CouponTargetItems a{
+	display:block;
+	text-decoration:none;
+	padding:5px;
+}
+ul.FS2_CouponTargetItems span.FS2_itemName{
+	display:block;
+	padding-top:4px;
+}
+div.FS2_CouponTargetItemsBox{
+	position:relative;
+	margin:0;
+}
+
+ul.FS2_CouponTargetItems:after{
+	content:".";
+	height:0;
+	visibility:hidden;
+	overflow:hidden;
+	display:block;
+	clear:both;
+}
+ul.FS2_CouponTargetItems {
+  min-height: 1px;
+}
+* html ul.FS2_CouponTargetItems{
+  height: 1px;
+  /*\*//*/
+  height: auto;
+  overflow: hidden;
+  /**/
+}
+ul.FS2_CouponTargetItems li{
+	width:130px;
+	margin:0 20px 0 0;
+	float:left;
+	text-align:center;
+}
+ul.FS2_CouponTargetItems li img{
+	width:120px;
+}
+
+/* クーポン対象商品一覧↑ */
+
+
+
+/* 支払い方法選択画面（クーポン）↓ */
+
+table.FS2_CouponTable{
+	margin-top:30px;
+}
+
+table.FS2_CouponTable th span{
+	display:block;
+	font-size:0.88em;
+}
+
+
+table.FS2_CouponTable ul,
+table.FS2_CouponTable li{
+	padding:0;
+	list-style:none;
+}
+table.FS2_CouponTable ul{margin:10px 0 0 0;}
+
+table.FS2_CouponTable li{
+	margin:0 0 10px 0;
+	padding-bottom:10px;
+	border-bottom:1px solid #ccc;
+}
+
+table.FS2_CouponTable li:last-child{border:none;}
+
+table.FS2_CouponTable li p{
+	margin:0 0 5px 0;
+}
+
+table.FS2_CouponTable li div{
+	margin:0 0 5px 5px;
+}
+
+table.FS2_CouponTable li strong{
+	display:block;
+	margin:0;
+	font-size:1.1em;
+	color:#c00;
+}
+
+table.FS2_CouponTable li p.FS_couponSettleCaution{
+	margin-top:10px;
+}
+
+table.FS2_CouponCalculateTable{
+	margin-bottom:30px;
+	width:300px;
+}
+
+table.FS2_CouponCalculateTable th,
+table.FS2_CouponCalculateTable td{
+	text-align:right;
+}
+/* 支払い方法選択画面（クーポン）↑ */
+
+
+
+
+
+/* -=-=-=-= ↓クーポン　テンプレートシリーズに依存する部分↓ =-=-=-=- */
+
+
+
+/* クーポン名(枠)：シンプルシリーズ */
+table.FS2_CouponDescriptionTable td.FS2_CouponDescriptionCell
+ h3{
+	margin:0 0 10px 0;
+	padding:2px 0 1px 8px;
+}
+
+/* クーポン名テキスト部分：シンプルシリーズ */
+table.FS2_CouponDescriptionTable td.FS2_CouponDescriptionCell
+ h3 span{
+	display:block;
+	padding:0;
+}
+
+
+
+/* -=-=-=-= ↓クーポン　テンプレートカラーに依存する部分↓ =-=-=-=- */
+
+/* クーポン一覧での各クーポンの境界線 */
+div.FS2_CouponBlock{
+	border-bottom:1px solid #999;
+}
+
+
+/* 「クーポン取得・使用」などのボタンを含むブロック */
+.FS2_Coupon_container,
+.FS2_UseCoupon_container,
+.FS2_InputCouponCode_container,
+.FS2_MoveToCouponCode_container{
+	border:5px solid #ddd;
+}
+
+
+/* 「クーポン取得・使用」などのボタンの上のコメント */
+.FS2_Coupon_container strong,
+.FS2_UseCoupon_container strong{
+	color:#c00;
+}
+
+
+/* 「クーポン対象商品」のサムネールにマウスオーバーしたときの背景色 */
+ul.FS2_CouponTargetItems a:hover{
+	background-color:#f5f5f5;
+}
+
+
+/* クーポン効果表示ブロック */
+div.FS2_CouponInfo{
+	border:3px double #999;
+	background-color:#f0f0f0;
+}
+
+/* クーポン効果文字列 */
+div.FS2_CouponInfo p.FS2_CouponEffect{
+	color:#f03;
+}
+
+
+/* 「クーポンを獲得しました」部分 */
+.FS2_GetCoupon{
+	color:#fff;
+	background-color:#c02;
+}
+
+
+
+/* クーポン名(枠)左線指定 */
+table.FS2_CouponDescriptionTable td.FS2_CouponDescriptionCell
+ h3{
+	border-left:3px solid #333;
+}
+
+/* クーポン名テキスト部分背景色と文字色 */
+table.FS2_CouponDescriptionTable td.FS2_CouponDescriptionCell
+ h3 span{
+	color:#333;
+}
+
+/*========================================================================
+　クーポン関係スタイル↑↑↑↑↑
+========================================================================　*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*ログインページの帯の文言*/
+.FS2_login_layout_table_td_left .CrossHead,
+.FS2_login_layout_table_td_right .CrossHead {
+}
+.FS2_login_layout_table_td_right .CrossHead + p {
+  position: relative;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*会員登録の上部=======================================*/
+.in_bannerArea {
+  margin: 0 auto;
+}
+.in_bannerArea img {
+  width: 776px;
+}
+.in_bannerArea p {
+  width: 100%;
+  color: #666;
+  font-weight: 700;
+  text-align: center;
+}
+.in_bannerArea + p {
+  width: 100%;
+  text-align: center;
+  margin-top: 40px;
+}
+.infoTextArea {
+  width: 100%;
+  width: 776px;
+  margin: 0 auto;
+}
+.infoTextArea p {
+  width: 776px;
+  margin: 0 auto;
+  line-height:1.6;
+}
+.infoTextArea div {
+  color: #666;
+  font-size: 11px;
+  width: 96%;
+  height: 175px;
+  margin: 50px auto 30px;
+  line-height: 16px;
+  padding: 10px;
+  border: 1px solid #D1D1CF;
+  overflow: auto;
+}
+/*会員登録の上部ここまで=======================================*/
+
+
+
+
+
+
+/* ==================
+	OHANAsmile Inc.
+====================== */
+body {
+    border-top: 1px solid #95BAA9;
+    margin-top: 4px;
+}
+#primary-menu {
+    background-color: #F0EDE4;
+    border-bottom: 1px solid #CCCCCC;
+    border-top: 1px solid #CCCCCC;
+    float: none;
+}
+#primary-menu #menu-global-navigation {
+    border-right: 1px dotted #CCCCCC;
+    margin-left: auto;
+    margin-right: auto;
+    width: 980px;
+}
+#primary-menu #menu-global-navigation .menu-item {
+    border-left: 1px dotted #CCCCCC;
+    height: 31px;
+    line-height: 31px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    text-align: center;
+    width: 117px;
+	display:inline-block;
+}
+#primary-menu #menu-global-navigation .menu-item a {
+    background-color: rgba(0, 0, 0, 0);
+    background-image: url("https://c25.future-shop.jp/shop/item/ty20/design/img02/navi_bg.gif");
+    background-position: 0 55%;
+    background-repeat: no-repeat;
+    padding: 0 15px;
+}
+
+#topBanner {
+margin-bottom:35px;
+line-height:0;
+margin-top:20px;
+}
+
+
+
+#side .widget {
+margin-bottom:20px;
+}
+#side #text-2 {
+margin-bottom:10px;
+line-height:0;
+}
+#side #text-3 form {
+
+}
+#side .widget .widget-title {
+background-color:#97B9A9;
+color:#FFF;
+background-image:url("https://c25.future-shop.jp/shop/item/ty20/design/img02/side_navi_bg.gif");
+background-repeat:no-repeat;
+background-position:5px 50%;
+margin-bottom:8px;
+padding-top:10px;
+padding-left:22px;
+padding-bottom:8px;
+font-size:1em;
+font-weight:normal;
+line-height:1;
+}
+#side #text-2 .widget-title,
+#navif #hybrid-nav-menu-4 .widget-title {
+display:none;
+}
+#side #hybrid-nav-menu-2 .widget-title,
+#side #hybrid-nav-menu-3 .widget-title,
+#side #hybrid-nav-menu-5 .widget-title,
+#side #text-7 .widget-title {
+margin-bottom:1px;
+}
+#side #menu-new-navigation .menu-item,
+#side #menu-brand-navigation .menu-item {
+	background-image:url("https://c25.future-shop.jp/shop/item/ty20/design/img02/side_arrow.gif");
+	background-repeat:no-repeat;
+	background-position:5px 50%;
+	padding:0 0 0 15px;
+	border-bottom-width: 1px;
+	border-bottom-style: dotted;
+	border-bottom-color: #CCCCCC;
+}
+#side #menu-osusume-navigation li {
+	border-bottom-width: 1px;
+	border-bottom-style: dotted;
+	border-bottom-color: #CCCCCC;
+}
+#side #menu-osusume-navigation li a {
+	line-height:0;
+}
+/* サイドバー */
+#side #menu-osusume-navigation li a.bnrOsusumeKei img {
+   background-color: #FBFAF5;
+    border: 1px dotted #D1D1CF;
+    padding: 1px;
+}
+#side #menu-new-navigation .menu-item a,
+#side #menu-brand-navigation .menu-item a,
+#side #menu-osusume-navigation li a {
+	display:block;
+	padding-top:10px;
+	padding-bottom:10px;
+}
+#side #menu-new-navigation .menu-item a small {
+display:inline-block;
+float:right;
+font-size:inherit;
+margin-right:30px;
+color:#D60000;
+}
+#side #menu-item-navigation > .menu-item-has-children > a {
+display:block;
+background-color:#F9F6ED;
+	margin-bottom:4px;
+padding:10px 0 10px 25px;
+	background-image:url("https://c25.future-shop.jp/shop/item/ty20/design/img02/side_navi_child_bg.gif");
+background-repeat:no-repeat;
+background-position:7px 50%;
+line-height:1;
+}
+#side #menu-item-navigation > .menu-item-has-children ul.sub-menu a {
+	display:block;
+	padding-top:4px;
+	padding-left:54px;
+	padding-bottom:4px;
+	height:44px;
+	line-height:44px;
+background-image:url("https://c25.future-shop.jp/shop/item/ty20/design/img01/item_img_04.jpg");
+background-repeat:no-repeat;
+background-position:0 50%;
+}
+#side #menu-item-navigation li#menu-item-31181 a {
+background-image:url("https://c25.future-shop.jp/shop/item/ty20/design/img01/item_img_01.jpg");
+}
+#side #menu-item-navigation li#menu-item-31182 a {
+background-image:url("https://c25.future-shop.jp/shop/item/ty20/design/img01/item_img_02.jpg");
+}
+#side #menu-item-navigation li#menu-item-31183 a {
+background-image:url("https://c25.future-shop.jp/shop/item/ty20/design/img01/item_img_03.jpg");
+}
+#side #menu-item-navigation li#menu-item-31184 a {
+background-image:url("https://c25.future-shop.jp/shop/item/ty20/design/img01/item_img_04.jpg");
+}
+#side #menu-item-navigation li#menu-item-31185 a {
+background-image:url("https://c25.future-shop.jp/shop/item/ty20/design/img01/item_img_05.jpg");
+}
+#side #menu-item-navigation li#menu-item-31186 a {
+background-image:url("https://c25.future-shop.jp/shop/item/ty20/design/img01/item_img_06.jpg");
+}
+#side #menu-item-navigation li#menu-item-31187 a {
+background-image:url("https://c25.future-shop.jp/shop/item/ty20/design/img01/item_img_07.jpg");
+}
+#side #menu-item-navigation li#menu-item-31189 a {
+background-image:url("https://c25.future-shop.jp/shop/item/ty20/design/img02/item_img_halfpants.jpg");
+}
+#side #menu-item-navigation li#menu-item-31190 a {
+background-image:url("https://c25.future-shop.jp/shop/item/ty20/design/img01/item_img_08.jpg");
+}
+#side #menu-item-navigation li#menu-item-31191 a {
+background-image:url("https://c25.future-shop.jp/shop/item/ty20/design/img01/item_img_10.jpg");
+}
+#side #menu-item-navigation li#menu-item-31192 a {
+background-image:url("https://c25.future-shop.jp/shop/item/ty20/design/img01/item_img_11.jpg");
+}
+#side #menu-item-navigation li#menu-item-35905 a {
+background-image:url("https://c25.future-shop.jp/shop/item/ty20/design/img02/item_img_long.jpg");
+}
+#side #menu-item-navigation li#menu-item-31193 a {
+background-image:url("https://c25.future-shop.jp/shop/item/ty20/design/img01/item_img_12.jpg");
+}
+
+#side #menu-item-navigation li#menu-item-31195 a {
+background-image:url("https://c25.future-shop.jp/shop/item/ty20/design/img01/item_img_13.jpg");
+}
+#side #menu-item-navigation li#menu-item-31196 a {
+background-image:url("https://c25.future-shop.jp/shop/item/ty20/design/img01/item_img_14.jpg");
+}
+
+#side #menu-item-navigation li#menu-item-31198 a {
+background-image:url("https://c25.future-shop.jp/shop/item/ty20/design/img01/item_img_15.jpg");
+}
+#side #menu-item-navigation li#menu-item-31199 a {
+background-image:url("https://c25.future-shop.jp/shop/item/ty20/design/img01/item_img_16.jpg");
+}
+#side #menu-item-navigation li#menu-item-31200 a {
+background-image:url("https://c25.future-shop.jp/shop/item/ty20/design/img01/item_img_17.jpg");
+}
+#side #menu-item-navigation li#menu-item-31201 a {
+background-image:url("https://c25.future-shop.jp/shop/item/ty20/design/img01/item_img_18.jpg");
+}
+
+#side #menu-item-navigation li#menu-item-31203 a {
+background-image:url("https://c25.future-shop.jp/shop/item/ty20/design/img01/item_img_19.jpg");
+}
+#side #menu-item-navigation li#menu-item-31204 a {
+background-image:url("https://c25.future-shop.jp/shop/item/ty20/design/img01/item_img_20.jpg");
+}
+#side #menu-item-navigation li#menu-item-31205 a {
+background-image:url("https://c25.future-shop.jp/shop/item/ty20/design/img01/item_img_21.jpg");
+}
+#side #menu-item-navigation li#menu-item-31206 a {
+background-image:url("https://c25.future-shop.jp/shop/item/ty20/design/img01/item_img_22.jpg");
+}
+#side #menu-item-navigation li#menu-item-31207 a {
+background-image:url("https://c25.future-shop.jp/shop/item/ty20/design/img01/item_img_23.jpg");
+}
+#side #menu-item-navigation li#menu-item-31208 a {
+background-image:url("https://c25.future-shop.jp/shop/item/ty20/design/img01/item_img_24.jpg");
+}
+#side #menu-item-navigation li#menu-item-31209 a {
+background-image:url("https://c25.future-shop.jp/shop/item/ty20/design/img01/item_img_25.jpg");
+}
+#side #menu-item-navigation li#menu-item-31210 a {
+background-image:url("https://c25.future-shop.jp/shop/item/ty20/design/img01/item_img_26.jpg");
+}
+#side #menu-item-navigation li#menu-item-35391 a {
+background-image:url("https://c25.future-shop.jp/shop/item/ty20/design/img01/item_img_27.jpg");
+}
+
+#side #menu-item-navigation li#menu-item-31212 a {
+background-image:url("https://c25.future-shop.jp/shop/item/ty20/design/img01/item_img_28.jpg");
+}
+#side #menu-item-navigation li#menu-item-31213 a {
+background-image:url("https://c25.future-shop.jp/shop/item/ty20/design/img01/item_img_29.jpg");
+}
+#side #menu-item-navigation li#menu-item-31214 a {
+background-image:url("https://c25.future-shop.jp/shop/item/ty20/design/img01/item_img_30.jpg");
+}
+#side #menu-item-navigation li#menu-item-31215 a {
+background-image:url("https://c25.future-shop.jp/shop/item/ty20/design/img01/item_img_31.jpg");
+}
+#side #menu-item-navigation li#menu-item-31216 a {
+background-image:url("https://c25.future-shop.jp/shop/item/ty20/design/img01/item_img_32.jpg");
+}
+#side #menu-item-navigation li#menu-item-31217 a {
+background-image:url("https://c25.future-shop.jp/shop/item/ty20/design/img01/item_img_33.jpg");
+}
+#side #menu-item-navigation > .menu-item-has-children ul.sub-menu {
+	border-top-width: 1px;
+	border-top-style: dotted;
+	border-top-color: #CCCCCC;
+margin-bottom:10px;
+}
+#side #menu-item-navigation > .menu-item-has-children ul.sub-menu .menu-item {
+	border-bottom-width: 1px;
+	border-bottom-style: dotted;
+	border-bottom-color: #CCCCCC;
+	line-height:1;
+	padding:0;
+}
+
+#side #text-7 h2 {
+font-weight:normal;
+font-size:1em;
+background-color:#F9F6ED;
+margin-top:0;
+	margin-bottom:4px;
+padding:10px 0 10px 25px;
+background-image:url("https://c25.future-shop.jp/shop/item/ty20/design/img02/side_navi_child_bg.gif");
+background-repeat:no-repeat;
+background-position:7px 50%;
+line-height:1;
+}
+#side #text-7 select {
+    margin: 10px 10px 0;
+    width: 160px;
+}
+#side #text-7 .yenWord {
+    margin: 5px 10px 0;
+}
+
+
+
+#brandNavi {
+
+}
+#brandNavi li {
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+	border: 1px dotted #D1D1CF;
+	display:inline-block;
+	width:181px;
+	height:70px;
+	margin-right:13px;
+	margin-bottom:9px;
+}
+#brandNavi li:nth-of-type(4n) {
+    margin-right:0;
+}
+#brandNavi li a {
+	display:block;
+	text-align:center;
+	padding-top:5px;
+	padding-bottom:5px;
+	
+}
+#brandNavi li a:after {
+	content:attr(title);
+	display:block;
+	font-size:9px;
+}
+
+
+
+#footer-container {
+	background-color:#FBFAF5;
+	border-top-width: 1px;
+	border-bottom-width: 1px;
+	border-top-style: solid;
+	border-bottom-style: solid;
+	border-top-color: #D1D1CF;
+	border-bottom-color: #D1D1CF;
+	padding-top:10px;
+}
+#footer {
+background-color:#FFFFFF;
+	border-top-width: 1px;
+	border-bottom-width: 1px;
+	border-top-style: solid;
+	border-bottom-style: solid;
+	border-top-color: #D1D1CF;
+	border-bottom-color: #D1D1CF;
+}
+
+
+
+#main .entry-content h1,
+#main .entry-content h2,
+#main .entry-content h3,
+#main .entry-content h4,
+#main .entry-content h5,
+#main .entry-content h6{
+margin-bottom:20px;
+}
+.entry-content p {
+margin-bottom:20px;
+}
+.singular-post .entry-content img {
+max-width:500px;
+height:auto;
+}
+
+
+
+
+
+
+/* ==================
+	header
+====================== */
+.header_box {
+  background-color: #fff;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 15px;
+}
+
+/*
+.header_box + .header_bg {
+  background: url(https://c25.future-shop.jp/shop/item/ty20/design/img01/usermenu_bg2.png) left bottom repeat-x;
+  height: 16px;
+  width: 100%;
+  margin-bottom: 15px;
+}
+*/
+/*height: 30px;display: none;を解除した場合コチラの高さにする----------*/
+
+#header {
+  background-color: #fff;
+  width: 982px;
+  margin: 0 auto 15px;
+}
+
+#header h1 {
+  float: left;
+  line-height:0;
+}
+
+#header .header_center {
+  float: left;
+}
+
+#header .header_center h2 {
+  padding: 33px 0 0 10px;
+  font-size: 11px;
+  line-height: 14px;
+}
+
+#header .header_center h2 p {
+  position: relative;
+  bottom: 10px;
+  font-weight:bold;
+  font-size:1.1em;
+}
+
+#header .header_center ul li {
+  float: left;
+  margin: 0 0 0 10px;
+}
+
+#header .header_center ul li a {
+  color:#88ac9d;
+}
+
+#header .header_center ul li a:hover {
+	color: #009ae3;
+	text-decoration: none;
+}
+
+#header .header_center ul li img {
+  margin: 0 8px 0 0;
+  vertical-align: middle;
+}
+
+#header .header_right {
+  float: right;
+  /*margin: 3px 0 0 0;*/
+  line-height:0;
+}
+
+#header .header_right ul {
+  margin: 0 0 15px 0;
+}
+
+#header .header_right ul li {
+  float: left;
+}
+
+#header .header_right .head_postage {
+  font-size: 15px;
+  text-align: center;
+}
+
+
+/* ==================
+	navi
+====================== */
+
+/*
+#navi {
+  background: url(https://c25.future-shop.jp/shop/item/ty20/design/img02/navi_bg.jpg) repeat-x;
+  height: 42px;
+}
+
+#navi ul {
+  width: 982px;
+  margin: 0 auto;
+}
+
+#navi ul li {
+  float: left;
+}
+#usermenu_bg {
+  background: url(https://c25.future-shop.jp/shop/item/ty20/design/img02/usermenu_bg.png) left bottom repeat-x;
+  height: 66px;
+}*/
+
+#usermenu {
+  display: none;
+  height: 47px;
+  margin: 0 auto;
+  padding: 0;
+  width: 982px;
+  background-color: #f9f9f9;
+  border: 1px solid #e5e5e5;
+  border-top: none;
+  position: relative;
+}
+
+#search {
+  width: 650px;
+  position: absolute;
+  right: 320px;
+  top: 10px;
+}
+
+#search p.word {
+  float: left;
+  padding: 0 10px 0 0px;
+  position: absolute;
+  top: 6px;
+  left: 650px;
+  width: 309px;
+}
+
+#search p.word a:link {
+  text-decoration: none;
+}
+
+#search input.searchWord {
+  height: 18px;
+}
+
+.yenWord {
+  margin: 5px 10px 0 10px;
+}
+#side .side_search,
+#side .side_searchBtn {
+line-height:0;
+}
+#side .side_search {
+  width: 147px;
+  float:left;
+}
+#side .side_searchBtn {
+	margin-top:-19px;
+  float:right;
+  width:26px;
+  padding:0;
+}
+
+#side h3.titl_top {
+  margin-top: 0!important;
+}
+
+.sideBanar {
+  background: #fff;
+  padding-bottom: 10px;
+}
+
+/* TOP */
+#asymmetryArea {
+width:767px;
+}
+#asymmetryArea a {
+
+}
+#asymmetryArea a img {
+	padding:4px;
+	border: 1px dotted #D1D1CF;
+
+}
+
+/* 見出し */
+.uGreen,
+h4 {
+font-family: '小塚ゴシック Pro','ヒラギノ角ゴ Pro W3','ＭＳ Ｐゴシック','Osaka','メイリオ','Meiryo',sans-serif;
+}
+h3.uGreen {
+font-size:180%;
+	border-bottom-width: 2px;
+	border-bottom-style: solid;
+	border-bottom-color: #DEDEDE;
+}
+h3.uGreen span {
+	width:266px;
+	border-bottom-width: 2px;
+	border-bottom-style: solid;
+	border-bottom-color: #96BFAD;
+	display:inline-block;
+	margin-bottom:-2px;
+}
+h3.uGreen small {
+font-size:60%;
+}
+h3.uGreen small:before {
+content: "/";
+margin-left:15px;
+margin-right:15px;
+}
+.home #_rcmdjp_display_2 {
+clear:both;
+margin-top:0;
+}
+#_rcmdjp_display_2 {
+clear:both;
+margin-top:90px;
+}
+.FS2_Recommend2_container_recommend,
+.FS2_Recommend2_container_history,
+.FS2_Recommend2_ranking_horizontal {
+margin-bottom:25px;
+}
+.FS2_Recommend2_container_recommend h3.uGreen,
+.FS2_Recommend2_container_history h3.uGreen,
+.FS2_Recommend2_ranking_horizontal h3.uGreen {
+margin-bottom:10px;
+color:#96BFAD;
+font-weight:bold;
+}
+.FS2_Recommend2_container_recommend h3.uGreen small:before,
+.FS2_Recommend2_container_history h3.uGreen small:before,
+.FS2_Recommend2_ranking_horizontal h3.uGreen small:before {
+content: "";
+margin-left:0;
+margin-right:0;
+}
+.FS2_Recommend2_container_recommend h3.uGreen span,
+.FS2_Recommend2_container_history h3.uGreen span,
+.FS2_Recommend2_ranking_horizontal h3.uGreen span {
+width:auto;
+}
+.FS2_Recommend2_ranking #FS2_itemlayout_IHL2,
+.FS2_Recommend2_ranking_horizontal #FS2_itemlayout_IHL2 {
+width:135px;
+}
+.FS2_Recommend2_ranking #FS2_itemlayout_IHL2:nth-of-type(5n),
+.FS2_Recommend2_ranking_horizontal #FS2_itemlayout_IHL2:nth-of-type(5n) {
+margin-right:0;
+}
+.search_box_01 h4,
+.rank_box_02 h4 {
+font-size:180%;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #DEDEDE;
+	text-align:center;
+}
+.search_box_01 h4 {
+margin-bottom:8px;
+}
+.rank_box_02 h4 small {
+display:inline-block;
+font-size:60%;
+background-image:url("https://c25.future-shop.jp/shop/item/ty20/design/img02/bg-heading-ranking.gif");
+background-repeat:no-repeat;
+background-position:0 0;
+padding-left:40px;
+}
+.search_box_01 select {
+width:140px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.FS2_thumbnail_container a img.thumbnail {
+width:175px;
+}
+.itemPrice {
+font-size:100%;
+}
+
+#FS2_itemlayout_IHL2 {
+width:175px;
+	padding:4px;
+	border: 1px dotted #D1D1CF;
+    position: relative;
+	background-color: #FBFAF5;
+	margin-left:0;
+	margin-right:12px;
+	margin-bottom:8px;
+}
+.rank_box #FS2_itemlayout_IHL2 {
+margin-bottom:20px;
+}
+#FS2_itemlayout_IHL2:nth-of-type(4n) {
+margin-right:0;
+}
+#FS2_itemlayout_IHL2 h2.itemGroup {
+font-size:100%;
+height:2.5em;
+}
+#FS2_itemlayout_IHL2 .FS2_itemPrice_text {
+font-size:100%;
+}
+
+
+#FS2_itemlayout_IH3 .FS2_additional_image_btn_thumbnail_container {
+width:380px;
+}
+#FS2_itemlayout_IH3 .FS2_additional_image_itemdetail_container_right {
+width:308px;
+}
+#FS2_itemlayout_IH3 .FS2_thumbnail_container {
+width:380px;
+}
+.FS2_additional_image_tableVariation_table {
+border-top:1px solid #DDDDDD;
+border-bottom:1px solid #DDDDDD;
+width:100%;
+}
+.FS2_additional_image_tableVariation_table tr {
+vertical-align:middle;
+line-height:33px;
+}
+.FS2_additional_image_tableVariation_table th {
+width:40px;
+border:none;
+}
+.FS2_additional_image_tableVariation_table td {
+border-bottom:1px solid #DDDDDD;
+}
+.FS2_additional_image_tableVariation_table td:nth-of-type(2n) {
+text-align:right;
+}
+.FS2_TweetButton_area {
+    height:115px;
+	position:relative;
+}
+.FS2_TweetButton_area .FS2_TweetButton_area_container {
+    background-color: #FBFAF5;
+    border: 1px solid #D1D1CF;
+	padding:10px;
+    line-height: 0;
+    margin-top: 10px;
+    text-align: center;
+    width: 306px;
+}
+.FS2_TweetButton_area .btnFacebook {
+width:103px;
+}
+.FS2_TweetButton_area .btnTwitter {
+width:77px;
+}
+.FS2_TweetButton_area .btnLine {
+
+}
+.FS2_TweetButton_area .btnGoogle {
+
+}
+.FS2_TweetButton_area #btnSize {
+position:absolute;
+bottom:19px;
+left:0;
+}
+.FS2_TweetButton_area div {
+display:inline-block;
+}
+#twitter-widget-0 {
+
+}
+
+#FS2_itemlayout_IH3 .FS2_additional_image_container_main {
+width:63px;
+padding: 0 22px 0 0;
+}
+#FS2_itemlayout_IH3 .FS2_additional_image_btn_thumbnail_container .FS2_thumbnail_container {
+border:none;
+padding:0;
+}
+#FS2_itemlayout_IH3 .FS2_additional_image_btn_thumbnail_container .FS2_thumbnail_container img {
+width:380px;
+height:380px;
+}
+#FS2_itemlayout_IH3 .FS2_additional_image_thumbnail_container {
+padding:0;
+}
+.FS2_additional_image_container_main img {
+	width:57px;
+	padding:2px;
+	border: 1px dotted #D1D1CF;
+	background-color: #FBFAF5;
+}
+.FS2_additional_image_container_sub img {
+	width:62px;
+	padding:2px;
+	border: 1px dotted #D1D1CF;
+	background-color: #FBFAF5;
+}
+
+.itemMore {
+/* 
+	width: 776px;
+	min-height: 360px;
+	margin-bottom: 30px;
+	padding-top:10px;
+*/
+}
+.itemMoreTitl {
+	height: 47px;
+	margin-bottom: 10px;
+}
+.itemMore li {
+	float: left;
+	padding-top:10px;
+    background-color: #FBFAF5;
+    border: 1px dotted #D1D1CF;
+	margin-right:12px;
+    margin-bottom: 8px;
+    padding: 4px;
+    position: relative;
+    width: 175px;
+}
+.itemMore li:nth-of-type(4n) {
+  margin-right:0;
+}
+
+
+
+
+/* ブログ */
+h1.post-title {
+    font-size: 18px;
+	height:47px;
+	border-bottom: 2px solid #DEDEDE;
+	margin-bottom:10px;
+    padding-bottom:10px;
+    font-weight: bold;
+    position: relative;
+    text-decoration: none;
+}
+h1.post-title a,
+#archive-container article h2.post-title a {
+color:#C689AB;
+}
+
+.byline {
+font-size:90%;
+margin-bottom:10px;
+}
+/* ブログここまで */
+
+
+
+
+
+
+
+
+#wp_ItemComment {
+width:776px;
+}
+#wp_ItemComment_container_left {
+float:left;
+width:434px;
+}
+dl.subphottop,
+dl.subphotbottom {
+width:434px;
+font-size:11px;
+}
+dl.subphotbox {
+float:left;
+width:211px;
+height:350px;
+margin-right:12px;
+font-size:11px;
+}
+dl.subphotbox dt img {
+width:211px;
+height:281px;
+}
+dl.subphotbox:nth-of-type(2n) {
+margin-right:0;
+}
+#colorphoto {
+
+}
+.colorphotobox {
+	margin-right:1px;
+}
+.colorphotobox:last-child {
+	margin-right:0;
+}
+
+.colorphotobox img {
+	padding:2px;
+	border: 1px dotted #D1D1CF;
+	background-color: #FBFAF5;
+}
+
+#wp_ItemComment_container_right {
+float:right;
+width:308px;
+}
+#wp_ItemComment_container_right h3.uGreen {
+margin-top:0;
+}
+#wp_ItemComment_container_right #detailinfo {
+margin-bottom:35px;
+}
+#wp_ItemComment_container_right #specinfo {
+
+}
+#staffvoice dl.staffvoicebox dt {
+
+}
+#staffvoice ul li div.staffvoicebox {
+    background: url("https://c25.future-shop.jp/shop/item/ty20/design/img01/voice_sam_img.jpg") no-repeat scroll left 15px rgba(0, 0, 0, 0);
+    border-bottom: 1px solid #E6E6E6;
+    font-size: 11px;
+    line-height: 14px;
+    min-height: 70px;
+    padding: 15px 0 15px 90px;
+}
+#wp_ItemComment_container_right h3.uGreen {
+margin-bottom:15px;
+}
+#wp_ItemComment_container_right h4 {
+margin-bottom:10px;
+font-size:120%;
+font-weight:bold;
+}
+
+
+table.spectable {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border-bottom: medium none;
+    border-collapse: separate;
+    border-spacing: 0;
+    border-top: 1px solid #EEEEEE;
+    float: left;
+    font-size: 12px;
+    margin-bottom: 25px;
+}
+table.spectable th {
+    /* background: url("https://c25.future-shop.jp/shop/item/ty20/design/img02/bg-thtd-table-info.gif") repeat-x scroll 0 100% #F1E7DD; */
+	background: url("https://c25.future-shop.jp/shop/item/ty20/design/img02/bg-thtd-table-info.gif") repeat-x scroll 0 100%;
+    border-bottom: medium none;
+    border-top: 1px solid #FFFFFF;
+    font-weight: normal;
+    height: auto;
+    padding: 10px;
+    vertical-align: top;
+    width: 50px;
+}
+table.spectable td {
+    background: url("https://c25.future-shop.jp/shop/item/ty20/design/img02/bg-thtd-table-info.gif") repeat-x scroll 0 100% #FFFFFF;
+    border-bottom: medium none;
+    border-top: 1px solid #FFFFFF;
+    height: auto;
+    padding: 10px;
+    vertical-align: top;
+}
+
+.hentry,
+#archive-container {
+float:left;
+/* width:434px; */
+width:500px;
+}
+#archive-container h1 {
+color:#96BFAD;
+font-size:32px;
+font-family: '小塚ゴシック Pro','ヒラギノ角ゴ Pro W3','ＭＳ Ｐゴシック','Osaka','メイリオ','Meiryo',sans-serif;
+text-align:center;
+line-height:1;
+margin-bottom:10px;
+}
+#archive-container small {
+font-family: '小塚ゴシック Pro','ヒラギノ角ゴ Pro W3','ＭＳ Ｐゴシック','Osaka','メイリオ','Meiryo',sans-serif;
+display:block;
+text-align:center;
+margin-bottom:15px;
+}
+#archive-container article .col1 {
+float:right;
+width:175px;
+margin-bottom:15px;
+}
+#archive-container article .col2 {
+float:left;
+width:305px;
+margin-bottom:15px;
+}
+#archive-container article h2.post-title {
+font-size:18px;
+font-weight:bold;
+	border-bottom: 2px solid #DEDEDE;
+	margin-bottom:10px;
+    padding-bottom:5px;
+}
+.singular-products .hentry,
+.singular-yogageneration .hentry {
+float:none;
+width:776px;
+}
+.singular-page #main .hentry {
+width:100%;
+}
+#secondary {
+float:right;
+/* width:308px; */
+width:242px;
+}
+#secondary .widget {
+margin-bottom:25px;
+}
+#secondary .widget .widget-title {
+/*
+background-color:#000000;
+color:#FFF;
+background-image:url("https://c25.future-shop.jp/shop/item/ty20/design/img02/side_navi_bg.gif");
+background-repeat:no-repeat;
+background-position:5px 50%;
+margin-top:0;
+margin-bottom:8px;
+padding-top:10px;
+padding-left:22px;
+padding-bottom:8px;
+font-size:1em;
+font-weight:normal;
+line-height:1;
+*/
+font-family: '小塚ゴシック Pro','ヒラギノ角ゴ Pro W3','ＭＳ Ｐゴシック','Osaka','メイリオ','Meiryo',sans-serif;
+    border-bottom: 2px solid #96BFAD;
+    font-size: 140%;
+	margin-bottom:10px;
+	padding-bottom:10px;
+	line-height:1;
+}
+#secondary .widget ul.xoxo li  {
+	background-image:url("https://c25.future-shop.jp/shop/item/ty20/design/img02/side_arrow.gif");
+	background-repeat:no-repeat;
+	background-position:5px 50%;
+	padding:0 0 0 15px;
+	border-bottom-width: 1px;
+	border-bottom-style: dotted;
+	border-bottom-color: #CCCCCC;
+}
+#secondary .widget ul.xoxo li a {
+display: inline-block;
+padding-top: 10px;
+padding-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 店舗情報 */
+#shop-info {
+    overflow: hidden;
+    text-align: center;
+    width: 776px;
+}
+#shop-info h2 {
+    margin-bottom: 40px;
+}
+#shop-info-perspective {
+    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    width: 776px;
+}
+#shop-info-perspective #info-YUTENJI, #shop-info-perspective #info-KOMAZAWA {
+    float: left;
+    overflow: hidden;
+    width: 378px;
+}
+#shop-info-perspective #info-YUTENJI {
+    margin-right:20px;
+}
+#shop-info-perspective #info-YUTENJI img, #shop-info-perspective #info-KOMAZAWA img {
+    width:378px !important;
+}
+.info-shop {
+    margin-top: 10px;
+}
+.info-caption {
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.info-container {
+    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    width: 700px;
+}
+#shop-misc, #shop-brand, #shop-access {
+    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    width: 700px;
+}
+#shop-misc h2, #shop-brand h2, #shop-access h2 {
+    margin-bottom: 25px;
+}
+#shop-misc p img {
+    margin-bottom: 20px;
+}
+#shop-brand #shop-brandlist {
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    width: 670px;
+}
+#shop-brand #shop-brandlist li {
+    float: left;
+    margin-bottom: 70px;
+    margin-right: 35px;
+    overflow: hidden;
+    text-align: center;
+    width: 200px;
+}
+#shop-brand #shop-brandlist li:nth-of-type(3n) {
+  margin-right:0;
+}
+#shop-brand #shop-brandlist li img {
+    margin-bottom: 10px;
+}
+#shop-access dl {
+    margin: 25px 0 0;
+}
+#shop-access dl dt {
+    border-left: 4px solid #85AD9A;
+    clear: left;
+    float: left;
+    font-weight: bold;
+    padding-left: 8px;
+    width: 240px;
+}
+#shop-access dl dd {
+    line-height: 1.8;
+    margin-left: 260px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ヨガジェネ掲載用一覧 */
+.entry-content ul li {
+    background-image: url("https://c25.future-shop.jp/shop/item/ty20/design/img02/side_arrow.gif");
+    background-position: 5px 50%;
+    background-repeat: no-repeat;
+    border-bottom: 1px dotted #CCCCCC;
+    padding: 0 0 0 15px;
+}
+.entry-content ul li a {
+    display: block;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+
+
+
+/* カート */
+.error_content {
+background: none repeat scroll 0 0 #D60000;
+}
+.itemLeft50 {
+float:right;
+margin-top:20px;
+text-align:right;
+}
+
+.cartInfor,
+.cartAtenText .cartAtenTextRed {
+color:#D60000;
+}
+.FS2_total_area table {
+float:right;
+margin-top:10px;
+}
+.FS2_bottom_btn_right_and_left_2 {
+width:270px;
+}
+.cartAtenText {
+width:360px;
+}
+.cartAtenText p {
+width:270px;
+text-align:right;
+padding-right:4px;
+}
+
+.pointAtenBox {
+width:600px;
+position:relative;
+  margin: 30px auto;
+}
+.pointAtenBox .pointAtenBtn {
+  position: absolute;
+  bottom: 25px;
+  right: 0;
+}
+.pointAtenTexw {
+  padding-left: 10px;
+  margin-top: 15px;
+}
+.pointAtenBox h2 {
+font-family: '小塚ゴシック Pro','ヒラギノ角ゴ Pro W3','ＭＳ Ｐゴシック','Osaka','メイリオ','Meiryo',sans-serif;
+font-size:18px;
+font-weight:bold;
+color:#D60000;
+text-align:center;
+}
+
+
+
+
+
+/* ==================
+	contents
+====================== */
+/*
+#container {
+  background: url(https://c25.future-shop.jp/shop/item/ty20/design/img02/body_bg.png);
+}
+*/
+/* ==================
+	contents
+====================== */
+
+#contents {
+  background-color: #fff;
+  width: 982px;
+  padding-bottom: 20px;
+  /* margin: -12px auto 0 auto; */
+  margin-left:auto;
+  margin-right:auto;
+  z-index: -1;
+}
+
+#contents .info {
+  width: 960px;
+  padding: 10px;
+  margin: 0 0 15px 0;
+  border: 1px solid #e5e5e5;
+  display:none;
+}
+
+#contents .info p span {
+  color: #CC0000;
+}
+
+/* ==================
+	side
+====================== */
+
+#side {
+  width: 180px;
+  padding: 0 0 30px 0;
+  margin: 0 0 0 0;
+  float: left;
+}
+
+/* 
+#side .side_box {
+  margin: 0 14px;
+}
+#side .side_boxTop {
+  min-height: 37px;
+}
+
+#side .side_box .search {
+  width: 50%;
+  position: relative !important;
+  left: 0px !important;
+  top: 10px !important;
+}
+
+#side h3 {
+  margin: 10px 0 0 0;
+}
+
+#side h3:first-child {
+  margin-top: 0;
+}
+
+#side dl {
+  margin: 10px;
+}
+
+#side dl dt {
+  float: left;
+}
+
+#side dl dt img {
+  margin: 0 5px 0 0;
+}
+
+#side dl dd {
+  color: #CC0000;
+  float: right;
+}
+
+#side ul.item_box {
+  background-color: #fff;
+  margin: 15px 10px;
+}
+
+#side ul.item_box li a {
+  display:block;
+  background: url(https://c25.future-shop.jp/shop/item/ty20/design/img02/side_icon02.jpg) 5px center no-repeat;
+  padding: 6px 0 6px 10px;
+  border-bottom: 1px #c8c6c6 dashed;
+}
+
+#side ul.item_box .bda0 a,
+#side ul.item_box_02 .bda0 a {
+  border-bottom: none;
+}
+
+#side ul.item_box_02 {
+  background-color: #fff;
+  margin: 15px 10px;
+}
+
+#side ul.item_box_02 li a {
+  display:block;
+  padding: 3px 0 3px 10px;
+  border-bottom: 1px #c8c6c6 dashed;
+}
+
+#side ul.item_box_02 li img {
+  vertical-align: middle;
+}
+
+#side ul.item_box_02 li span {
+  padding: 0 0 0 10px;
+}
+
+#side select {
+  width: 160px;
+  margin: 10px 10px 0 10px;
+}
+
+#side input {
+  margin: 5px 10px 0 10px;
+}
+
+#side .color_box {
+  margin: 0 10px;
+}
+
+#side .color_box p {
+  margin: 5px 0 0 0;
+}
+
+#side .color_box ul li {
+  margin: 5px 0 0 0;
+  float: left;
+}
+
+#side .color_box ul li + li {
+  margin: 5px 0 0 18px;
+}
+*/
+.formBg_white,
+.formBg_black,
+.formBg_gray,
+.formBg_brown,
+.formBg_beige,
+.formBg_green,
+.formBg_blue,
+.formBg_purple,
+.formBg_yellow,
+.formBg_pink,
+.formBg_red,
+.formBg_orange,
+.formBg_pattern,
+.formBg_other {
+    background-position: 5px 0;
+    background-repeat: no-repeat;
+	padding-left:25px;
+}
+.formBg_white {
+    background-image: url("https://c25.future-shop.jp/shop/item/ty20/design/img02/formBg_white.png");
+}
+.formBg_black {
+    background-image: url("https://c25.future-shop.jp/shop/item/ty20/design/img02/formBg_black.png");
+}
+.formBg_gray {
+    background-image: url("https://c25.future-shop.jp/shop/item/ty20/design/img02/formBg_gray.png");
+}
+.formBg_brown {
+    background-image: url("https://c25.future-shop.jp/shop/item/ty20/design/img02/formBg_brown.png");
+}
+.formBg_beige {
+    background-image: url("https://c25.future-shop.jp/shop/item/ty20/design/img02/formBg_beige.png");
+}
+.formBg_green {
+    background-image: url("https://c25.future-shop.jp/shop/item/ty20/design/img02/formBg_green.png");
+}
+.formBg_blue {
+    background-image: url("https://c25.future-shop.jp/shop/item/ty20/design/img02/formBg_blue.png");
+}
+.formBg_purple {
+    background-image: url("https://c25.future-shop.jp/shop/item/ty20/design/img02/formBg_purple.png");
+}
+.formBg_yellow {
+    background-image: url("https://c25.future-shop.jp/shop/item/ty20/design/img02/formBg_yellow.png");
+}
+.formBg_pink {
+    background-image: url("https://c25.future-shop.jp/shop/item/ty20/design/img02/formBg_pink.png");
+}
+.formBg_red {
+    background-image: url("https://c25.future-shop.jp/shop/item/ty20/design/img02/formBg_red.png");
+}
+.formBg_orange {
+    background-image: url("https://c25.future-shop.jp/shop/item/ty20/design/img02/formBg_orange.png");
+}
+.formBg_pattern {
+    background-image: url("https://c25.future-shop.jp/shop/item/ty20/design/img02/formBg_pattern.png");
+}
+.formBg_other {
+    background-image: url("https://c25.future-shop.jp/shop/item/ty20/design/img02/formBg_other.png");
+}
+
+
+
+.sideSociaArea{
+  margin: 20px 0;
+}
+
+
+.tweet{
+  margin: 0 0 30px;
+}
+
+/*facebook custom*/
+iframe #faceboo ._4s7c{
+  border: none!important;
+  border-style: none!important;
+}
+iframe #facebook .uiBoxLightblue{
+  background: none!important;
+}
+/*/facebook custom*/
+
+/* ==================
+	main
+====================== */
+
+#main {
+  width: 776px;
+  margin: 0 0 0 0;
+  float: right;
+}
+
+#slidearea{
+  margin:0 auto;
+  width:776px;
+  /* height: 560px; */
+  position:relative;
+  z-index:100;
+}
+
+.ie6 #slidearea,
+.ie7 #slidearea{
+  position:inherit;
+  z-index:1;
+}
+
+.bnrwrapper {
+  width: 776px;
+  height: 450px;
+  margin: 0px 0px 3px;
+  overflow: hidden;
+  position: relative;
+  top: auto;
+  right: auto;
+  bottom: auto;
+  left: auto;
+}
+
+#images {
+  width: 776px;
+  height: 450px;
+  margin: 0 0 3px 0;
+  overflow: hidden;
+}
+
+#images a {
+  width: 776px;
+  height: 450px;
+  display: block;
+  float: left;
+}
+
+#images div.bnrm {
+  width: 9900px;
+  height: 303px;
+  margin: 0px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+.thumbwrapper {
+  width: 776px;
+  background-color: #FBFAF5;
+  margin: 7px 0 0 0;
+  z-index: 1;
+}
+
+.thumbwrapper .caroufredsel_wrapper {
+  width: 720px !important;
+  height: 64px !important;
+  margin: 0px;
+  position: relative;
+  top: auto;
+  right: auto;
+  bottom: auto;
+  left: 0px;
+  overflow: hidden;
+}
+
+#thumbs {
+  height: 64px;
+  padding: 7px 0 5px 0;
+  overflow: hidden;
+}
+
+#thumbs img {
+  display: block;
+  float: left;
+  cursor: pointer;
+  margin: 0 8px 0 7px;
+  width: 215px;
+}
+
+.focus {
+  background: url("http://ty20.c25.future-shop.jp/wp-content/uploads/bg_focus.png") no-repeat;
+  display: block;
+  text-indent: -999em;
+  position: absolute;
+  top: 457px;
+  left: 265px;
+  z-index: 100;
+  height: 65px;
+  width: 227px;
+}
+
+#prev, #next {
+  width: 23px;
+  height: 64px;
+  display: block;
+  text-indent: -999em;
+  background: url(https://c25.future-shop.jp/shop/item/ty20/design/img02/arrow_left.jpg) no-repeat 0 0;
+  position: absolute;
+  top: 457px;
+}
+
+#prev {
+  left: 0px;
+}
+
+#next {
+  background: url(https://c25.future-shop.jp/shop/item/ty20/design/img02/arrow_right.jpg) no-repeat 0 0;
+  right: -6px;
+}
+
+/* V’…î•ñ */
+
+#newsArea {
+
+}
+#newsArea .bySns {
+text-align:right;
+float:right;
+padding-top:5px;
+}
+
+.newsList {
+  width: 776px;
+  height: 220px;
+  overflow-y: scroll;
+}
+.newsList li {
+    background-position: 0 50%;
+    background-repeat: no-repeat;
+    margin-bottom: 5px;
+border-bottom: 1px dotted #CCCCCC;
+padding-top:10px;
+padding-bottom:10px;
+	}
+.newsList li span {
+float: left;
+margin-right: 20px;
+padding-top:3px;
+line-height:1;
+}
+.newsList li .date {
+    display: block;
+    margin-right: 20px;
+	font-size:90%;
+	font-weight:bold;
+}
+.newsList li .label a {
+    background-color: #C689AB;
+    border-radius: 3px;
+    display: block;
+    font-size: 11px;
+    margin-top: 2px;
+    text-align: center;
+    width: 120px;
+	color:#FFFFFF;
+}
+
+
+#main h3 {
+  margin: 30px 0 0 0;
+}
+
+/* V’…ƒAƒCƒeƒ€ */
+
+.jcarousel-skin-tango .jcarousel-direction-rtl {
+  direction: rtl;
+}
+
+.jcarousel-skin-tango .jcarousel-container-horizontal {
+  width: 696px;
+  padding: 20px 40px;
+}
+
+.jcarousel-skin-tango .jcarousel-clip {
+  overflow: hidden;
+  margin: 0 0 0 5px;
+}
+
+.jcarousel-skin-tango .jcarousel-item {
+  width: 750px;
+  min-height: 200px;
+  text-align: left;
+  margin: 0 25px 0 0;
+}
+
+.jcarousel-skin-tango .jcarousel-item img {
+  margin:0 0 0 -20px;
+  padding-bottom: 10px;
+}
+
+.jcarousel-skin-tango .jcarousel-item a img {
+  border-style: none !important;
+}
+
+.jcarousel-skin-tango .jcarousel-item-horizontal {
+  margin:0 20px 0 0
+}
+
+/* V’…ƒAƒCƒeƒ€ ƒ{ƒ^ƒ“ */
+
+.jcarousel-skin-tango .jcarousel-next-horizontal {
+  position: absolute;
+  top: 40px;
+  right: 5px;
+  width: 24px;
+  height: 523px;
+  cursor: pointer;
+  background: transparent url(https://c25.future-shop.jp/shop/item/ty20/design/img01/arrow_r.gif) no-repeat 0 0;
+}
+
+.jcarousel-skin-tango .jcarousel-direction-rtl .jcarousel-next-horizontal {
+  left: 5px;
+  right: auto;
+  background: url(https://c25.future-shop.jp/shop/item/ty20/design/img01/arrow_l.gif);
+}
+
+.jcarousel-skin-tango .jcarousel-next-horizontal:hover,
+.jcarousel-skin-tango .jcarousel-next-horizontal:focus {
+  background-position: -32px 0;
+}
+
+.jcarousel-skin-tango .jcarousel-next-horizontal:active {
+  background-position: -64px 0;
+}
+
+.jcarousel-skin-tango .jcarousel-next-disabled-horizontal,
+.jcarousel-skin-tango .jcarousel-next-disabled-horizontal:hover,
+.jcarousel-skin-tango .jcarousel-next-disabled-horizontal:focus,
+.jcarousel-skin-tango .jcarousel-next-disabled-horizontal:active {
+  cursor: default;
+  background-position: -96px 0;
+}
+
+.jcarousel-skin-tango .jcarousel-prev-horizontal {
+  position: absolute;
+  top: 40px;
+  left: 0px;
+  width: 24px;
+  height: 523px;
+  cursor: pointer;
+  background: transparent url(https://c25.future-shop.jp/shop/item/ty20/design/img01/arrow_l.gif) no-repeat 0 0;
+}
+
+.jcarousel-skin-tango .jcarousel-direction-rtl .jcarousel-prev-horizontal {
+  left: auto;
+  right: 10px;
+  background: url(https://c25.future-shop.jp/shop/item/ty20/design/img01/arrow_r.jpg);
+}
+
+.jcarousel-skin-tango .jcarousel-prev-horizontal:hover,
+.jcarousel-skin-tango .jcarousel-prev-horizontal:focus {
+  background-position: -32px 0;
+}
+
+.jcarousel-skin-tango .jcarousel-prev-horizontal:active {
+  background-position: -64px 0;
+}
+
+.jcarousel-skin-tango .jcarousel-prev-disabled-horizontal,
+.jcarousel-skin-tango .jcarousel-prev-disabled-horizontal:hover,
+.jcarousel-skin-tango .jcarousel-prev-disabled-horizontal:focus,
+.jcarousel-skin-tango .jcarousel-prev-disabled-horizontal:active {
+  cursor: default;
+  background-position: -96px 0;
+}
+
+.clear {
+  clear: both;
+  display: block;
+  visibility: hidden;
+}
+
+div.newitem {
+  width: 776px !important;
+}
+
+div.newBox img {
+  margin: 20px 0 0 0;
+}
+
+span.start {
+  display:block;
+  color: #333!important;
+  margin: 10px 0;
+  padding: 0;
+}
+
+span.usual {
+  display:block;
+  font-size:110%;
+  font-weight:bold;
+  color: #333!important;
+  margin: 10px 0;
+  padding: 0;
+}
+
+span.point {
+  display: none;
+}
+
+.itembox {
+  float: left;
+  width: 155px;
+  margin: 20px 20px 0 0;
+}
+
+.itembox a {
+  display:block;
+  color: #85ad9a;
+}
+
+.itembox a:hover {
+  color: #009ae3;
+}
+
+/* ƒ‰ƒ“ƒLƒ“ƒO */
+
+.rank_box {
+  float: left;
+}
+.FS2_Recommend2_ranking .rank_box {
+margin-top:15px;
+}
+
+.prize1,
+.prize2,
+.prize3,
+.prize4,
+.prize5,
+.prize6,
+.prize7,
+.prize8,
+.prize9,
+.prize10 {
+background-position:50% 0;
+background-repeat:no-repeat;
+margin-left:auto;
+margin-right:auto;
+padding-top:25px;
+width:197px;
+}
+.FS2_Recommend2_ranking .prize1,
+.FS2_Recommend2_ranking .prize2,
+.FS2_Recommend2_ranking .prize3,
+.FS2_Recommend2_ranking .prize4,
+.FS2_Recommend2_ranking .prize6,
+.FS2_Recommend2_ranking .prize7,
+.FS2_Recommend2_ranking .prize8,
+.FS2_Recommend2_ranking .prize9,
+.FS2_Recommend2_ranking_horizontal .prize1,
+.FS2_Recommend2_ranking_horizontal .prize2,
+.FS2_Recommend2_ranking_horizontal .prize3,
+.FS2_Recommend2_ranking_horizontal .prize4,
+.FS2_Recommend2_ranking_horizontal .prize6,
+.FS2_Recommend2_ranking_horizontal .prize7,
+.FS2_Recommend2_ranking_horizontal .prize8,
+.FS2_Recommend2_ranking_horizontal .prize9 {
+width:157px;
+}
+.FS2_Recommend2_ranking .prize5,
+.FS2_Recommend2_ranking .prize10,
+.FS2_Recommend2_ranking_horizontal .prize5,
+.FS2_Recommend2_ranking_horizontal .prize10 {
+width:145px;
+}
+.prize1 {
+background-image: url("https://c25.future-shop.jp/shop/item/ty20/design/img02/bg-itemranking-first.gif");
+}
+.prize2 {
+background-image: url("https://c25.future-shop.jp/shop/item/ty20/design/img02/bg-itemranking-second.gif");
+}
+.prize3 {
+background-image: url("https://c25.future-shop.jp/shop/item/ty20/design/img02/bg-itemranking-third.gif");
+}
+.prize4 {
+background-image: url("https://c25.future-shop.jp/shop/item/ty20/design/img02/bg-itemranking-4.gif");
+}
+.prize5 {
+background-image: url("https://c25.future-shop.jp/shop/item/ty20/design/img02/bg-itemranking-5.gif");
+}
+.prize6 {
+background-image: url("https://c25.future-shop.jp/shop/item/ty20/design/img02/bg-itemranking-6.gif");
+}
+.prize7 {
+background-image: url("https://c25.future-shop.jp/shop/item/ty20/design/img02/bg-itemranking-7.gif");
+}
+.prize8 {
+background-image: url("https://c25.future-shop.jp/shop/item/ty20/design/img02/bg-itemranking-8.gif");
+}
+.prize9 {
+background-image: url("https://c25.future-shop.jp/shop/item/ty20/design/img02/bg-itemranking-9.gif");
+}
+.prize10 {
+background-image: url("https://c25.future-shop.jp/shop/item/ty20/design/img02/bg-itemranking-10.gif");
+}
+.search_box_01,
+.rank_box_02 {
+width:754px;
+padding: 10px !important;
+background-color: #FBFAF5 !important;
+border: 1px solid #D1D1CF !important;
+overflow:hidden;
+}
+.search_box_01 {
+margin-bottom:20px;
+padding:10px 10px 5px;
+}
+.search_box_01 .flL {
+width:604px;
+}
+.search_box_01 .flR img {
+
+}
+.search_box_01 dl {
+  width:292px;
+  float:left;
+    border-right: 1px dotted #D1D1CF;
+	border-bottom: 1px dotted #D1D1CF;
+	padding-top:8px;
+	padding-left:8px;
+	padding-bottom:8px;
+}
+.search_box_01 dl:nth-of-type(3),
+.search_box_01 dl:nth-of-type(4) {
+border-bottom: none;
+padding-bottom:2px;
+}
+.search_box_01 dl dt {
+  clear: left;
+  float: left;
+  
+  width: 130px;
+  padding-left: 5px;
+  vertical-align:middle;
+  line-height:23px;
+}
+
+.search_box_01 dl dd {
+
+}
+.rank_box_02 ul {
+	padding-top:10px;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #FFFFFF;
+	margin-left:-1px;
+    /* background-image: url("http://ty20.c25.future-shop.jp/wp-content/uploads/bg-btn-ranking.png"); */
+    background-position: 0 0;
+    background-repeat: repeat-y;
+	height:51px;
+}
+.rank_box_02 ul li {
+width:185px;
+float:left;
+margin-right:3px;
+padding-right:2px;
+line-height:0;
+border-right: 1px solid #D1D1CF;
+}
+.rank_box_02 ul li:last-child {
+width:182px;
+margin-right:0;
+padding-right:0;
+border-right:none;
+}
+
+/* “ÁW‹LŽ– */
+
+.feature_box {
+  width: 380px;
+  margin: 20px 0 0 0;
+}
+
+.feature_box .left {
+  float: left;
+  width: 184px;
+}
+
+.feature_box .left a img {
+  width:170px;
+  padding:4px;
+  border: 1px dotted #D1D1CF;
+  background-color:#FBFAF5;
+}
+
+.feature_box .right {
+  float: right;
+  width: 184px;
+}
+.feature_box .right .date img {
+  margin-top:-3px;
+}
+.feature_box .right .title {
+  color: #85ad9a;
+  font-size: 120%;
+  font-weight: bold;
+  line-height: 1.2;
+display:block;
+padding-top:5px;
+padding-bottom:10px;
+}
+
+/* ƒXƒ^ƒCƒŠƒ“ƒOƒXƒNƒ‰ƒbƒv */
+
+.styling_box {
+  width: 178px;
+  margin: 0 21px 0 0;
+  float: left;
+  font-size:80%;
+}
+.styling_box:nth-of-type(4n) {
+  margin-right:0;
+}
+.styling_box > p:first-child {
+position:relative;
+    border: 1px dotted #D1D1CF;
+	width:178px;
+	line-height:0;
+}
+.styling_box > p:first-child span {
+display:block;
+position:absolute;
+bottom:0;
+	width:158px;
+	color:#FFFFFF;
+	padding:5px 10px;
+background-color: rgba(51,51,51,0.4);
+line-height:1.6;
+}
+
+.styling_box a.tooltip img {
+    border: 1px dotted #D1D1CF;
+    padding: 2px;
+	width:37px;
+}
+.styling_box a.tooltip {
+display:block;
+float:left;
+  margin-right:2px;
+}
+.styling_box a.tooltip:nth-of-type(4) {
+margin-right:0;
+}
+
+
+.styling_box a.tooltip:hover img {
+
+}
+
+div.styling_box p.check {
+  margin: 10px 0;
+  line-height:0;
+}
+
+a.tooltip img {
+  border: none;
+}
+
+a.tooltip:hover {
+  background: #fff;
+  /* IE6ˆÈ‰º‚Å•K—v */
+  text-decoration: none;
+}
+
+a.tooltip span {
+  display: none;
+  padding: 10px;
+  margin-left: 8px;
+  line-height: 1.6;
+}
+
+a.tooltip:hover span {
+  display: inline;
+  position: absolute;
+  background-color: #333;
+  border: 1px solid #ccc;
+  color: #ffffff;
+  width: 150px;
+  /* a.tooltip span‚ÉŽw’è‚·‚é‚ÆAIE6ˆÈ‰º‚Åspan‚Ì—Ìˆæ‚Åƒ}ƒEƒX‚ª”½‰ž‚µ‚Ä‚µ‚Ü‚¤ */
+}
+
+/* IE6ˆÈ‰º‚É‚Ì‚Ý“K—p */
+
+a.tooltip:hover span {
+  width: 150px;
+}
+
+
+/* BLOG */
+#blogArea {
+
+}
+
+.blogbox {
+    float: left;
+	width:175px;
+    height: 265px;
+    margin-left: 0;
+    margin-right: 12px;
+	padding:4px;
+	border: 1px dotted #D1D1CF;
+    position: relative;
+}
+
+.blogbox:nth-of-type(4) {
+    margin-right:0;
+}
+
+.blogbox dt {
+    position:absolute;
+	top:125px;
+	left:9px;
+	width:160px
+}
+.blogthumb {
+position:absolute;
+top:4px;
+left:4px;
+line-height:0;
+width:175px;
+height:110px;
+}
+
+.blogsummary {
+    font-size: 10px;
+    left: 9px;
+    overflow: hidden;
+    position: absolute;
+    top: 168px;
+    width: 160px;
+}
+
+.readmore {
+    bottom: 9px;
+    right: 9px;
+    font-size: 11px;
+    position: absolute;
+}
+
+
+/* 
+.brand_box{
+  display:block;
+  width:179px;
+  height:66px;
+  border:1px #ccc solid;
+  float: left;
+  margin: 10px 0 0 10px;
+  text-align:center;
+}
+
+.brand_box img {
+  margin:5px 0 0 0;
+}
+
+.brand_box span{
+  display:block;
+  color:#828181;
+}
+*/
+
+/* ==================
+	footer
+====================== */
+
+/* スライダー*/
+
+.news_block {
+  margin: 0 auto;
+  position: relative;
+  padding: 18px 0 10px 0;
+  border: 1px solid #ded7c0;
+  background-color: #f4efde;
+}
+
+.news_slider {
+  width: 980px;
+  height: 129px;
+  position: relative;
+  z-index: 10;
+  margin: 0 auto 10px auto;
+  overflow: hidden;
+}
+
+.news_slider ul.slides {
+  position: relative;
+  width: auto;
+  height: 129px;
+  overflow: hidden;
+  left: 0;
+  margin: 0 0 0 50px;
+}
+
+.news_slider ul.slides li {
+  float: left;
+  width: 980px;
+}
+
+.news_slider ul.slides li img {
+  width: 216px;
+  float: left;
+  margin: 0 8px 0 0;
+}
+
+.news_slider-right, .news_slider-left {
+  background: url(https://c25.future-shop.jp/shop/item/ty20/design/img01/news_slider-frecce.png);
+  background-repeat: no-repeat;
+  height: 37px;
+  width: 25px;
+  cursor: pointer;
+  position: absolute;
+  top: 60px;
+  z-index: 100;
+}
+
+.news_slider-right {
+  background-position: -25px 0;
+  right: 10px;
+}
+
+.news_slider-left {
+  display: none;
+  left: 10px;
+}
+
+.news_slider-right:hover {
+  background-position: -25px -37px;
+}
+
+.news_slider-left:hover {
+  background-position: 0px -37px;
+}
+
+
+
+
+.site_block {
+  margin: 0 auto;
+  position: relative;
+  padding: 18px 0 10px 0;
+}
+
+.site_slider {
+  width: 930px;
+  height: 135px;
+  position: relative;
+  z-index: 10;
+  margin: 0 auto 10px auto;
+  overflow: hidden;
+}
+
+.site_slider ul.slides {
+  position: relative;
+  width: auto;
+  height: 135px;
+  overflow: hidden;
+  left: 0;
+  margin: 0 0 0 0;
+}
+
+.site_slider ul.slides li {
+  float: left;
+  width: 930px;
+}
+
+.site_slider ul.slides li a {
+  width: 216px;
+  float: left;
+  margin: 0 22px 0 0;
+  display:block;
+  line-height:0;
+}
+.site_slider ul.slides li a:nth-child(4n) {
+    margin-right:0;
+}
+
+.site_slider-right, .site_slider-left {
+  background: url("https://c25.future-shop.jp/shop/item/ty20/design/img01/news_slider-frecce.png");
+  background-repeat: no-repeat;
+  height: 37px;
+  width: 25px;
+  cursor: pointer;
+  position: absolute;
+  top: 60px;
+  z-index: 100;
+}
+
+.site_slider-right {
+  background-position: -25px 0;
+  right: 10px;
+}
+
+.site_slider-left {
+  display: none;
+  left: 10px;
+}
+
+.site_slider-right:hover {
+  background-position: -25px -37px;
+}
+
+.site_slider-left:hover {
+  background-position: 0px -37px;
+}
+
+
+
+
+/* /スライダー */
+
+#pagetop {
+  width: 982px;
+  margin: 15px auto;
+  text-align: right;
+  clear: both;
+}
+
+/* ƒtƒbƒ^[ */
+
+#navif {
+  width: 982px;
+  height: 260px;
+  margin: 0 auto;
+}
+
+#copyright {
+  color: #999999;
+  float: right;
+  font-size: 80%;
+  padding: 10px 0 0 0;
+}
+
+#guidearea a {
+  text-decoration: none;
+  color: #C689AA;
+}
+
+#guidearea {
+	width:955px;
+  min-height: 290px;
+  padding-top:25px;
+  padding-bottom:25px;
+  margin: 0 auto;
+}
+
+#guidearea div.clum1 {
+  width: 275px;
+  min-height: 580px;
+  padding: 15px;
+  background-color: #fff;
+  float: left;
+  margin: 0 20px 0 0;
+}
+
+#guidearea h4 {
+  font-size:14px;
+font-weight:bold;
+}
+
+#guidearea div.clum1 p {
+  margin: 0 0 20px 0;
+}
+
+.clum1 div.bloc,
+.clum3 div.bloc,
+.clum4 div.bloc,
+.clumRight div.bloc,
+.clumLeft div.bloc {
+  line-height: 1.8;
+  text-align: left;
+}
+
+.clum1 div.bloc_no
+.clumRight div.bloc_no,
+.clumLeft div.bloc_no {
+  line-height: 1.8;
+  text-align: left;
+}
+
+#guidearea .bloc_img {
+  margin: 30px 0 -10px 0;
+}
+
+#guidearea .clum3 {
+  width: 275px;
+  min-height: 550px;
+  padding: 0 15px 15px 15px;
+  background-color: #fff;
+  float: left;
+  margin: 20px 20px 0 0;
+}
+
+#guidearea .clum3 .days {
+  margin: 5px 0 15px 0;
+  padding: 10px;
+  width: 245px;
+  background-color: #f5f5f5;
+  border: 1px solid #e6e6e6;
+}
+
+#guidearea .clum3 p.asuraku {
+  line-height: 1.8;
+}
+
+#guidearea .clum4 {
+  width: 275px;
+  min-height: 595px;
+  padding: 0 15px 15px 15px;
+  background-color: #fff;
+  float: left;
+  margin: 20px 0 0 0;
+}
+
+#guidearea p.mail {
+  background: url(https://c25.future-shop.jp/shop/item/ty20/design/img01/footer_icon_mail.gif) no-repeat left 5px;
+  font-size:127%;
+  padding: 0 0 0 25px;
+  color: #000;
+  font-weight: bold;
+  margin:10px 0 0 0;
+}
+
+#guidearea p.mail a{
+  color:#ab7b94;
+}
+
+#guidearea p.tell {
+  background: url(https://c25.future-shop.jp/shop/item/ty20/design/img01/footer_icon_tell.gif) no-repeat left 9px;
+  padding: 0 0 0 25px;
+  font-size:163%;
+  font-weight: bold;
+  font-family: Arial,Helvetica,sans-serif;
+  font-weight: bold;
+  color: #000;
+}
+
+#guidearea p.btn {
+}
+
+#navif {
+  width: 980px;
+  height: 57px;
+  color: #000;
+  text-align: left;
+  background: url(https://c25.future-shop.jp/shop/item/ty20/design/img02/bg_footer.gif) top left no-repeat;
+}
+
+#navif ul {
+  float: left;
+}
+
+#navif ul li {
+  float: left;
+  margin:0 20px 0 0;
+  padding: 20px 20px 0 0;
+  color: #333;
+  background: url(https://c25.future-shop.jp/shop/item/ty20/design/img02/bg_li.gif) right no-repeat;
+  background-position: right 21px;
+}
+
+div#navif ul li a {
+  color: #333 !important;
+}
+
+div#navif ul li a:hover,
+div#navif ul li a:active {
+  color: #06c !important;
+  text-decoration: none !important;
+}
+
+div#navif p.copyright {
+  float: right;
+  color: #333;
+  padding: 20px 0 0 0;
+}
+
+/* ƒJƒŒƒ“ƒ_[ */
+
+table.calendar {
+  padding: 0;
+  margin: 10px auto;
+  width: 250px;
+}
+
+table.calendar th {
+  text-align: left;
+  font-family: Arial,sans-serif;
+  color: #333;
+  background-color: #fff;
+}
+
+table.calendar th span {
+  font-family: Arial,sans-serif;
+  cursor: pointer;
+  float: right;
+}
+
+table.calendar td {
+  border-bottom: solid 1px #ccc;
+  text-align: center;
+  height: 25px;
+  vertical-align: middle;
+  font-family: Arial,sans-serif;
+  line-height: normal;
+  color: #333333;
+}
+
+table.calendar td.click {
+  cursor: pointer;
+  background-color: #fff;
+}
+
+table.calendar td.Today {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+table.calendar td.Sat {
+  color: #FF0000;
+  background-color: #fcc;
+}
+
+table.calendar td.SatToday {
+  color: #FF0000;
+  background-color: #fcc;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+table.calendar td.Sun {
+  color: #FF0000;
+  background-color: #fcc;
+}
+
+table.calendar td.SunToday {
+  color: #FF0000;
+  background-color: #fcc;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+table.calendar td.otherToday {
+  color: #FF6600;
+  background-color: #ffedcc;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+table.calendar td.holiday {
+  color: #FF0000;
+  background-color: #fcc;
+}
+
+table.calendar td.other {
+  color: #FF9900;
+  background-color: #fff0d9;
+}
+
+table.calendar td.otherday {
+  color: #FF9900;
+  background-color: #fff0d9;
+}
+
+table.calendar td.otherToday {
+  color: #FF9900;
+  background-color: #fff0d9;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+table.calendar td.other {
+  color: #FF6600;
+  background-color: #ffedcc;
+}
+
+table.calendar td.xday {
+  font-weight: bolder;
+  color: #099;
+}
+
+table.calendar td.birthday {
+  font-weight: bolder;
+  color: #990;
+}
+
+/*=====float-history=====*/
+
+#history{
+  background-color:#fff;
+  width:99px;
+  position:absolute!important;
+  top:200px;
+  right:0;
+  border:1px #ccc solid;
+}
+
+#history a img{
+  margin:6px 0 ;
+}
+
+.scrollFixIt{
+  display:none;
+}
+/*=====/float-history=====*/
+
+/*=====social tag=====*/
+div#bottomcolumn {
+    clear: both;
+    margin: 0;
+}
+.socialTag {
+	clear:both;
+    line-height: 0;
+    margin: 60px auto;
+    text-align: center;
+    width: 100%;
+	background-color:#FBFAF5;
+	border:1px solid #D1D1CF;
+}
+.hentry .socialTag {
+border-left:none;
+border-right:none;
+background:none;
+padding-top:20px;
+padding-bottom:10px;
+}
+article.hentry .socialTag {
+border-left:none;
+border-right:none;
+background:none;
+margin-top:10px;
+margin-bottom:30px;
+padding:0;
+}
+.hentry .socialTag .bySns {
+
+}
+.hentry .socialTag p {
+    display: inline-block;
+    font-size: 16px;
+	font-weight:normal;
+font-family: '小塚ゴシック Pro','ヒラギノ角ゴ Pro W3','ＭＳ Ｐゴシック','Osaka','メイリオ','Meiryo',sans-serif;
+line-height:1;
+height:20px;
+border-bottom:2px solid #96BFAD;
+margin-bottom:10px;
+	}
+
+#archive-container .hentry .socialTag p,
+#archive-container .hentry .socialTag ul {
+display:inline-block;
+
+}
+#archive-container .hentry .socialTag {
+border-left:none;
+border-right:none;
+text-align:right;
+background:none;
+}
+#archive-container .hentry .socialTag .bySns {
+text-align:right;
+border-left:1px dotted #D1D1CF;
+margin-left:10px;
+padding-left:15px;
+}
+#archive-container .socialTag p {
+color:#CCCCCC;
+height:auto;
+margin-bottom:0;
+	font-size:12px;
+    position: relative;
+    top: -5px;
+font-family: '小塚ゴシック Pro','ヒラギノ角ゴ Pro W3','ＭＳ Ｐゴシック','Osaka','メイリオ','Meiryo',sans-serif;
+	}
+.bySns {
+    line-height: 0;
+    padding:10px;
+    text-align: center;
+}
+.bySns li {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0) !important;
+    display: inline-block;
+    padding-left: 0 !important;
+}
+.btnFacebook {
+    width: 120px;
+}
+.hentry .btnFacebook {
+	width:110px;
+	}
+
+#membership {
+    clear: both;
+    padding-top: 30px;
+}
+/*
+#detailarea .bySns li.btnFacebook {
+    width: 108px;
+}
+*/
+.btnTwitter {
+    width: 90px;
+}
+/*
+#detailarea .bySns li.btnTwitter {
+    width: 95px;
+}
+*/
+.btnLine {
+    width: 30px;
+}
+.btnGoogle {
+    width: 40px;
+}
+/*=====/social tag=====*/
+
+
+/*=====underHeader 4col banner=====*/
+.bnrUnderHead4col {
+  width: 980px;
+  margin: 20px 0 20px 0;
+  line-height:0;
+}
+.bnrUnderHead4col ul li{
+  float: left;
+  margin: 0 20px 0 0;
+}
+.bnrUnderHead4col ul li a img {
+width:226px;
+height:79px;
+    background-color: #FBFAF5;
+    border: 1px dotted #D1D1CF;
+    padding: 1px;
+}
+
+.bnrUnderHead4col ul li：nth-child(4n){
+  margin: 0;
+}
+
+/*=====/underHeader 4col banner=====*/

@@ -1,0 +1,29 @@
+.modal {
+    
+}
+
+.modal-header {
+    .close {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+    }
+}
+
+.modal-footer {
+    .save-select {
+        width: auto;
+        vertical-align: middle;
+        display: inline-block;
+    }
+}
+
+@media (max-width: $screen-sm-min) {
+
+.modal {
+    .modal-body {
+        padding: 10px;
+    }
+}
+
+}

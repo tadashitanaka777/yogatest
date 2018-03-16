@@ -1,0 +1,1302 @@
+@charset "UTF-8";
+/* ==================
+	common
+====================== */
+/* ==================
+	header
+====================== */
+.header_box {
+  background-color: #fff;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 15px;
+}
+
+.header_box + .header_bg {
+  background: url(https://c25.future-shop.jp/shop/item/ty20/design/img01/usermenu_bg2.png) left bottom repeat-x;
+  /*height: 30px;display: none;を解除した場合コチラの高さにする----------*/
+  height: 16px;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+#header {
+  background-color: #fff;
+  width: 982px;
+  margin: 0 auto 15px;
+}
+
+#header h1 {
+  float: left;
+}
+
+#header .header_center {
+  float: left;
+}
+
+#header .header_center h2 {
+  padding: 33px 0 0 10px;
+  font-size: 11px;
+  line-height: 14px;
+}
+
+#header .header_center h2 p {
+  position: relative;
+  bottom: 10px;
+}
+
+#header .header_center ul li {
+  float: left;
+  margin: 0 0 0 10px;
+}
+
+#header .header_center ul li a {
+  color:#88ac9d;
+}
+
+#header .header_center ul li a:hover {
+	color: #009ae3;
+	text-decoration: none;
+}
+
+#header .header_center ul li img {
+  margin: 0 8px 0 0;
+  vertical-align: middle;
+}
+
+#header .header_right {
+  float: right;
+  /*margin: 3px 0 0 0;*/
+}
+
+#header .header_right ul {
+  margin: 0 0 5px 0;
+}
+
+#header .header_right ul li {
+  float: left;
+}
+
+#header .header_right .head_postage {
+  font-size: 15px;
+  text-align: center;
+}
+
+
+/* ==================
+	navi
+====================== */
+
+#navi {
+  background: url(https://c25.future-shop.jp/shop/item/ty20/design/img01/navi_bg.jpg) repeat-x;
+  height: 42px;
+}
+
+#navi ul {
+  width: 982px;
+  margin: 0 auto;
+}
+
+#navi ul li {
+  float: left;
+}
+/*
+#usermenu_bg {
+  background: url(https://c25.future-shop.jp/shop/item/ty20/design/img01/usermenu_bg.png) left bottom repeat-x;
+  height: 66px;
+}*/
+
+#usermenu {
+  display: none;
+  height: 47px;
+  margin: 0 auto;
+  padding: 0;
+  width: 982px;
+  background-color: #f9f9f9;
+  border: 1px solid #e5e5e5;
+  border-top: none;
+  position: relative;
+}
+
+#search {
+  width: 650px;
+  position: absolute;
+  right: 320px;
+  top: 10px;
+}
+
+#search p.word {
+  float: left;
+  padding: 0 10px 0 0px;
+  position: absolute;
+  top: 6px;
+  left: 650px;
+  width: 309px;
+}
+
+#search p.word a:link {
+  text-decoration: none;
+}
+
+#search input.searchWord {
+  height: 18px;
+}
+
+.yenWord {
+  margin: 5px 10px 0 10px;
+}
+
+.side_search {
+  width: 115px;
+  position: relative;
+  left: -10px;
+  top: 10px;
+}
+.side_searchBtn {
+  position: relative;
+  left: -7px;
+  top: 10px;
+}
+
+#side h3.titl_top {
+  margin-top: 0!important;
+}
+
+.sideBanar {
+  background: #fff;
+  padding-bottom: 10px;
+}
+
+/* ==================
+	contents
+====================== */
+/*
+#container {
+  background: url(https://c25.future-shop.jp/shop/item/ty20/design/img01/body_bg.png);
+}
+*/
+/* ==================
+	contents
+====================== */
+
+#contents {
+  background-color: #fff;
+  width: 982px;
+  padding: 15px;
+  margin: -12px auto 0 auto;
+  z-index: -1;
+}
+
+#contents .info {
+  width: 960px;
+  padding: 10px;
+  margin: 0 0 15px 0;
+  border: 1px solid #e5e5e5;
+}
+
+#contents .info p span {
+  color: #CC0000;
+}
+
+/* ==================
+	side
+====================== */
+
+#side {
+  background-color: #f4efde;
+  width: 180px;
+  padding: 0 0 30px 0;
+  margin: 30px 0 0 0;
+  float: left;
+}
+
+#side .side_box {
+  margin: 0 14px;
+}
+#side .side_boxTop {
+  min-height: 37px;
+}
+
+#side .side_box .search {
+  width: 50%;
+  position: relative !important;
+  left: 0px !important;
+  top: 10px !important;
+}
+
+#side h3 {
+  margin: 10px 0 0 0;
+}
+
+#side h3:first-child {
+  margin-top: 0;
+}
+
+#side dl {
+  margin: 10px;
+}
+
+#side dl dt {
+  float: left;
+}
+
+#side dl dt img {
+  margin: 0 5px 0 0;
+}
+
+#side dl dd {
+  color: #CC0000;
+  float: right;
+}
+
+#side ul.item_box {
+  background-color: #fff;
+  margin: 15px 10px;
+}
+
+#side ul.item_box li a {
+  display:block;
+  background: url(https://c25.future-shop.jp/shop/item/ty20/design/img01/side_icon02.jpg) 5px center no-repeat;
+  padding: 6px 0 6px 10px;
+  border-bottom: 1px #c8c6c6 dashed;
+}
+
+#side ul.item_box .bda0 a,
+#side ul.item_box_02 .bda0 a {
+  border-bottom: none;
+}
+
+#side ul.item_box_02 {
+  background-color: #fff;
+  margin: 15px 10px;
+}
+
+#side ul.item_box_02 li a {
+  display:block;
+  padding: 3px 0 3px 10px;
+  border-bottom: 1px #c8c6c6 dashed;
+}
+
+#side ul.item_box_02 li img {
+  vertical-align: middle;
+}
+
+#side ul.item_box_02 li span {
+  padding: 0 0 0 10px;
+}
+
+#side select {
+  width: 160px;
+  margin: 10px 10px 0 10px;
+}
+/*
+#side input {
+  margin: 5px 10px 0 10px;
+}
+*/
+#side .color_box {
+  margin: 0 10px;
+}
+
+#side .color_box p {
+  margin: 5px 0 0 0;
+}
+
+#side .color_box ul li {
+  margin: 5px 0 0 0;
+  float: left;
+}
+
+#side .color_box ul li + li {
+  margin: 5px 0 0 18px;
+}
+
+.formBg_green {/*フォームセレクター背景*/
+  color: #6c0;
+}
+.formBg_pink {/*フォームセレクター背景*/
+  color: #cc33cc;
+}
+.formBg_red {/*フォームセレクター背景*/
+  color: #cc3333;
+}
+.formBg_yellow {/*フォームセレクター背景*/
+  color: #febf00;
+}
+.formBg_purple {/*フォームセレクター背景*/
+  color: #7c27f0;
+}
+.formBg_white {/*フォームセレクター背景*/
+  color: #ccc;
+}
+.formBg_black {/*フォームセレクター背景*/
+  color: #000;
+}
+.formBg_gray {/*フォームセレクター背景*/
+  color: #666;
+}
+.formBg_brownn {/*フォームセレクター背景*/
+  color: #663300;
+}
+.formBg_lightblue {/*フォームセレクター背景*/
+  color: #3399cc;
+}
+.formBg_orange {/*フォームセレクター背景*/
+  color: #ff6600;
+}
+
+
+.sideSociaArea{
+  margin: 20px 0;
+}
+
+
+.tweet{
+  margin: 0 0 30px;
+}
+
+/*facebook custom*/
+iframe #faceboo ._4s7c{
+  border: none!important;
+  border-style: none!important;
+}
+iframe #facebook .uiBoxLightblue{
+  background: none!important;
+}
+/*/facebook custom*/
+
+/* ==================
+	main
+====================== */
+
+#main {
+  width: 776px;
+  margin: 30px 0 0 0;
+  float: right;
+}
+
+#slidearea{
+  margin:0 auto;
+  width:776px;
+  height: 560px;
+  position:relative;
+  z-index:100;
+}
+
+.ie6 #slidearea,
+.ie7 #slidearea{
+  position:inherit;
+  z-index:1;
+}
+
+.bnrwrapper {
+  width: 776px;
+  height: 450px;
+  margin: 0px 0px 3px;
+  overflow: hidden;
+  position: relative;
+  top: auto;
+  right: auto;
+  bottom: auto;
+  left: auto;
+}
+
+#images {
+  width: 776px;
+  height: 450px;
+  margin: 0 0 3px 0;
+  overflow: hidden;
+}
+
+#images a {
+  width: 776px;
+  height: 450px;
+  display: block;
+  float: left;
+}
+
+#images div.bnrm {
+  width: 9900px;
+  height: 303px;
+  margin: 0px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+.thumbwrapper {
+  width: 776px;
+  background-color: #f4efde;
+  margin: 7px 0 0 0;
+  z-index: 1;
+}
+
+.thumbwrapper .caroufredsel_wrapper {
+  width: 720px !important;
+  height: 64px !important;
+  margin: 0px;
+  position: relative;
+  top: auto;
+  right: auto;
+  bottom: auto;
+  left: 0px;
+  overflow: hidden;
+}
+
+#thumbs {
+  height: 64px;
+  padding: 7px 0 5px 0;
+  overflow: hidden;
+}
+
+#thumbs img {
+  display: block;
+  float: left;
+  cursor: pointer;
+  margin: 0 8px 0 7px;
+  width: 215px;
+}
+
+.focus {
+  background: url(https://c25.future-shop.jp/shop/item/ty20/design/img01/bg_focus.png) no-repeat;
+  display: block;
+  text-indent: -999em;
+  position: absolute;
+  top: 457px;
+  left: 265px;
+  z-index: 100;
+  height: 65px;
+  width: 227px;
+}
+
+#prev, #next {
+  width: 23px;
+  height: 64px;
+  display: block;
+  text-indent: -999em;
+  background: url(https://c25.future-shop.jp/shop/item/ty20/design/img01/arrow_left.jpg) no-repeat 0 0;
+  position: absolute;
+  top: 457px;
+}
+
+#prev {
+  left: 0px;
+}
+
+#next {
+  background: url(https://c25.future-shop.jp/shop/item/ty20/design/img01/arrow_right.jpg) no-repeat 0 0;
+  right: -6px;
+}
+
+/* V’…î•ñ */
+
+.news {
+  background: url(https://c25.future-shop.jp/shop/item/ty20/design/img01/ttl_news.jpg) no-repeat;
+}
+
+.news ul {
+  padding: 10px 0 20px 0;
+  float: right;
+}
+
+.news ul li {
+  float: left;
+  margin: 0 0 0 10px;
+}
+
+.news ul li a {
+  color:#88ac9d;
+}
+
+.news ul li a:hover {
+  color: #009ae3;
+  text-decoration: none;
+}
+
+.news ul li img {
+  margin: 0 8px 0 0;
+  vertical-align: middle;
+}
+
+.news dl {
+  width: 766px;
+  height: 220px;
+  overflow-y: scroll;
+}
+
+.gecko .news {
+  background: url(https://c25.future-shop.jp/shop/item/ty20/design/img01/ttl_news.jpg) 0 0 no-repeat;
+  padding:10px 0 0 0;
+}
+
+.news dl dt {
+  width: 130px;
+  font-family: Arial,Helvetica,sans-serif;
+  font-weight: bold;
+  line-height: 3.0;
+  background: url(https://c25.future-shop.jp/shop/item/ty20/design/img01/dotted.gif) repeat-x left bottom;
+}
+
+.news dl dd {
+  margin:-3em 0 0 137px;
+  line-height: 3.0;
+  color: #333333;
+  background: url(https://c25.future-shop.jp/shop/item/ty20/design/img01/dotted.gif) repeat-x left bottom;
+}
+
+.news span.icon {
+  padding: 0 3px;
+  margin: 0 0 0 5px;
+}
+
+.news span.sale {
+  width: 26px;
+  background-color: #cc0000;
+}
+
+.news span.point {
+  width: 26px;
+  background-color: #cc9900;
+}
+
+.news span.event {
+  width: 26px;
+  background-color: #c1c1c1;
+  letter-spacing: 0.03em;
+}
+
+.news span.new {
+  width: 26px;
+  background-color: #993366;
+  letter-spacing: 0.04em;
+}
+
+.news span.rearrival {
+  width: 26px;
+  background-color: #9dacbf;
+  letter-spacing: 0.03em;
+}
+
+.news span.feature {
+  width: 26px;
+  background-color: #1b2e79;
+  letter-spacing: 0.04em;
+}
+
+.news span.pick {
+  width: 26px;
+  background-color: #b8ca14;
+  letter-spacing: 0.04em;
+}
+
+#main h3 {
+  margin: 30px 0 0 0;
+}
+
+/* V’…ƒAƒCƒeƒ€ */
+
+.jcarousel-skin-tango .jcarousel-direction-rtl {
+  direction: rtl;
+}
+
+.jcarousel-skin-tango .jcarousel-container-horizontal {
+  width: 696px;
+  padding: 20px 40px;
+}
+
+.jcarousel-skin-tango .jcarousel-clip {
+  overflow: hidden;
+  margin: 0 0 0 5px;
+}
+
+.jcarousel-skin-tango .jcarousel-item {
+  width: 750px;
+  min-height: 200px;
+  text-align: left;
+  margin: 0 25px 0 0;
+}
+
+.jcarousel-skin-tango .jcarousel-item img {
+  margin:0 0 0 -20px;
+  padding-bottom: 10px;
+}
+
+.jcarousel-skin-tango .jcarousel-item a img {
+  border-style: none !important;
+}
+
+.jcarousel-skin-tango .jcarousel-item-horizontal {
+  margin:0 20px 0 0
+}
+
+/* V’…ƒAƒCƒeƒ€ ƒ{ƒ^ƒ“ */
+
+.jcarousel-skin-tango .jcarousel-next-horizontal {
+  position: absolute;
+  top: 40px;
+  right: 5px;
+  width: 24px;
+  height: 523px;
+  cursor: pointer;
+  background: transparent url(https://c25.future-shop.jp/shop/item/ty20/design/img01/arrow_r.gif) no-repeat 0 0;
+}
+
+.jcarousel-skin-tango .jcarousel-direction-rtl .jcarousel-next-horizontal {
+  left: 5px;
+  right: auto;
+  background: url(https://c25.future-shop.jp/shop/item/ty20/design/img01/arrow_l.gif);
+}
+
+.jcarousel-skin-tango .jcarousel-next-horizontal:hover,
+.jcarousel-skin-tango .jcarousel-next-horizontal:focus {
+  background-position: -32px 0;
+}
+
+.jcarousel-skin-tango .jcarousel-next-horizontal:active {
+  background-position: -64px 0;
+}
+
+.jcarousel-skin-tango .jcarousel-next-disabled-horizontal,
+.jcarousel-skin-tango .jcarousel-next-disabled-horizontal:hover,
+.jcarousel-skin-tango .jcarousel-next-disabled-horizontal:focus,
+.jcarousel-skin-tango .jcarousel-next-disabled-horizontal:active {
+  cursor: default;
+  background-position: -96px 0;
+}
+
+.jcarousel-skin-tango .jcarousel-prev-horizontal {
+  position: absolute;
+  top: 40px;
+  left: 0px;
+  width: 24px;
+  height: 523px;
+  cursor: pointer;
+  background: transparent url(https://c25.future-shop.jp/shop/item/ty20/design/img01/arrow_l.gif) no-repeat 0 0;
+}
+
+.jcarousel-skin-tango .jcarousel-direction-rtl .jcarousel-prev-horizontal {
+  left: auto;
+  right: 10px;
+  background: url(https://c25.future-shop.jp/shop/item/ty20/design/img01/arrow_r.jpg);
+}
+
+.jcarousel-skin-tango .jcarousel-prev-horizontal:hover,
+.jcarousel-skin-tango .jcarousel-prev-horizontal:focus {
+  background-position: -32px 0;
+}
+
+.jcarousel-skin-tango .jcarousel-prev-horizontal:active {
+  background-position: -64px 0;
+}
+
+.jcarousel-skin-tango .jcarousel-prev-disabled-horizontal,
+.jcarousel-skin-tango .jcarousel-prev-disabled-horizontal:hover,
+.jcarousel-skin-tango .jcarousel-prev-disabled-horizontal:focus,
+.jcarousel-skin-tango .jcarousel-prev-disabled-horizontal:active {
+  cursor: default;
+  background-position: -96px 0;
+}
+
+.clear {
+  clear: both;
+  display: block;
+  visibility: hidden;
+}
+
+div.newitem {
+  width: 776px !important;
+}
+
+div.newBox img {
+  margin: 20px 0 0 0;
+}
+
+span.start {
+  display:block;
+  color: #333!important;
+  margin: 10px 0;
+  padding: 0;
+}
+
+span.usual {
+  display:block;
+  font-size:110%;
+  font-weight:bold;
+  color: #333!important;
+  margin: 10px 0;
+  padding: 0;
+}
+
+span.point {
+  display: none;
+}
+
+.itembox {
+  float: left;
+  width: 155px;
+  margin: 20px 20px 0 0;
+}
+
+.itembox a {
+  display:block;
+  color: #85ad9a;
+}
+
+.itembox a:hover {
+  color: #009ae3;
+}
+
+/* ƒ‰ƒ“ƒLƒ“ƒO */
+
+.rank_box {
+  float: left;
+  width: 155px;
+  margin: 15px 0 0 0;
+}
+
+.rank_box a {
+  color: #85ad9a;
+}
+
+.rank_box a:hover {
+  color: #009ae3;
+}
+
+.rank_box_02 {
+  border: 1px #95baaa solid;
+  padding: 10px 5px 5px 5px;
+  margin: 3px 0 0 0;
+}
+
+.rank_box_02 img {
+  margin: 0 0 0 1px;
+}
+
+/* “ÁW‹LŽ– */
+
+.feature_box {
+  width: 380px;
+  margin: 20px 0 0 0;
+}
+
+.feature_box .left {
+  float: left;
+  width: 184px;
+}
+
+.feature_box .right {
+  float: right;
+  width: 184px;
+}
+
+.feature_box .right .title {
+  color: #85ad9a;
+  font-size: 1.3em;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+/* ƒXƒ^ƒCƒŠƒ“ƒOƒXƒNƒ‰ƒbƒv */
+
+.styling_box {
+  width: 178px;
+  margin: 30px 15px 0 0;
+  float: left;
+}
+
+.styling_box a.tooltip img {
+  margin: 0 5px 0 0;
+}
+
+.styling_box a.tooltip:hover img {
+  border: 2px solid #ccc;
+  margin: -2px;
+}
+
+div.styling_box p.check {
+  margin: 10px 0;
+}
+
+a.tooltip img {
+  border: none;
+}
+
+a.tooltip:hover {
+  background: #fff;
+  /* IE6ˆÈ‰º‚Å•K—v */
+  text-decoration: none;
+}
+
+a.tooltip span {
+  display: none;
+  padding: 10px;
+  margin-left: 8px;
+  line-height: 1.6;
+}
+
+a.tooltip:hover span {
+  display: inline;
+  position: absolute;
+  background-color: #333;
+  border: 1px solid #ccc;
+  color: #ffffff;
+  width: 150px;
+  /* a.tooltip span‚ÉŽw’è‚·‚é‚ÆAIE6ˆÈ‰º‚Åspan‚Ì—Ìˆæ‚Åƒ}ƒEƒX‚ª”½‰ž‚µ‚Ä‚µ‚Ü‚¤ */
+}
+
+/* IE6ˆÈ‰º‚É‚Ì‚Ý“K—p */
+
+a.tooltip:hover span {
+  width: 150px;
+}
+
+.brand_box{
+  display:block;
+  width:179px;
+  height:66px;
+  border:1px #ccc solid;
+  float: left;
+  margin: 10px 0 0 10px;
+  text-align:center;
+}
+
+.brand_box img {
+  margin:5px 0 0 0;
+}
+
+.brand_box span{
+  display:block;
+  color:#828181;
+}
+
+/* ==================
+	footer
+====================== */
+
+/* スライダー*/
+
+.news_block {
+  margin: 0 auto;
+  position: relative;
+  padding: 18px 0 10px 0;
+  border: 1px solid #ded7c0;
+  background-color: #f4efde;
+}
+
+.news_slider {
+  width: 980px;
+  height: 129px;
+  position: relative;
+  z-index: 10;
+  margin: 0 auto 10px auto;
+  overflow: hidden;
+}
+
+.news_slider ul.slides {
+  position: relative;
+  width: auto;
+  height: 129px;
+  overflow: hidden;
+  left: 0;
+  margin: 0 0 0 50px;
+}
+
+.news_slider ul.slides li {
+  float: left;
+  width: 980px;
+}
+
+.news_slider ul.slides li img {
+  width: 216px;
+  float: left;
+  margin: 0 8px 0 0;
+}
+
+.news_slider-right, .news_slider-left {
+  background: url(https://c25.future-shop.jp/shop/item/ty20/design/img01/news_slider-frecce.png);
+  background-repeat: no-repeat;
+  height: 37px;
+  width: 25px;
+  cursor: pointer;
+  position: absolute;
+  top: 60px;
+  z-index: 100;
+}
+
+.news_slider-right {
+  background-position: -25px 0;
+  right: 10px;
+}
+
+.news_slider-left {
+  display: none;
+  left: 10px;
+}
+
+.news_slider-right:hover {
+  background-position: -25px -37px;
+}
+
+.news_slider-left:hover {
+  background-position: 0px -37px;
+}
+
+/* /スライダー */
+
+#pagetop {
+  width: 982px;
+  margin: 15px auto;
+  text-align: right;
+  clear: both;
+}
+
+/* ƒtƒbƒ^[ */
+
+#navif {
+  width: 980px;
+  height: 260px;
+  margin: 0 auto;
+}
+
+#copyright {
+  color: #999999;
+  float: right;
+  font-size: 80%;
+  padding: 10px 0 0 0;
+}
+
+#guidearea a {
+  text-decoration: none;
+  color: #0066cc;
+}
+
+#guidearea {
+  background-color: #f4efde;
+  min-height: 290px;
+  padding: 10px;
+  margin: 50px auto 0 auto;
+}
+
+#guidearea div.clum1 {
+  width: 275px;
+  min-height: 580px;
+  padding: 15px;
+  background-color: #fff;
+  float: left;
+  margin: 0 20px 0 3px;
+}
+
+#guidearea div.clum1 p {
+  margin: 0 0 20px 0;
+}
+
+.clum1 div.bloc,
+.clum3 div.bloc,
+.clum4 div.bloc,
+.clumRight div.bloc,
+.clumLeft div.bloc {
+  line-height: 1.8;
+  text-align: left;
+}
+
+.clum1 div.bloc_no
+.clumRight div.bloc_no,
+.clumLeft div.bloc_no {
+  line-height: 1.8;
+  text-align: left;
+}
+
+#guidearea .bloc_img {
+  margin: 30px 0 -10px 0;
+}
+
+#guidearea .clum3 {
+  width: 275px;
+  min-height: 550px;
+  padding: 0 15px 15px 15px;
+  background-color: #fff;
+  float: left;
+  margin: 20px 20px 0 0;
+}
+
+#guidearea .clum3 .days {
+  margin: 5px 0 15px 0;
+  padding: 10px;
+  width: 245px;
+  background-color: #f5f5f5;
+  border: 1px solid #e6e6e6;
+}
+
+#guidearea .clum3 p.asuraku {
+  line-height: 1.8;
+}
+
+#guidearea .clum4 {
+  width: 275px;
+  min-height: 595px;
+  padding: 0 15px 15px 15px;
+  background-color: #fff;
+  float: left;
+  margin: 20px 0 0 0;
+}
+
+#guidearea p.mail {
+  background: url(https://c25.future-shop.jp/shop/item/ty20/design/img01/footer_icon_mail.gif) no-repeat left 5px;
+  font-size:127%;
+  padding: 0 0 0 25px;
+  color: #000;
+  font-weight: bold;
+  margin:10px 0 0 0;
+}
+
+#guidearea p.mail a{
+  color:#ab7b94;
+}
+
+#guidearea p.tell {
+  background: url(https://c25.future-shop.jp/shop/item/ty20/design/img01/footer_icon_tell.gif) no-repeat left 9px;
+  padding: 0 0 0 25px;
+  font-size:163%;
+  font-weight: bold;
+  font-family: Arial,Helvetica,sans-serif;
+  font-weight: bold;
+  color: #000;
+}
+
+#guidearea p.btn {
+  text-align: center;
+  margin:1px 0 30px 0;
+}
+
+#navif {
+  width: 980px;
+  height: 57px;
+  color: #000;
+  margin: 20px 0 0 0;
+  text-align: left;
+  background: url(https://c25.future-shop.jp/shop/item/ty20/design/img01/bg_footer.gif) top left no-repeat;
+}
+
+#navif ul {
+  float: left;
+}
+
+#navif ul li {
+  float: left;
+  margin:0 20px 0 0;
+  padding: 20px 20px 0 0;
+  color: #333;
+  background: url(https://c25.future-shop.jp/shop/item/ty20/design/img01/bg_li.gif) right no-repeat;
+  background-position: right 21px;
+}
+
+div#navif ul li a {
+  color: #333 !important;
+}
+
+div#navif ul li a:hover,
+div#navif ul li a:active {
+  color: #06c !important;
+  text-decoration: none !important;
+}
+
+div#navif p.copy {
+  float: right;
+  color: #333;
+  padding: 20px 0 0 0;
+}
+
+/* ƒJƒŒƒ“ƒ_[ */
+
+table.calendar {
+  padding: 0;
+  margin: 10px auto;
+  width: 250px;
+}
+
+table.calendar th {
+  text-align: left;
+  font-family: Arial,sans-serif;
+  color: #333;
+  background-color: #fff;
+}
+
+table.calendar th span {
+  font-family: Arial,sans-serif;
+  cursor: pointer;
+  float: right;
+}
+
+table.calendar td {
+  border-bottom: solid 1px #ccc;
+  text-align: center;
+  height: 25px;
+  vertical-align: middle;
+  font-family: Arial,sans-serif;
+  line-height: normal;
+  color: #333333;
+}
+
+table.calendar td.click {
+  cursor: pointer;
+  background-color: #fff;
+}
+
+table.calendar td.Today {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+table.calendar td.Sat {
+  color: #FF0000;
+  background-color: #fcc;
+}
+
+table.calendar td.SatToday {
+  color: #FF0000;
+  background-color: #fcc;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+table.calendar td.Sun {
+  color: #FF0000;
+  background-color: #fcc;
+}
+
+table.calendar td.SunToday {
+  color: #FF0000;
+  background-color: #fcc;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+table.calendar td.otherToday {
+  color: #FF6600;
+  background-color: #ffedcc;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+table.calendar td.holiday {
+  color: #FF0000;
+  background-color: #fcc;
+}
+
+table.calendar td.other {
+  color: #FF9900;
+  background-color: #fff0d9;
+}
+
+table.calendar td.otherday {
+  color: #FF9900;
+  background-color: #fff0d9;
+}
+
+table.calendar td.otherToday {
+  color: #FF9900;
+  background-color: #fff0d9;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+table.calendar td.other {
+  color: #FF6600;
+  background-color: #ffedcc;
+}
+
+table.calendar td.xday {
+  font-weight: bolder;
+  color: #099;
+}
+
+table.calendar td.birthday {
+  font-weight: bolder;
+  color: #990;
+}
+
+/*=====float-history=====*/
+
+#history{
+  background-color:#fff;
+  width:99px;
+  position:absolute!important;
+  top:200px;
+  right:0;
+  border:1px #ccc solid;
+}
+
+#history a img{
+  margin:6px 0 ;
+}
+
+.scrollFixIt{
+  display:none;
+}
+/*=====/float-history=====*/
+
+/*=====social tag=====*/
+div#bottomcolumn {
+    clear: both;
+    margin: 0;
+}
+.socialTag {
+  background: url(https://c25.future-shop.jp/shop/item/ty20/design/img01/top_309.jpg) 0 0 no-repeat;
+    line-height: 0;
+    margin: 60px auto;
+    text-align: center;
+    width: 497px;
+    height: 48px;
+}
+.bySns {
+    line-height: 0;
+    padding-top: 15px;
+    text-align: center;
+}
+.bySns li {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0) !important;
+    display: inline-block;
+    padding-left: 0 !important;
+}
+.bySns li.btnFacebook {
+    width: 120px;
+}
+
+#membership {
+    clear: both;
+    padding-top: 30px;
+}
+#detailarea .bySns li.btnFacebook {
+    width: 108px;
+}
+.bySns li.btnTwitter {
+    width: 90px;
+}
+#detailarea .bySns li.btnTwitter {
+    width: 95px;
+}
+.bySns li.btnLine {
+    width: 30px;
+}
+.bySns li.btnGoogle {
+    width: 40px;
+}
+/*=====/social tag=====*/
+
+
+/*=====underHeader 4col banner=====*/
+.bnrUnderHead4col {
+  width: 980px;
+  padding: 5px 0;
+  margin: 0 0 10px 0;
+}
+.bnrUnderHead4col ul li{
+  float: left;
+  margin: 0 20px 0 0;
+}
+
+.bnrUnderHead4col ul li：nth-child(4n){
+  margin: 0;
+}
+
+/*=====/underHeader 4col banner=====*/

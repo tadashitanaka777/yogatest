@@ -1,0 +1,12 @@
+p.notice {
+    color: $gray-light;
+    small {
+        
+    }
+    a {
+        color: $brand-primary;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}

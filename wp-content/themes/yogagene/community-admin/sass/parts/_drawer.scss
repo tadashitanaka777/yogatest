@@ -1,0 +1,109 @@
+body {
+    .drawer-hamburger {
+        display: none;
+    }
+    .drawer-nav {
+        //display: none;
+    }
+}
+
+@media screen and (max-width:$sp-width){
+
+body {
+    &.drawer--left {
+        .drawer-nav {
+            left: -9999px;
+        }
+        &.drawer-open {
+            .drawer-hamburger {
+                left: 0;
+                .drawer-hamburger-icon {
+                    background-color: transparent;
+                }
+            }
+        }
+    }
+    .drawer-nav {
+        width: 100%;
+        //margin-top: 69px;
+        //padding-bottom: 69px;
+        //color: $white;
+        //background: $gray;
+        overflow-y: scroll;
+        &.iphone {
+            padding-bottom: 0;
+            overflow: hidden;
+        }
+        .area {
+            padding-bottom: 69px;
+            //display: block;
+            overflow: auto;
+        }
+        /*
+        a {
+            color: $white;
+        }
+
+        ul.drawer-menu {
+            li {
+                background-image: url('../images/drawer-menu-arrow.svg');
+                background-repeat: no-repeat;
+                background-size: 8px;
+                background-position: center right 20px;
+                border-bottom: 1px solid $light-border;
+                &:first-child {
+                    border-top: 1px solid $light-border;
+                }
+                a {
+                    padding: 20px;
+                    font-size: 14px;
+                    display: block;
+                }
+            }
+        }
+        footer {
+            padding: 30px 0;
+            color: $gray;
+            text-align: center;
+            background: $background;
+            ul {
+                margin-bottom: 30px;
+                text-align: center;
+                li {
+                    padding: 0 15px;
+                    display: inline-block;
+                    a {
+                        img {
+                            width: 60px;
+                            height: auto;
+                        }
+                    }
+                }
+            }
+            h2 {
+                margin-bottom: 20px;
+                font-weight: bold;
+            }
+        }
+        */
+    }
+    .drawer-hamburger {
+        /*
+        padding: 13px .75rem 25px;
+        position: absolute;
+        display: block;
+        .drawer-hamburger-icon {
+            background-color: $light-border;
+            &:before,
+            &:after {
+                background-color: $light-border;
+            }
+        }
+        */
+    }
+    .drawer-overlay {
+        background: transparent;
+    }
+}
+
+}

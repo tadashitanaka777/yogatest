@@ -1,0 +1,15 @@
+.btn-circle {
+    width: 25px;
+    height: 25px;
+    padding: 0;
+    margin: 1px;
+    font-size: 18px;
+    line-height: 0;
+    text-align: center;
+    @include border-radius(25px);
+}
+
+.btn-plug-row {
+    position: absolute;
+    top: -15px;
+}

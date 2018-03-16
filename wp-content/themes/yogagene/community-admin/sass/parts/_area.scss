@@ -1,0 +1,16 @@
+.area {
+    margin-bottom: 20px;
+    .area-title {
+        font-size: 16px;
+    }
+    .area-description {
+        font-size: 12px;
+        color: $gray-light;
+    }
+    .btn-group {
+        width: 100%;
+        .btn {
+            width: 50%;
+        }
+    }
+}

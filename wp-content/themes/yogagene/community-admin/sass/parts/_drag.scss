@@ -1,0 +1,16 @@
+body.dragging, body.dragging * {
+  cursor: move !important;
+}
+
+.dragged {
+  width: 100%;
+  position: absolute;
+  opacity: 0.5;
+  z-index: 2000;
+  .td-news {
+    width: 100%;
+  }
+  .td-button {
+    width: 30px;
+  }
+}

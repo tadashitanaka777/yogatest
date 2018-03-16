@@ -1,0 +1,156 @@
+.dropWrap {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid $border;
+    box-sizing: border-box;
+    @include pie-clearfix;
+    * {
+        box-sizing: border-box;
+    }
+    .dropRow {
+        display: -webkit-flex;
+        display: flex;
+        -webkit-justify-content: space-between;
+        justify-content: space-between;
+        -webkit-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+    .dropCol {
+        width: 32%;
+        height: auto;
+        margin-bottom: 15px;
+        position: relative;
+        float: left;
+        &:before {
+            content: "";
+            padding-top: 100%;
+            display: block;
+        }
+    }
+}
+.dropArea {
+    width: 100%;
+    height: 100%;
+    //padding: 10px;
+    margin-bottom: 10px;
+    border: 5px dashed #000000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    .dropFile {
+        font-size: 16px;
+        color: #000000;
+        background-color: transparent;
+        text-align: center;
+    }
+    input[type="file"]{
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+        @include opacity(0);
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 10;
+    }
+    .dropView {
+        overflow: hidden;
+        > div {
+            width: 100%;
+            //padding: 10px;
+            //border: 5px dashed #000000;
+            float: left;
+        }
+        img {
+            width: 100%;
+            height: auto;
+            //cursor: move;
+            display: block;
+        }
+    }
+    .dropText {
+        width: 100%;
+        margin-top: -15px;
+        font-size: 11px;
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        z-index: 1;
+    }
+    .dropImages {
+        width: 100%;
+        height: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: absolute;
+        z-index: 20;
+    }
+    .dropView {
+        width: 100%;
+        height: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: absolute;
+        &.avatar {
+            background-size: cover;
+            background-image: url('/images/obj/no-avatar.gif');
+            .dropImages {
+                background-size: cover;
+            }
+        }
+        &.logo {
+            background-size: cover;
+            background-image: url('/images/obj/no-logo.gif');
+            .dropImages {
+                background-size: cover;
+            }
+        }
+        &.portraito {
+            background-image: url('/images/obj/no-portraito.gif');
+        }
+    }
+    .dropButton {
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        position: absolute;
+        right: 10px;
+        bottom: 10px;
+        z-index: 30;
+    }
+}
+
+@media (max-width: $screen-sm-min) {
+
+.dropWrap {
+    .dropCol {
+        width: 49%;
+        margin-bottom: 15px;
+        .dropArea {
+            .dropText {
+                margin-top: -15px;
+            }
+        }
+    }
+}
+
+}
+
+@media (max-width: $screen-xs-min) {
+
+.dropWrap {
+    .dropCol {
+        width: 48%;
+        margin-bottom: 15px;
+        .dropArea {
+            .dropText {
+                margin-top: -25px;
+                font-size: 10px;
+            }
+        }
+    }
+}
+
+}

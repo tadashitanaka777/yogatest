@@ -1,0 +1,94 @@
+.ul-msg {
+    .li-msg {
+        width: 100%;
+        padding: 10px 15px;
+        margin-bottom: 10px;
+        position: relative;
+        background: $gray-lighter;
+        display: table;
+        .msg-thumbnail,
+        .msg-content {
+            vertical-align: middle;
+            display: table-cell;
+        }
+        .msg-thumbnail {
+            width: 50px;
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+        .msg-content {
+            padding-left: 10px;
+            .msg-title {
+                font-weight: bold;
+                //display: block;
+            }
+            .message {
+                display: block;
+            }
+            .time {
+                margin-right: 10px;
+                float: left;
+            }
+            .msg-right {
+                float: right;
+                .msg-select {
+                    width: auto;
+                    float: left;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:$screen-sm){
+
+.ul-msg {
+    .li-msg {
+        width: 100%;
+        padding: 10px 15px;
+        margin-bottom: 10px;
+        position: relative;
+        background: $gray-lighter;
+        display: table;
+        .msg-thumbnail,
+        .msg-content {
+            vertical-align: middle;
+            display: table-cell;
+        }
+        .msg-thumbnail {
+            width: 50px;
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+        .msg-content {
+            padding-left: 10px;
+            .msg-title {
+                font-weight: bold;
+                //display: block;
+            }
+            .message {
+                display: block;
+            }
+            .time {
+                margin-right: 0;
+                margin-bottom: 5px;
+                text-align: right;
+                float: none;
+                display: block;
+            }
+            .msg-right {
+                float: right;
+                .msg-select {
+                    width: auto;
+                    float: left;
+                }
+            }
+        }
+    }
+}
+
+}

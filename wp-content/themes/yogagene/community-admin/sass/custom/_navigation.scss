@@ -1,0 +1,38 @@
+.drawer-hamburger {
+    width: 30px;
+    position: absolute;
+}
+
+@media (min-width: $screen-md-min) {
+
+.drawer-hamburger {
+    display: none;
+}
+
+}
+
+.drawer--left {
+    .drawer-hamburger {
+        left: 5px;
+    }
+    &.drawer-open {
+        .drawer-hamburger {
+            left: $left-width;
+        }
+        .col-footer {
+            display: none;
+        }
+    }
+    .drawer-nav {
+        left: -$left-width;
+    }
+}
+@media (min-width: $screen-md-min) {
+
+.drawer--left {
+    .drawer-nav {
+        left: auto;
+    }
+}
+
+}

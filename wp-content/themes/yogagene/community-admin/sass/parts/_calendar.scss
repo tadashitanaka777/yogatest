@@ -1,0 +1,91 @@
+body {
+
+.bd-calendar-modal-lg {
+    .modal-body {
+        .modal-box {
+            .monthly-reset {
+                display: none;
+            }
+        }
+    }
+}
+
+.monthly-day-wrap {
+    overflow: auto;
+}
+
+.calendar-instructor-ul {
+    padding-left: 0;
+    list-style: none;
+}
+
+.calendar-instructor-li {
+    padding: 10px;
+    &:nth-child(odd) {
+        background: #f9f9f9;
+    }
+    .close {
+        margin-top: 8px;
+    }
+}
+
+.calendar-instructor-thumb {
+    width: 40px;
+    margin-right: 10px;
+    height: auto;
+}
+
+.calendar-nav {
+    margin-top: 15px;
+    text-align: center;
+    display: block;
+    select,
+    button {
+        background: #eee;
+        border: 1px solid #ccc;
+        @include border-radius(20px);
+        display: inline-block;
+    }
+    button {
+        margin-left: 10px;
+    }
+    select {
+        margin-left: 10px;
+        padding: 0 10px 4px;
+    }
+}
+
+}
+
+body {
+
+}
+
+@media (max-width: $screen-sm-min) {
+
+body {
+
+.calendar-nav {
+    text-align: center;
+    right: 0;
+    select,
+    button {
+        display: inline-block;
+        float: none;
+    }
+    select {
+        margin-left: 5px;
+    }
+    button {
+        &:first-of-type {
+            margin-left: 0;
+        }
+        &:last-of-type {
+            margin-left: 5px;
+        }
+    }
+}
+
+}
+
+}

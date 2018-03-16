@@ -1,0 +1,523 @@
+@charset  "utf-8";
+/* = 
+ * Twenty Fifteen
+ * widget_fudo Style
+ * corners2015.css サイトパーツの装飾
+ * @package WordPress4.5
+ * Version: 1.7.2
+-------------------------------------------------------------- */
+/* = common 
+-------------------------------------------------------------- */
+body,input,textarea,select,.page-title,.pingback a.url,input[type=submit],pre,code {
+	font-family: 'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,Arial,Helvetica,sans-serif;
+}
+
+/* = header 
+-------------------------------------------------------------- */
+
+/* = nav 
+-------------------------------------------------------------- */
+
+/* = primary
+-------------------------------------------------------------- */
+
+/* = トップページ 物件表示部分  .grid-content / #top_fbox内
+---------------------------------------------------------------------- */
+/* 縦 */
+/*
+	.grid-content li {
+		border: 1px solid #CCC;
+		display: block;
+		width: 150px;
+		margin:0 6px 6px 0;
+		padding: 0px;
+		font-size: 1.4rem;
+		float:left;
+		list-style-type: none;
+	}
+*/
+
+/* 横 */
+.grid-content li {
+	font-size: 88%;
+/*	border: 1px solid #CCC; */
+	display: block;
+	float: left;
+	max-width: 48.5%;
+	margin: 0 5px 10px 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+.grid-content li .box1image {
+	display: block;
+	float: left;
+	width: 150px;
+	height: auto;
+	margin: 0 5px 0 0;
+}
+
+
+.top_title{
+}
+
+.top_price {
+	font-weight: 700;
+	color: #e30;
+}
+
+.top_madori {
+	font-weight: 700;
+}
+
+#secondary .grid-content li {
+	width: 100%;
+	max-width: 233px;
+	padding: 0;
+	border: none;
+}
+
+#secondary .grid-content li .box1image {
+	float: left;
+	max-width: 90px;
+	padding: 0 5px 0 0;
+}
+
+/* = トップスライダー widget_fudo_top_slider
+---------------------------------------------------------------------- */
+/* スライダー 表示サイズ*/
+#primary .widget_fudo_top_slider_m ul,#primary .widget_fudo_top_slider ul {
+	overflow: hidden;
+	max-width: 620px;
+	margin: 0;
+	padding-top: 0;
+}
+
+#secondary .widget_fudo_top_slider_m ul,#secondary .widget_fudo_top_slider ul {
+	overflow: hidden;
+	max-width: 233px;
+	margin: 0;
+	padding-top: 0;
+}
+
+#primary .widget_fudo_top_slider_m ul li,#primary .widget_fudo_top_slider ul li {
+	width: 150px;
+	max-width: 150px;
+/*
+    width:100%;
+    max-width:307px;
+    min-width:307px;
+*/
+}
+
+/* = 閲覧履歴 widget_fudou_single_history
+---------------------------------------------------------------------- */
+.cl_botton,.cl_botton2 {
+	float: right;
+	margin: 2px;
+}
+
+/* = 条件検索
+-------------------------------------------------------------- */
+ul.cookie_fudou_jsearch li {
+	margin: 0 0 0 15px;
+	list-style: circle;
+}
+
+/* = 最近の投稿記事 widget_fudo_toukou_top
+-------------------------------------------------------------- */
+.widget_fudo_toukou_top ul,.widget_fudo_toukou_top li {
+	list-style: none;
+}
+
+.widget_fudo_toukou_top li > ul,.widget_fudo_toukou_top li > ol {
+	margin: 0;
+}
+
+.widget_fudo_toukou_top li:after {
+	display: block;
+	clear: both;
+	height: 10px;
+	content: '';
+}
+
+.toukou_top_post_title {
+	font-weight: 700;
+}
+
+.toukou_top_post_thumbnail img {
+	float: left;
+	width: 100px;
+	height: auto;
+	padding: 0 5px 0 0;
+}
+
+/* = 路線・地域
+-------------------------------------------------------------- */
+.widget_fudo_b_bus li,.widget_fudo_r_bus li,.widget_fudo_b_c ul li,.widget_fudo_b_r ul li,.widget_fudo_r_c ul li,.widget_fudo_r_r ul li,.widget_fudo_b_c_m ul li,.widget_fudo_b_r_m ul li,.widget_fudo_r_c_m ul li,.widget_fudo_r_r_m ul li {
+	margin: 0 0 0 15px;
+	list-style: circle;
+}
+
+/*
+	#primary .widget_fudo_b_c,
+	#primary .widget_fudo_b_r,
+	#primary .widget_fudo_r_c,
+	#primary .widget_fudo_r_r,
+	#primary .widget_fudo_b_c_m,
+	#primary .widget_fudo_b_r_m,
+	#primary .widget_fudo_r_c_m,
+	#primary .widget_fudo_r_r_m{
+		float: left;
+		width: 48%;
+	}
+*/
+/* = 物件カテゴリ
+-------------------------------------------------------------- */
+.widget_fudo_widget ul li {
+	margin: 0 0 0 15px;
+	list-style: circle;
+}
+
+/* = 条件検索
+-------------------------------------------------------------- */
+.widget_fudo_b_k input {
+	margin-top: 8px;
+}
+
+.widget-container select,.widget_fudo_b_k_bus_m select,.widget_fudo_b_k_bus select,.widget_fudo_b_k_m select,.widget_fudo_b_k select {
+	width: 98%;
+	margin: 2px 0;
+	padding: 3px;
+	border: 1px solid #ccc;
+}
+
+#chikunen,#memseki,#hofun,#kakaku_b,#kakaku_c,#chiiki,#roseneki,#caution1,#shubetsu,#setsubi_cb,#madori_cb,#busline,#terms,#kouku_cb,#choumei_cb {
+	margin: 0 0 5px;
+}
+
+.widget_fudo_b_k_bus input[type='checkbox'],.widget_fudo_b_k_m input[type='checkbox'],.widget_fudo_b_k input[type='checkbox'] {
+	margin: 0 2px 0 0;
+}
+
+.widget_fudo_b_k_bus label,.widget_fudo_b_k_m label,.widget_fudo_b_k label {
+	margin: 0 5px 0 0;
+}
+
+.memseki select,.kakaku_c select,.kakaku_b select {
+	width: 45%;
+}
+
+.widget_fudo_b_k_bus .jsearch_caution1,.widget_fudo_b_k_bus .jsearch_caution2,.widget_fudo_b_k_m .jsearch_caution1,.widget_fudo_b_k_m .jsearch_caution2,.widget_fudo_b_k .jsearch_caution1,.widget_fudo_b_k .jsearch_caution2 {
+	font-size: 11.5px;
+}
+
+.widget_fudo_b_k .jsearch_caution2 {
+	margin: 10px 0;
+}
+
+.widget_fudo_b_k_bus .madori_cb label,.widget_fudo_b_k_bus .setsubi_cb label,.widget_fudo_b_k_m .madori_cb label,.widget_fudo_b_k_m .setsubi_cb label,.widget_fudo_b_k .madori_cb label,.widget_fudo_b_k .setsubi_cb label {
+	padding: 0 8px 0 2px;
+}
+
+/* ボタン */
+.widget_fudo_b_k_bus input[type='submit'],.widget_fudo_b_k_m input[type='submit'],.widget_fudo_b_k input[type='submit'] {
+	background-color: #333;
+}
+
+.widget_fudo_b_k_bus input[type='submit']:hover,.widget_fudo_b_k_m input[type='submit']:hover,.widget_fudo_b_k input[type='submit']:hover {
+	background-color: #707070;
+	background-color: rgba(51,51,51,.7);
+}
+
+.widget_fudo_b_k_bus input[type='submit']:disabled,.widget_fudo_b_k_m input[type='submit']:disabled,.widget_fudo_b_k input[type='submit']:disabled {
+	color: #888;
+}
+
+.widget_fudo_b_k_bus input[type='submit']:disabled:hover,.widget_fudo_b_k_m input[type='submit']:disabled:hover,.widget_fudo_b_k input[type='submit']:disabled:hover {
+	background-color: #333;
+}
+
+/* = in-map 条件検索
+-------------------------------------------------------------- */
+/* サイドバースクロール */
+#map_menu {
+	position: relative;
+}
+
+#map_menu h3 {
+	line-height: 1.1538;
+	margin-top: 1.8462em;
+	margin-bottom: .9231em;
+}
+
+#searchmapitem select {
+	width: 98%;
+	margin: 2px 0;
+	padding: 3px;
+	border: 1px solid #ccc;
+}
+
+.memseki select,.kakakumap_c select,.kakakumap_b select {
+	width: 45% !important;
+}
+
+#menu_botton {
+	margin: -5px 0 !important;
+}
+
+.jsearchmap_caution1,.jsearchmap_caution2 {
+	font-size: 11.5px;
+}
+
+/* ボタン */
+#map_search input[type='submit'] {
+	background-color: #333;
+}
+
+#map_search input[type='submit']:hover {
+	background-color: #707070;
+	background-color: rgba(51,51,51,.7);
+}
+
+#map_search input[type='submit']:disabled {
+	color: #888;
+}
+
+#map_search input[type='submit']:disabled:hover {
+	background-color: #333;
+}
+
+/* = TOP twitter
+-------------------------------------------------------------- */
+#twitter_update_list a {
+	font-weight: 400;
+	text-decoration: none;
+}
+
+#twitter_update_list li a.tw_date {
+	font-family: Arial,Helvetica,sans-serif;
+	line-height: 1.6;
+	display: block;
+	float: left;
+	width: 90px;
+}
+
+#twitter_update_list li:after {
+	display: block;
+	clear: both;
+	height: 10px;
+	content: '';
+}
+
+#twitter_update_list li .tw_status {
+	line-height: 1.6;
+	display: block;
+}
+
+#twitter_update_list li .tw_status {
+	margin: 0 0 0 100px;
+}
+
+ul#twitter_update_list li {
+	font-weight: 400;
+	display: block;
+	margin: 0;
+	padding: 0 5px 5px;
+	list-style: none;
+}
+
+/* = new_mark
+-------------------------------------------------------------- */
+.grid-content li {
+	position: relative;
+}
+
+#syousai_box ul.syousai-content li {
+	position: relative;
+}
+
+.up_mark,.new_mark {
+	font-family: Verdana,Geneva,sans-serif;
+	font-size: 10px;
+	font-weight: 700;
+	position: absolute;
+	top: 3px;
+	left: 3px;
+	display: block;
+	width: auto !important;
+	padding: 2px 5px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #fff;
+	border-radius: 4px;
+	background: #900;
+	text-shadow: 1px 1px 0 #900;
+}
+
+/* 物件リスト・詳細 */
+.entry-title .new_mark {
+	font-family: Verdana,Geneva,sans-serif;
+	font-size: 14px !important;
+	font-weight: 700;
+	position: static !important;
+	display: inline;
+	display: inline !important;
+	padding: 0 10px !important;
+	text-align: center;
+	vertical-align: middle;
+	text-transform: uppercase;
+	color: #c00 !important;
+	background: none !important;
+}
+
+/* = 物件詳細ページ関連物件  #syousai_box : 関連物件部分
+---------------------------------------------------------------------- */
+#syousai_box ul {
+	padding-left: 5px;
+}
+
+#syousai_box ul:after {
+	display: block;
+	clear: both;
+	height: 0;
+	content: '';
+}
+
+#syousai_box ul.syousai-content li {
+	font-size: 1.4rem;
+	display: block;
+	float: left;
+	width: 150px;
+	margin: 0 6px 6px 0;
+	padding: 0;
+	list-style-type: none;
+	border: 1px solid #ccc;
+}
+
+#syousai_box ul.syousai-content li .box2image {
+	display: block;
+	width: 148px !important;
+	height: auto;
+	margin: 0 auto;
+}
+
+/* = toukou
+-------------------------------------------------------------- */
+.entry-content {
+	margin: 0;
+}
+
+.entrycontent {
+	padding: 10px 0 0;
+}
+
+/* = キーワード検索
+---------------------------------------------------------------------- */
+.widget_fudo_search #searchform input[type='submit'] {
+	display: none;
+}
+
+/* = 物件カウント
+---------------------------------------------------------------------- */
+.kaiin_count li {
+	list-style-type: none;
+}
+
+/* = 会員用ログイン マッチングメールボタン
+-------------------------------------------------------------- */
+#loginform input[type='submit'] {
+	margin: 10px 0;
+}
+
+#maching_mail a {
+	font-weight: 400;
+	display: block;
+	width: auto;
+	margin: 10px 0;
+	padding: .75em 1.5em;
+	text-align: center;
+	vertical-align: middle;
+	text-decoration: none;
+	color: #fff;
+	border-radius: 0;
+	background-color: rgba(0,0,0,1);
+	text-shadow: none;
+}
+
+#maching_mail a:active,#maching_mail a:hover {
+	text-decoration: none;
+	background-color: rgba(51,51,51,.7);
+}
+
+/* ボタン */
+.widget_fudo_kaiin input[type='submit'] {
+	background-color: #333;
+}
+
+.widget_fudo_kaiin input[type='submit']:hover {
+	background-color: #707070;
+	background-color: rgba(51,51,51,.7);
+}
+
+.widget_fudo_kaiin .kaiin_login p{
+	margin:10px 0 5px;
+}
+
+/**
+ * Mobile Large < 620px
+ */
+@media screen and (max-width: 38.74em) {
+	.grid-content li {
+		max-width: 100%;
+	}
+}
+
+/**
+ * 15.1 Mobile Large 620px
+ */
+@media screen and (min-width: 38.75em) {
+	
+}
+
+/**
+ * 15.2 Tablet Small 740px
+ */
+@media screen and (min-width: 46.25em) {
+	
+}
+
+/**
+ * 15.3 Tablet Large 880px
+ */
+@media screen and (min-width: 55em) {
+	
+}
+
+/**
+ * 15.4 Desktop Small 967px
+ */
+@media screen and (min-width: 59.6875em) {
+	
+}
+
+/**
+ * 15.5 Desktop Medium 1100px
+ */
+@media screen and (min-width: 68.75em) {
+	
+}
+
+/**
+ * 15.6 Desktop Large 1240px
+ */
+@media screen and (min-width: 77.5em) {
+	
+}
+
+/**
+ * 15.7 Desktop X-Large 1403px
+ */
+@media screen and (min-width: 87.6875em) {
+	
+}
