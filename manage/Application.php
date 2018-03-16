@@ -17,7 +17,7 @@ class Application
     {
         global $wpdb;
         //var_dump($wpdb);
-        //すでに申請データがないか確認する。
+        //すでに申請データがないか確認する。-
         $result = $wpdb->get_results("
             SELECT *
             FROM  accountpermission
@@ -168,6 +168,7 @@ class Application
             AND permissionWpPostId = $permissionWpPostId
             AND kind = '$postType'
         ");
+        $result2 = null;
         // exit;
         if (!isset($result[0])) {
             // var_dump($result);
@@ -196,6 +197,51 @@ class Application
         //var_dump($result);
         return $result2;
     }
+    public function applicationPostTypeUpdate($applicationWpPostId, $permissionWpPostId, $postType, $status)
+    {
+        global $wpdb;
+        // var_dump($applicationWpPostId);
+        //すでに申請データがないか確認する。
+        //    //null 未選択
+            //0 申請中
+            //1 承認済み
+            //2 非承認
+        $result = $wpdb->get_results("
+            SELECT *
+            FROM  actionpermission
+            WHERE applicationWpPostId = $applicationWpPostId
+            AND permissionWpPostId = $permissionWpPostId
+            AND kind = '$postType'
+        ");
+        // var_dump($result[0]->id);
+        $result2 = null;
+        // exit;
+        if (isset($result[0])) {
+            // var_dump($result);
+            // idの行のステータスを更新する。
+            $result2 = $wpdb->update(
+                'actionpermission',
+                array(
+                    'status' => $status,
+                ),
+                array(
+                'id' => $result[0]->id,
+                ),
+                array(
+                    '%d',
+                ),
+                array(
+                    '%d',
+                )
+            );
+            // var_dump($result2);
+        }
+        // var_dump($wpdb->queries);
+        //echo "<hr />";
+        //var_dump($result);
+        return $result2;
+
+    }
     /**
      * publish な　posttypeの全ての表示
      * @param  [type] $postType [description]
@@ -214,6 +260,28 @@ class Application
      ");
          // var_dump($results);
         return $results;
+    }
+    /**
+     * publish な　posttypeの一部の取得
+     * @param  [type] $postType [description]
+     * @return [type]           [description]
+     */
+    public function getPostActionListFromTo($postType, $page, $limit)
+    {
+        global $wpdb;
+        $results = $this->getPostTypeList($postType);
+        // var_dump($results);
+        $first = $page * $limit-$limit;
+         //取得終わり
+         $end = $page * $limit;
+         foreach ($results as $key => $value) {
+             if (($first <= ($key+1)) && (($key+1) < $end)) {
+                 $arr[$key+1] = (array)$value;
+             }
+         }
+          // var_dump($first,$end,count($arr),$arr);
+          // var_dump($arr);
+        return $arr;
     }
     public function isOwnPostTypeList(
         $applicationUserId,
@@ -276,7 +344,7 @@ class Application
             default:
                 break;
         }
-        return ture;
+        return true;
     }
     public function getUserHavePostTypeList($postAuthor, $postType)
     {
@@ -387,6 +455,10 @@ class Application
                 break;
         }
     }
+    //null 未選択
+    //0 申請中
+    //1 承認済み
+    //2 非承認
     public function getApplicationPostTypeStatus($applicationWpPostId, $permissionWpPostId, $postType)
     {
         global $wpdb;
@@ -404,6 +476,40 @@ class Application
         // var_dump($wpdb->queries);
         // var_dump($result);
         return $rst;
+    }
+    //1 申請中
+    //2 未選択
+    //3 承認済み
+    public function getWpApplicationPostTypeStatus($applicationWpPostId, $permissionWpPostId, $postType)
+    {
+        try {
+            //null 未選択
+            //0 申請中
+            //1 承認済み
+            //2 非承認
+            $status =  $this->getApplicationPostTypeStatus($applicationWpPostId, $permissionWpPostId, $postType);
+            // var_dump($status);
+            $rstStatus = null;
+            switch ($status) {
+                case '1':
+                $rstStatus = 3;
+                break;
+                case '0':
+                $rstStatus = 1;
+                break;
+                case null:
+                $rstStatus = 2;
+                break;
+                case '2':
+                $rstStatus = 0;
+                break;
+            }
+            // var_dump($rstStatus);
+        } catch (\Exception $e) {
+
+        }
+
+        return $rstStatus;
     }
     public function getPermissionPostTypeList($permissionId, $postType)
     {
@@ -480,10 +586,10 @@ class Application
             $result = $wpdb->delete(
                 'actionpermission', //integer
                 array(
-                    'id' => $permissionId,
+                'id' => $permissionId,
                 ),
                 array(
-                    '%d',
+                '%d',
                 )
             );
             return $result;
@@ -493,19 +599,33 @@ class Application
         $result = $wpdb->update(
             'actionpermission', //integer
             array(
-                'status' => $status,
+            'status' => $status,
             ),
             array(
-                'id' => $permissionId,
-                'kind' => $postType
+            'id' => $permissionId,
+            'kind' => $postType
             ),
             array(
-                '%d',
-                '%s',
+            '%d',
+            '%s',
             )
         );
         // var_dump($wpdb->queries);
         // var_dump($result);
         return $result;
+    }
+    public function showPagenation()
+    {
+        echo '
+        <ul class="pagination" role="menubar" aria-label="Pagination">
+            <li class="first"><a href="#" data-value="1"><span>First</span></a></li>
+            <li class="previous"><a href="#" data-value="1"><span>Previous</span></a></li>
+            <li class="current" data-value="1"><a>1</a></li>
+            <li><a href="#" class="inactive" data-value="2">2</a></li>
+            <li><a href="#" class="inactive" data-value="3" >3</a></li>
+            <li class="next" data-value="4"><a href="#"><span>Next</span></a></li>
+            <li class="last" data-value="4"><a href="#"><span>Last</span></a></li>
+        </ul>
+        ';
     }
 }

@@ -58,10 +58,10 @@ foreach ($results as $value) {
     $arr = get_user_meta($value->applicationId);
     echo "<div class='column'>".$arr['first_name'][0]."</div>";
     echo "<div class='column'>";
-    // $apliCorpStatus = $apc->getApplicationCorpStatus($ui->id, $value->ID);
+    // $apliCorpStatus = $apc->getApplicationCorpStatus($ui->ID, $value->ID);
 //{申請の状況の表示}
     // $apc->showApplicationCorpStatus($apliCorpStatus, $value->ID);
-    $apc->showPermissionCorpStatus($value->status, $value->id);
+    $apc->showPermissionCorpStatus($value->status, $value->ID);
     echo "</div>";
 
    //try {

@@ -28,7 +28,7 @@ class WpCustomfiled
         } elseif ($value == "") {
             $result = delete_post_meta($postId, $itemname, get_post_meta($postId, $itemname, true));
         }
-        return $result;
+            return $result;
     }
     /**
      * arrayのフィールドを保存する。基本削除後、登録
@@ -53,12 +53,59 @@ class WpCustomfiled
          */
         $result = delete_post_meta($postId, $itemname, "");
         if (is_array($array)) {
+            $result = add_post_meta($postId, $itemname, $array, false);
+            // var_dump($result);
             foreach ($array as $value) {
                 // var_dump($array);
-                $result = add_post_meta($postId, $itemname, $value, false);
             }
             return true;
         }
+        return null;
+    }
+    /**
+     *  値をグループとして保存、可変OK　acf対応
+     * @param  [type] $pstId    [投稿ID]
+     * @param  [type] $groupKind ["interviewなど"]
+     * @param  [type] $itemArr1 [登録する配列]
+     * @return [type]           [description]
+     */
+    public function saveCustomPostsGroup($postId, $groupKind, $itemArr)
+    {
+        $count = get_post_meta($postId, $groupKind, true);//単一の値　false:array
+        $count = 3;
+        $rstDel[] = delete_post_meta($postId, "_".$groupKind, "");
+        $rstDel[] = delete_post_meta($postId, $groupKind, "");
+        foreach ($itemArr as $key => $value) {
+            // var_dump($count);
+            for ($i=0; $i < $count; $i++) {
+                // var_dump($key,$i,$groupKind);
+                $itemName = null;
+                $itemName = $groupKind."_".$i."_Group_".$key;
+                $rstDel[] = delete_post_meta($postId, $itemName, "");
+                $itemName = "_".$groupKind."_".$i."_Group_".$key;
+                $rstDel[] = delete_post_meta($postId, $itemName, "");
+                $itemName = $groupKind."_".$i."_Group";
+                $rstDel[] = delete_post_meta($postId, $itemName, "");
+                $itemName = "_".$groupKind."_".$i."_Group";
+                $rstDel[] = delete_post_meta($postId, $itemName, "");
+            }
+        }
+        foreach ($itemArr as $key => $value) {
+            // var_dump($count);
+            for ($i=0; $i < $count; $i++) {
+                // var_dump($key,$i,$groupKind);
+                $itemName = null;
+                $itemName = $groupKind."_".$i."_Group_".$key;
+                $rstDel[] = add_post_meta($postId, $itemName, $value[$i], false);
+                // $itemName = "_".$groupKind."_".$i."_Group_".$key;
+                $itemName = $groupKind."_".$i."_Group";
+                $rstDel[] = add_post_meta($postId, $itemName, "", false);
+                // $itemName = "_".$groupKind."_".$i."_Group";
+            }
+        }
+        add_post_meta($postId, $groupKind, $count, false);
+        // var_dump($postId,$count,$rstDel,$itemArr,$itemName);
+        // var_dump($value);
         return null;
     }
     /**
@@ -82,10 +129,13 @@ class WpCustomfiled
         }
         return null;
     }
-    public function showCheckedItems($arrayItem, $kind)
+    public function showCheckedItems($serialize, $kind)
     {
-        if (in_array($kind, $arrayItem)) {
-            return  'checked="CHECKED"';
+        $arrayItem = unserialize($serialize[0]);
+        if (isset($arrayItem)) {
+            if (in_array($kind, $arrayItem)) {
+                return  'checked="CHECKED"';
+            }
         }
         return null;
     }
@@ -94,7 +144,7 @@ class WpCustomfiled
     最後にreturn $aidでIDを返しても良い
     カスタムフィールドの画像のアップロード
     */
-    function addCustomImage($post_id, $upload, $cfName)
+    function saveCustomImage($post_id, $upload, $cfName)
     {
         //frontでもメディア関係が使えるように
         require_once ABSPATH . 'wp-admin/includes/media.php';
@@ -125,7 +175,8 @@ class WpCustomfiled
                        // var_dump($rst);
 
                     if (!is_wp_error($aid)) {
-                             wp_update_attachment_metadata($aid, wp_generate_attachment_metadata($aid, $file['file']));  /*If there is no error, update the metadata of the newly uploaded image*/
+                             $result = wp_update_attachment_metadata($aid, wp_generate_attachment_metadata($aid, $file['file']));  /*If there is no error, update the metadata of the newly uploaded image*/
+                            return $result;
                     }
                 }
             } else {
@@ -133,7 +184,85 @@ class WpCustomfiled
             }
         }
     }
+    /**
+     * 画像を複数保存する。Adbance Custom Filedsに対応
+     */
+    function saveCustomImages($postId, $uploadArr, $cfName)
+    {
+        try {
+            // var_dump($uploadArr);
+            $rstImgArr = array();
+            /*uploadするために整形する。*/
+            foreach ($uploadArr as $key => $value) {
+                foreach ($value as $key2 => $value2) {
+                    $rstImgArr[$key2][$key] = $value2;
+                }
+            }
+            // var_dump($rstImgArr);
+            foreach ($rstImgArr as $key3 => $value3) {
+                $rst[] = $this->saveImage($postId, $value3);
+            }
+            $item = get_post_custom($postId);
+            $serializeImg = $item[$cfName];
+            // var_dump($serializeImg);
+            $imgArr = array();
+            if ($serializeImg[0]) {
+                $imgArr = unserialize($serializeImg[0]);
+            }
+            // var_dump($imgArr);
+            // var_dump($rst);
+            // foreach ($rst as $key => $value) {
+            //     if ($imgArr[$key]) {
+            //         if ($imgArr[$key] != '') {  /*If image exists*/
+            //         }
+            //     }
+            // }
+            //新しいイメージをシリアライズして保存
+            foreach ($rst as $key => $value) {
+                if ($value) {
+                    //前のイメージを削除
+                    wp_delete_attachment($imgArr[$key]);  /*Delete previous image画像が増えていかないように*/
+                    $imgArr[$key] = $value;
+                }
+            }
+            /**$imgArr　arrayのままで勝手にシリアライズ化してくれる
+            **/
+            $rst = update_post_meta($postId, $cfName, $imgArr);
+            // var_dump($sirializeImg);
+        } catch (\Exception $e) {
+        }
+    }
+    /**
+     * シンプルに画像をアップし、画像IDを返す。
+     * @param  [type] $post_id [description]
+     * @param  [type] $upload  [description]
+     * @return [type]          [description]
+     */
+    function saveImage($postId, $upload)
+    {
+        //frontでもメディア関係が使えるように
+        require_once ABSPATH . 'wp-admin/includes/media.php';
+        require_once ABSPATH . 'wp-admin/includes/file.php';
+        require_once ABSPATH . 'wp-admin/includes/image.php';
+        $uploads = wp_upload_dir(); /*Get path of upload dir of wordpress*/
 
+        if (is_writable($uploads['path'])) {  /*Check if upload dir is writable*/
+            if ((!empty($upload['tmp_name']))) {  /*Check if uploaded image is not empty*/
+                if ($upload['tmp_name']) {   /*Check if image has been uploaded in temp directory*/
+                    $file = $this->handleImageUpload($upload); /*Call our custom function to ACTUALLY upload the image*/
+
+                    $attachment = array  /*Create attachment for our post*/
+                    (
+                      'post_mime_type' => $file['type'],  /*Type of attachment*/
+                      'post_parent' => $postId,  /*Post id*/
+                       );
+
+                       $aid = wp_insert_attachment($attachment, $file['file'], $postId);  /*Insert post attachment and return the attachment id*/
+                       return $aid;
+                }
+            }
+        }
+    }
     function handleImageUpload($upload)
     {
         global $post;
@@ -156,5 +285,57 @@ class WpCustomfiled
         } else {
             return false;
         }
+    }
+    public function getImageUrl($imgNum)
+    {
+        $imgUrl = null;
+        try {
+            $imgUrl = wp_get_attachment_image_src($imgNum, "full");
+        } catch (\Exception $e) {
+        }
+        return $imgUrl[0];
+    }
+    /**
+     * 複数の画僧を取得
+     * @param  [type] $sirializeImg [画像IDがはいった配列　シリアライズされているa:2:{i:0;s:1:"a";i:1;s:1:"b";}]
+     * @return [type]               [画像のURLがはいった配列]
+     */
+    public function getImagesUrl($sirializeImg)
+    {
+        $resultArr = null;
+        try {
+            $array = unserialize($sirializeImg[0]);
+            // var_dump($sirializeImg);
+            if (is_array($array)) {
+                foreach ($array as $key => $value) {
+                    $resultArr[$key] = $this->getImageUrl($value);
+                }
+            }
+        } catch (\Exception $e) {
+        }
+        return $resultArr;
+    }
+    public function getImagesId($sirializeImg)
+    {
+        $resultArr = null;
+        try {
+            $resultArr = unserialize($sirializeImg[0]);
+        } catch (\Exception $e) {
+        }
+        return $resultArr;
+    }
+    /**
+     * dropzoneの背景画像の表示
+     * @param  [type] $imgUrl [description]
+     * @return [type]         [description]
+     */
+    public function theDropzoneBackimage($imgId)
+    {
+        if (!isset($imgId)) {
+            return null;
+        }
+        $imgUrl = $this->getImageUrl($imgId);
+        echo '<button class="dropButton" data-value="enable"><i class="fa fa-trash"></i></button>
+        <div class="dropImages" style="background-image: url(\''.$imgUrl.'\');"></div>';
     }
 }

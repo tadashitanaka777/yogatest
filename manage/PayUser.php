@@ -21,6 +21,7 @@ class PayUser
             $obj->email =  $userinfo->user_email;
 
             $obj->firstName = $umeta['first_name'][0];
+            $obj->wpUserLevel = $umeta["wp_user_level"][0];
 
             $obj->payjpCusId = $umeta['payjpCusId'][0];
             //初期無料プラン設定

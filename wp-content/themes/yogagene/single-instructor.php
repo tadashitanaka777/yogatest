@@ -12,8 +12,10 @@ use Manage\Application;
 use Manage\Login;
 use WP_User;
 use Manage\WpCustomfiled;
+use Manage\AdvancedCustomFields;
 
 session_start();
+
 // echo get_home_directory();
 require_once('vendor/autoload.php');
 require_once("payjp-php/vendor/autoload.php");
@@ -25,6 +27,8 @@ require_once("manage/src/header.php");
 Common::showWpLoginBar();
 //Sessionloginのチェックと　現在のステータス
 Common::showSessionLoginBar($ui->ID);
+// var_dump($ui->ID);
+
 ?>
 <?php require_once('community-admin/include/navigation.php'); ?>
 <?php
@@ -38,8 +42,8 @@ if (isset($_POST['nonce'])
 ) {
                 // var_dump($_POST["postId"]);
                 // var_dump($_POST["yogastyle"]);
-                // var_dump($_POST["intaviewSelect"]);
-                // var_dump($_POST["intaviewText"]);
+                // var_dump($_POST["interviewSelect"]);
+                // var_dump($_POST["interviewText"]);
                 $wpcf->saveCustomPost($_POST["postId"], "name", $_POST["pname"]);
                 $wpcf->saveCustomPost($_POST["postId"], "instagramUrl", $_POST["instagramUrl"]);
                 $wpcf->saveCustomPost($_POST["postId"], "facebookUrl", $_POST["facebookUrl"]);
@@ -58,21 +62,74 @@ if (isset($_POST['nonce'])
                 $wpcf->saveCustomPost($_POST["postId"], "profile", $_POST["profile"]);
                 $wpcf->savePostStatus($_POST["postId"], $_POST["status"]);
                 $wpcf = new WpCustomfiled;
+                // var_dump($_FILES);
     if (isset($_FILES['imgMain']) && !empty($_FILES['imgMain'])) {
         $upload = $_FILES['imgMain'];
-        $wpcf->addCustomImage($_POST["postId"], $upload, "imgMain");
+        $wpcf->saveCustomImage($_POST["postId"], $upload, "imgMain");
     }
-    if (isset($_FILES['imgSub']) && !empty($_FILES['imgSub'])) {
-        $upload = $_FILES['imgSub'];
-        $wpcf->addCustomImage($_POST["postId"], $upload, "imgSub");
+    if (isset($_FILES['avatarImage']) && !empty($_FILES['avatarImage'])) {
+        $upload = $_FILES['avatarImage'];
+        $wpcf->saveCustomImage($_POST["postId"], $upload, "avatarImage");
     }
-    if (isset($_POST['intaviewSelect']) && (isset($_POST['intaviewText']))) {
-        $intaview = array();
-        foreach ($_POST['intaviewSelect'] as $key => $value) {
-            $intaview[] = $_POST['intaviewSelect'][$key].",".urlencode($_POST['intaviewText'][$key]);
-            // var_dump($intaview);
+    if (isset($_FILES['logoImage']) && !empty($_FILES['logoImage'])) {
+        $upload = $_FILES['logoImage'];
+        $wpcf->saveCustomImage($_POST["postId"], $upload, "logoImage");
+    }
+    if (isset($_FILES['otherImage']) && !empty($_FILES['otherImage'])) {
+        $wpcf->saveCustomImages($_POST["postId"], $_FILES['otherImage'], "otherImage");
+    }
+    if (isset($_POST['interviewSelect']) && (isset($_POST['interviewText']))) {
+        /**
+         * 値をグループとして保存する。AdvancedCustomFieldsでも確認できるように。
+         * @var [type]
+         */
+        $itemArr = array();
+        $itemArr["select"] = $_POST['interviewSelect'];
+        $itemArr["text"] = $_POST['interviewText'];
+        $wpcf->saveCustomPostsGroup($_POST["postId"], "interview", $itemArr);
+    }
+    //スタジオ登録
+    if (isset($_POST['studioApplication'])) {
+        // var_dump($_POST['studioApplication']);
+        $apc = new Application;
+        //applyとdeleteの時のみ実行する。
+        // applying
+        // success
+        // null
+        foreach ($_POST['studioApplication'] as $key => $value) {
+            //null 未選択
+            //0 申請中
+            //1 承認済み
+            //2 非承認
+            if ($value["status"]=="apply") {
+                $apc->applicationPostTypeUpdate($_POST["postId"], $key, "studio", 0);
+            }
+            if ($value["status"]=="delete") {
+                $rst=$apc->applicationPostTypeUpdate($_POST["postId"], $key, "studio", 2);
+            }
         }
-        $wpcf->saveCustomPosts($_POST["postId"], "intaview", $intaview);
+    }
+    //イベント登録
+    if (isset($_POST['eventApplication'])) {
+        // var_dump($_POST['eventApplication']);
+        $apc = new Application;
+        //applyとdeleteの時のみ実行する。
+        // applying
+        // success
+        // null
+        foreach ($_POST['eventApplication'] as $key => $value) {
+            //null 未選択
+            //0 申請中
+            //1 承認済み
+            //2 非承認
+            if ($value["status"]=="apply") {
+                $apc->applicationPostTypeUpdate($_POST["postId"], $key, "event", 0);
+            }
+            if ($value["status"]=="delete") {
+                $rst=$apc->applicationPostTypeUpdate($_POST["postId"], $key, "event", 2);
+                // var_dump($rst);
+            }
+        }
     }
 }
 
@@ -82,6 +139,8 @@ if (isset($_POST['nonce'])
            // var_dump($results);
 foreach ($results as $postVal) {
     $item = get_post_custom($postVal->ID);
+
+
     echo "<div class='column'>".$postVal->ID."</div>";?>
     <section class="mypage-section">
         <form class="forms" data-parsley-validate novalidate method="post" id="f<?=$postVal->ID?>"  enctype="multipart/form-data">
@@ -110,22 +169,7 @@ foreach ($results as $postVal) {
 
                         <div class="x_content">
                             <div class="row">
-                                <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12 profile_left">
-                                    <input type="file" name="imgMain" >
-                                    <div class="profile_img">
-                                        <?php
-                                        if (isset($item)) {
-                                            echo wp_get_attachment_image($item["imgMain"][0], array("80px",));
-                                        }
-
-                                        // genelate_upload_image('imgMain', get_option('imgMain'));
-                                        ?>
-                                        <div id="crop-avatar">
-                                            <div id="myAvatar" class="dropzone dz-clickable avatarzone"></div>
-                                        </div>
-                                    </div>
-                                            </div>
-                                            <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12">
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                     <div class="form-horizontal form-label-left input_mask">
                                         <div class="row">
                                             <div class="col-md-12 col-sm-12 col-xs-12 form-group has-feedback">
@@ -186,20 +230,109 @@ foreach ($results as $postVal) {
                                                 </div>
                                             </div>
 
-                                            <div class="col-md-12 col-sm-12 col-xs-12">
-                                                <h4>プロフィール画像</h4>
-                                                <div class="pose_img">
+
+
+                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                                                <div class="dropWrap">
+                                                <div class="dropRow">
+                                                    <div class="dropCol">
+                                                        <div class="dropArea">
+                                                            <div class="dropFile">
+                                                                <input type="file" class="fileInput" name="imgMain"  accept=".jpg,.jpeg,.png" capture="camera">
+                                                            </div>
+                                                            <div class="dropView portraito">
+                                                                <span class="dropText">【メイン】<br>画像をドラッグするか、<br>クリックしてファイルを選択してください<br><small>推奨：1600 x 960px【横長】</small></span>
+                                                                <?php
+                                                                /**
+                                                                 * 選択画像の表示
+                                                                 */
+                                                                if (isset($item)) {
+                                                                    $wpcf->theDropzoneBackimage($item["imgMain"][0]);
+
+                                                                }
+                                                                ?>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="dropCol">
+                                                        <div class="dropArea">
+                                                            <div class="dropFile">
+                                                                <input type="file" class="fileInput" name="avatarImage" accept=".jpg,.jpeg,.png" capture="camera">
+                                                            </div>
+                                                            <div class="dropView avatar">
+                                                                <span class="dropText">画像をドラッグするか、<br>クリックしてファイルを選択してください<br><small>推奨：1000 x 1000px【正方形】</small></span>
+                                                                <?php
+                                                                /**
+                                                                 * 選択画像の表示
+                                                                 */
+                                                                if (isset($item)) {
+
+                                                                    $wpcf->theDropzoneBackimage($item["avatarImage"][0]);
+                                                                }
+                                                                ?>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="dropCol">
+                                                        <div class="dropArea">
+                                                            <div class="dropFile">
+                                                                <input type="file" class="fileInput" name="logoImage" accept=".jpg,.jpeg,.png" capture="camera">
+                                                            </div>
+                                                            <div class="dropView logo">
+                                                                <span class="dropText">画像をドラッグするか、<br>クリックしてファイルを選択してください<br><small>推奨：1000 x 1000px【正方形】</small></span>
+                                                                <?php
+                                                                /**
+                                                                 * 選択画像の表示
+                                                                 */
+                                                                if (isset($item)) {
+                                                                    $wpcf->theDropzoneBackimage($item["logoImage"][0]);
+                                                                }
+                                                                ?>
+                                                            </div>
+                                                        </div>
+                                                    </div>
                                                     <?php
-                                                    if (isset($item)) {
-                                                        echo wp_get_attachment_image($item["imgSub"][0], array("80px",));
+                                                    //可変イメージ
+                                                    $otherImageArr = $wpcf->getImagesId($item["otherImage"]);
+                                                    // var_dump($item["otherImage"],$otherImageArr);
+                                                    if (isset($otherImageArr)) {
+                                                        //数は変更可能
+                                                        for ($i=0; $i < 6; $i++) {
+                                                            $value = null;
+
+                                                            if (isset($otherImageArr[$i])) {
+                                                                $value = $otherImageArr[$i];
+                                                            }
+                                                                ?>
+                                                                <div class="dropCol">
+                                                                    <div class="dropArea">
+                                                                        <div class="dropFile">
+                                                                            <input type="file" class="fileInput" name="otherImage[]" accept=".jpg,.jpeg,.png" capture="camera">
+                                                                        </div>
+                                                                        <div class="dropView portraito">
+                                                                            <span class="dropText">画像をドラッグするか、<br>クリックしてファイルを選択してください<br><small>推奨：1000 x 600px【横長】</small></span>
+                                                                            <?php
+                                                                            /**
+                                                                            * 選択画像の表示
+                                                                            */
+                                                                            if (isset($item)) {
+                                                                                // $wpcf->theDropzoneBackimage($item["avatarImage"][0]);
+
+                                                                                $wpcf->theDropzoneBackimage($value);
+                                                                            }
+                                                                            ?>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <?php
+                                                            }
                                                     }
-                                            ?>
-                                        <input type="file" name="imgSub" >
-                                        <div id="crop-pose">
-                                            <div id="myPose" class="dropzone dz-clickable"></div>
-                                        </div>
-                                    </div>
-                                            </div>
+
+                                                    ?>
+                                                </div>
+                                            </div>                                </div>
+
+
 
                                             <div class="col-md-12 col-sm-12 col-xs-12">
                                     <h4>プロフィール</h4>
@@ -255,7 +388,8 @@ foreach ($results as $postVal) {
                                                     ?>
                                                     <li>
                                                         <div class="md-checkbox">
-                                                        <input id="md-<?php echo $i; ?>" type="checkbox" value="<?php echo $key; ?>" name="yogastyle[]" <?=$wpcf->showCheckedItems($item["yogastyle"], $key)?>><label for="md-<?php echo $i; ?>"></label>
+                                                        <input id="md-<?php echo $i; ?>" type="checkbox" value="<?php echo $key; ?>" name="yogastyle[]"
+                                                         <?=$wpcf->showCheckedItems($item["yogastyle"], $key)?>><label for="md-<?php echo $i; ?>"></label>
                                                         </div>
                                                                 <p class="style-name"><?php echo $value[0]; ?> <small><?php echo $value[1]; ?></small></p>
                                                                 </li>
@@ -293,40 +427,39 @@ foreach ($results as $postVal) {
 
                                             $variable= array(1,2,3);
                                             $length = count($variable);
-                                            if (isset($item["intaview"])) {
-                                                $variable= $item["intaview"];
-                                                $length = count($item["intaview"]);
+                                            if (isset($item["interview"])) {
+                                                $length= $item["interview"];
                                             }
                                             $cnt = 0;
                                             foreach ($variable as $key => $value) {
-                                                $cnt++;
+                                                $i = $cnt++;
                                                 // var_dump($length);
                                                 if ($cnt < $length) {
                                                     // var_dump($cnt);
                                                 ?>
-                                                    <tr>
-                                                        <td class="td-question">
-                                                            <?php
-                                                            // echo $item["intaview"][$key];
-                                                            $intaviewSelect = $key+1;
-                                                            $intaviewText = "";
-                                                            if (isset($item["intaview"][$key])) {
-                                                                $rstArr = explode(",",$item["intaview"][$key]);
-                                                                $intaviewSelect = $rstArr[0];
-                                                                $intaviewText = $rstArr[1];
-                                                            }
-                                                             ?>
-                                                            <select class="form-control" name="intaviewSelect[]">
-                                                                <?php echo $cdClass->interviewSelect($intaviewSelect);?>
-                                                            </select>
-                                                            <textarea class="form-control resize-vertical" placeholder="質問の答えを記入" name="intaviewText[]"><?php
-                                                                echo  urldecode($intaviewText);
-                                                                 ?></textarea>
-                                                        </td>
-                                                        <td class="td-button">
-                                                            <button class="btn btn-default btn-circle btn-remove-row">－</button>
-                                                        </td>
-                                                    </tr>
+                                                <tr>
+                                                    <td class="td-question">
+                                                    <?php
+                                                    // echo $item["interview"][$key];
+                                                    $interviewSelect = $key+1;
+                                                    $interviewText = "";
+                                                    if (isset($item["interview"])) {
+                                                        $rstArr = explode(",", $item["interview"][$key]);
+                                                        $interviewSelect = $item["interview"."_".$i."_Group_select"][0];
+                                                        $interviewText = $item["interview"."_".$i."_Group_text"][0];
+                                                    }
+                                                        ?>
+                                                    <select class="form-control" name="interviewSelect[]">
+                                                        <?php echo $cdClass->interviewSelect($interviewSelect);?>
+                                                    </select>
+                                                    <textarea class="form-control resize-vertical" placeholder="質問の答えを記入" name="interviewText[]"><?php
+                                                        echo  urldecode($interviewText);
+                                                            ?></textarea>
+                                                    </td>
+                                                    <td class="td-button">
+                                                        <button class="btn btn-default btn-circle btn-remove-row">－</button>
+                                                    </td>
+                                                </tr>
                                                 <?php
                                                 }
                                                 if ($cnt == $length) {
@@ -335,18 +468,17 @@ foreach ($results as $postVal) {
                                                     ?>
                                                     <tr class="tr-add-row">
                                                     <td class="td-question">
-                                                    <select class="form-control" name="intaviewSelect[]">
+                                                    <select class="form-control" name="interviewSelect[]">
                                                         <?php echo $cdClass->interviewSelect($key+1);?>
                                                     </select>
-                                                    <textarea class="form-control resize-vertical" placeholder="質問の答えを記入" name="intaviewText[]"></textarea>
+                                                    <textarea class="form-control resize-vertical" placeholder="質問の答えを記入" name="interviewText[]"></textarea>
                                                     </td>
                                                     <td class="td-button">
                                                         <button class="btn btn-default btn-circle btn-plug-row">＋</button>
                                                         <button class="btn btn-default btn-circle btn-remove-row">－</button>
                                                     </td>
                                                     </tr>
-                                                <?php                                                                           }//if
-
+                                                <?php                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   }//if
                                             }//foreach
                                                         ?>
                                                                 </tbody>
@@ -410,33 +542,57 @@ foreach ($results as $postVal) {
                                             <h4>登録スタジオ</h4>
                                             <div id="studio-list" class="list-js">
                                                 <ul class="list list-group">
-                                        <li>
-                                            <span class="shop-name">オハナスマイル ヨガスタジオ 祐天寺</span><span class="pref-name">東京都</span>
-                                            <select class="form-control case">
-                                            <?php foreach ($dataClass->getValues(3) as $key => $value) : ?>
-                                                            <option value="<?php echo $key; ?>"><?php echo $value; ?></option>
-                                                        <?php endforeach; ?>
-                                            </select>
-                                            <input type="hidden" class="data-id" value="01">
-                                        </li>
-                                        <li>
-                                            <span class="shop-name">オハナスマイル ヨガスタジオ 駒沢大学</span><span class="pref-name">東京都</span>
-                                            <select class="form-control case">
-                                            <?php foreach ($dataClass->getValues(1) as $key => $value) : ?>
-                                                            <option value="<?php echo $key; ?>"><?php echo $value; ?></option>
-                                                        <?php endforeach; ?>
-                                            </select>
-                                            <input type="hidden" class="data-id" value="02">
-                                        </li>
-                                        <li>
-                                            <span class="shop-name">ヨガアカデミー大阪</span><span class="pref-name">神奈川県</span>
-                                            <select class="form-control case">
-                                            <?php foreach ($dataClass->getValues(2) as $key => $value) : ?>
-                                                            <option value="<?php echo $key; ?>"><?php echo $value; ?></option>
-                                                        <?php endforeach; ?>
-                                            </select>
-                                            <input type="hidden" class="data-id" value="03">
-                                        </li>
+                                                    <div class="ui four column grid">
+                                                        <?php
+                                                     // $apc = new Application;
+                                                        $arrStudio =$apc->getPost($ui->ID, $postVal->ID);
+                                                        // var_dump($arrStudio->ID,$postVal->ID,$arrStudio->post_title);
+                                                        ?>
+                                                        <?php
+                                                        $results = $apc->getPostTypeList("studio");
+                                                        foreach ($results as $apcval) {
+                                                            // ◎自分自身への申請のみ表示する。
+                                                             // $isShow = $apc->isOwnPostTypeList(
+                                                             //     $ui->ID,
+                                                             //     $apcval->post_author,
+                                                             //     $arrStudio->post_type,
+                                                             //     "studio"
+                                                             // );
+                                                             // if (!$isShow) {
+                                                             //     continue;
+                                                             // }
+                                                            //---------------------
+                                                            ?>
+                                                            <?php //申請の状況の取得
+                                                               //3 承認済み
+                                                               //2 申請中
+                                                               //1 未選択
+                                                               $studioStatus = null;
+                                                               $studioStatus = $apc->getWpApplicationPostTypeStatus($arrStudio->ID, $apcval->ID, "studio");
+                                                               //未選択は表示しない
+                                                            if ($studioStatus == 2) {
+                                                                continue;
+                                                            }
+                                                                ?>
+                                                               <li>
+                                                                <?php
+                                                                echo '<span class="shop-name">'.$apcval->ID.$apcval->post_title.'</span><span class="pref-name">東京都</span>';
+                                                            ?>
+                                                           <select class="form-control case" name="studioApplication[<?=$apcval->ID?>][status]">
+                                                            <?php
+                                                           //3 承認済み
+                                                           //2 申請中
+                                                           //1 未選択
+                                                            foreach ($dataClass->getValues($studioStatus) as $key => $value) : ?>
+                                                                            <option  value="<?php echo $key; ?>"><?php echo $value; ?></option>
+                                                            <?php                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 endforeach; ?>
+                                                           </select>
+                                                           <input type="hidden" name="studioApplication[<?=$apcval->ID?>][applicationPostId]" value="<?=$arrStudio->ID?>">
+                                                       </li><?php
+                                                        }//foreach
+                                                        ?>
+
+                                                    </div>
                                                 </ul>
                                             </div>
 
@@ -444,7 +600,7 @@ foreach ($results as $postVal) {
                                                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-right">
                                         <button type="button" class="btn btn-default" data-toggle="modal" data-target=".bd-studio-modal-lg">スタジオ追加</button>
                                                 </div>
-                                                <?php include(WORKSPACE . '/include/modal-studio.php'); ?>
+                                                <?php include(get_template_directory().'/include/modal-studio.php'); ?>
                                             </div>
 
                                             <div class="row">
@@ -507,7 +663,7 @@ foreach ($results as $postVal) {
                                 <h4>開催イベント</h4>
                                 <div id="event-list" class="list-js">
                         <ul class="list list-group">
-                            <li>
+                            <!-- <li>
                                 <time class="event-date">2017年10月09日（月）</time>
                                 <span class="event-name">dusk</span><span class="event-pref-name">東京都</span>
                                 <select class="form-control case">
@@ -516,7 +672,43 @@ foreach ($results as $postVal) {
                                                         <?php endforeach; ?>
                                             </select>
                                             <input type="hidden" class="data-id" value="01">
-                                        </li>
+                                        </li> -->
+                                        <?php
+                                        $results = $apc->getPostTypeList("event");
+                                        // var_dump($results);
+                                        foreach ($results as $apcval) {
+                                            ?>
+                                            <?php //申請の状況の取得
+                                               //3 承認済み
+                                               //2 申請中
+                                               //1 未選択
+                                               $eventStatus = null;
+                                               $eventStatus = $apc->getWpApplicationPostTypeStatus($postVal->ID, $apcval->ID, "event");
+                                               //未選択は表示しない
+                                               // exit;
+                                            if ($eventStatus == 2) {
+                                                continue;
+                                            }
+                                                ?>
+                                               <li>
+                                                <?php
+                                                // var_dump($eventStatus,$postVal->ID,$apcval->ID);
+                                                echo '<time class="event-date">2017年10月09日（月）</time>
+                                                <span class="event-name">dusk'.$apcval->ID.$apcval->post_title.'dd</span><span class="event-pref-name">東京都</span>';
+                                            ?>
+                                           <select class="form-control case" name="eventApplication[<?=$apcval->ID?>][status]">
+                                            <?php
+                                           //3 承認済み
+                                           //2 申請中
+                                           //1 未選択
+                                            foreach ($dataClass->getValues($eventStatus) as $key => $value) : ?>
+                                                            <option  value="<?php echo $key; ?>"><?php echo $value; ?></option>
+                                            <?php                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 endforeach; ?>
+                                           </select>
+                                           <input type="hidden" name="eventApplication[<?=$apcval->ID?>][applicationPostId]" value="<?=$arrStudio->ID?>">
+                                       </li><?php
+                                        }//foreach
+                                        ?>
                                     </ul>
                                             </div>
                                             <div class="row">
@@ -574,6 +766,6 @@ foreach ($results as $postVal) {
                 break;
 }//foreach
             ?>
-            <script src="<?=WORKSPACE2?>vendors/mixitup/mixitup.min.js"></script>
-            <script src="<?=WORKSPACE2?>js/script-mixitup.js"></script>
+
+
 <?php get_footer("admin");

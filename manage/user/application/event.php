@@ -54,7 +54,7 @@ Common::showSessionLoginBar($ui->ID);
                         if (isset($_POST['permissionWpPostId'])) {
                             // var_dump($_POST);
                             $apc->applicationPostType(
-                                $ui->id,
+                                $ui->ID,
                                 $_POST['permissionId'],
                                 $_POST['applicationWpPostId'],
                                 $_POST['permissionWpPostId'],

@@ -1,15 +1,15 @@
 <aside class="nav-left">
     <header class="nav-left-header">
         <div class="mypage-logo">
-            <a href="/stg.yoga-gene.com/">
-                <img src="/stg.yoga-gene.com/images/dashboard-logo.svg" class="dashboard_logo">
+            <a href="/">
+                <img src="/images/dashboard-logo.svg" class="dashboard_logo">
             </a>
         </div>
     </header>
     <section>
         <div class="profile clearfix">
             <div class="profile_pic">
-                <img src="/stg.yoga-gene.com/images/yuki-20170424-01.jpg" alt="..." class="img-circle profile_img">
+                <img src="/images/yuki-20170424-01.jpg" alt="..." class="img-circle profile_img">
             </div>
             <div class="profile_info">
                 <h2>吉川祐生<small>Yuki Yoshikawa</small></h2>
@@ -22,14 +22,14 @@
         <div class="menu_section">
         <ul class="nav side-menu">
             <li>
-                <a href="/stg.yoga-gene.com/">
+                <a href="/">
                     <i class="fa fa-home"></i>
                     <div class="menu_title">お知らせ<small>Information</small></div>
                     <span class="fa fa-chevron-right"></span>
                 </a>
             </li>
             <li>
-                <a href="/stg.yoga-gene.com/mng/instructor/">
+                <a href="/mng/instructor/">
                     <i class="fa fa-user"></i>
                     <div class="menu_title">インストラクター<small>instructor</small></div>
                     <span class="fa fa-chevron-right"></span>
@@ -43,10 +43,10 @@
                 </a>
                 <ul class="nav child_menu">
                     <li>
-                        <a href="/stg.yoga-gene.com/mng/studio/">スタジオ一覧</a>
+                        <a href="/mng/studio/">スタジオ一覧</a>
                     </li>
                     <li>
-                        <a href="/stg.yoga-gene.com/mng/studio/edit/">スタジオ登録</a>
+                        <a href="/mng/studio/edit/">スタジオ登録</a>
                     </li>
                 </ul>
             </li>
@@ -58,10 +58,10 @@
                 </a>
                 <ul class="nav child_menu">
                     <li>
-                        <a href="/stg.yoga-gene.com/mng/event/">イベント一覧</a>
+                        <a href="/mng/event/">イベント一覧</a>
                     </li>
                     <li>
-                        <a href="/stg.yoga-gene.com/mng/event/edit/">イベント登録</a>
+                        <a href="/mng/event/edit/">イベント登録</a>
                     </li>
                 </ul>
             </li>
@@ -73,10 +73,10 @@
                 </a>
                 <ul class="nav child_menu">
                     <li>
-                        <a href="/stg.yoga-gene.com/mng/shop/">ショップ一覧</a>
+                        <a href="/mng/shop/">ショップ一覧</a>
                     </li>
                     <li>
-                        <a href="/stg.yoga-gene.com/mng/shop/edit/">ショップ登録</a>
+                        <a href="/mng/shop/edit/">ショップ登録</a>
                     </li>
                 </ul>
             </li>
@@ -88,15 +88,15 @@
                 </a>
                 <ul class="nav child_menu">
                     <li>
-                        <a href="/stg.yoga-gene.com/mng/job/">求人一覧</a>
+                        <a href="/mng/job/">求人一覧</a>
                     </li>
                     <li>
-                        <a href="/stg.yoga-gene.com/mng/job/edit/">求人登録</a>
+                        <a href="/mng/job/edit/">求人登録</a>
                     </li>
                 </ul>
             </li>
             <li>
-                <a href="/stg.yoga-gene.com/mng/company/">
+                <a href="/mng/company/">
                     <i class="fa fa-building"></i>
                     <div class="menu_title">企業<small>Company</small></div>
                     <span class="fa fa-chevron-right"></span>

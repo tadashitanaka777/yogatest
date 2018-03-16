@@ -21,7 +21,7 @@ Common::showWpLoginBar();
 //Sessionloginのチェックと　現在のステータス
 Common::showSessionLoginBar($ui->ID);
 ?>
-     <div class="ui stackable left aligned page grid">
+<div class="ui stackable left aligned page grid">
    <div class="fourteen wide column">
        <div class="ui four column grid">
              <div class="row">
@@ -30,9 +30,6 @@ Common::showSessionLoginBar($ui->ID);
                 <?php
                 $apc = new Application;
                 $arr =$apc->getPost($ui->ID,$_GET['postId']);;
-             // var_dump($arr);
-             // var_dump($_GET['postId']);
-             // exit;
                 ?>
              <div class="row " style="background:#ccc;">
                  <div class="column">
@@ -50,7 +47,7 @@ Common::showSessionLoginBar($ui->ID);
                         if (isset($_POST['permissionWpPostId'])) {
                             // var_dump($_POST);
                             $apc->applicationPostType(
-                                $ui->id,
+                                $ui->ID,
                                 $_POST['permissionId'],
                                 $_POST['applicationWpPostId'],
                                 $_POST['permissionWpPostId'],

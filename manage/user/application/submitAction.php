@@ -75,18 +75,15 @@ Common::showSessionLoginBar($ui->ID);
             $postType = "event";
                 $results = $apc->getPermissionPostTypeList($ui->ID, $postType);
                 // var_dump($results);
-                // exit;
                 ?>
                 <div class="row">
                     <?php
                     foreach ($results as $value) {
-                        $rstpt = $apc->getPost($ui->ID, $value->applicationWpPostId);
-                        if ($rstpt == null) {
-                            continue;
-                        }
-                        // <var_dum></var_dum>p($value);
+                        // $rstpt = $apc->getPost($ui->ID, $value->applicationWpPostId);
+                        // var_dump($rstpt);
                         echo "<div class='column'>■".$value->kind."■　&nbsp;";
-                        echo $value->applicationWpPostId.":".$rstpt->post_title;
+                        echo $value->applicationWpPostId;
+                        // echo ":".$rstpt->post_title;
                         $rstpt = $apc->getPostFromPostId($value->permissionWpPostId);
                         // print_r($wpdb->queries);
                         echo "</div>";
@@ -112,7 +109,9 @@ Common::showSessionLoginBar($ui->ID);
                 <div class="row">
                     <?php
                     foreach ($results as $value) {
-                        $rstpt = $apc->getPost($ui->ID, $value->applicationWpPostId);
+                        $rstpt = $apc->getPost($value->applicationId, $value->applicationWpPostId);//applicationWpPostId
+                        // var_dump($ui->ID,$value->applicationId,$value->applicationWpPostId,$rstpt);
+                        // exit;
                         echo "<div class='column'>■".$value->kind."■　&nbsp;";
                         echo $value->applicationWpPostId.":".$rstpt->post_title;
                         $rstpt = $apc->getPost($ui->ID, $value->permissionWpPostId);

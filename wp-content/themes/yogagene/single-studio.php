@@ -26,7 +26,38 @@ Common::showWpLoginBar();
 //Sessionloginのチェックと　現在のステータス
 Common::showSessionLoginBar($ui->ID);
 ?>
+------------------------------------------------------------
+<script >
+  var admin_ajax_url  = '<?php echo admin_url('admin-ajax.php', __FILE__); ?>';
+  function ajax(){
+      $.ajax({
+        dataType: "text",
+        url: admin_ajax_url,
+        data: {
+            'action': 'text_ajax_test',
+            'text_test': 'text',
+            'secure': '<?php echo wp_create_nonce('text_test_ajax') ?>'
+        },
+        success: function( response ){
+            alert( response );
+            $(".response").html(response);
+        }
+    })
+  }
 
+  $( '#tstb' ).on( 'click', function(){
+        ajax();
+    });
+
+</script>
+<div class="response">
+
+</div>
+<button id="tstb" onclick="ajax();"> test </button>
+<?php
+
+?>
+<hr>
 <?php require_once('community-admin/include/navigation.php'); ?>
 <?php
 //-------------------------------------
@@ -138,4 +169,5 @@ foreach ($results as $postVal) {
             </div>
           </form>
 </section>
-<?php get_footer("admin");
+<?php
+get_footer("admin");

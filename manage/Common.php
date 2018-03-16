@@ -16,6 +16,7 @@ class Common
         global $ui;
         if (!is_user_logged_in()) {
             echo "ログインしてください。";
+
             exit;
         }
         $userinfo = wp_get_current_user();
@@ -49,7 +50,7 @@ class Common
         <div class="ui segment">
             payjpUser
             [ID:<?=$ui->ID?>]&nbsp;
-            [NAME:<?=$ui->firstName?>]&nbsp;
+            [NAME:<?=$ui->firstName?>]&nbsp;<?=$ui->userLevel?>
             でログイン&nbsp;
         </div>
         <?php
